@@ -2,7 +2,7 @@
 //  SingletonMacro.h
 //  Jccp
 //
-//  Created by 蒲晓涛 on 13-12-30.
+//  Created by Gary on 13-12-30.
 //  Copyright (c) 2013年 蒲晓涛. All rights reserved.
 //
 
