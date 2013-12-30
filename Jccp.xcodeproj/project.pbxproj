@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E6F3E7718719EF3000305E6 /* SingletonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
 		4ED193D3187100FC00F643DC /* Jccp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jccp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED193D6187100FC00F643DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4ED193D8187100FC00F643DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6F3E7618719ECB000305E6 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				4E6F3E7718719EF3000305E6 /* SingletonMacro.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
 		4ED193CA187100FC00F643DC = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +127,7 @@
 		4ED193DC187100FD00F643DC /* Jccp */ = {
 			isa = PBXGroup;
 			children = (
+				4E6F3E7618719ECB000305E6 /* Macros */,
 				4ED193E5187100FD00F643DC /* AppDelegate.h */,
 				4ED193E6187100FD00F643DC /* AppDelegate.m */,
 				4ED8F6AB18713B6A00F97F98 /* ViewController.h */,
