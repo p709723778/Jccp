@@ -78,9 +78,11 @@
 //方正黑体简体字体定义
 #define FONT(F) [UIFont fontWithName:@"FZHTJW--GB1-0" size:F]
 
-//针对数字和字符显示电子样式
+//针对数字和字符显示电子样式 这个字体需要下载
 #define Digital_7(s)          [UIFont fontWithName:@"Digital-7 Mono" size:s]
 
+//判断是否为 闰年
+#define  IS_LEAP_YEAR(y)  y%4==0&&y%100!=0||y%400==0
 
 #pragma mark -设置View的tag属性
 //设置View的tag属性
@@ -127,5 +129,26 @@
 #pragma mark -度弧度转换
 #define GY_DegreesToRadian(degrees)      (M_PI * (degrees) / 180.0)
 #define GY_RadianToDegrees(radians) (radians * 180.0) / (M_PI)
+
+
+
+#pragma mark ---------------------------------非宏定义缩写方法--------------------
+
+//判断对象是否为空
+static inline BOOL isEmpty(id thing)
+{
+    return thing == nil
+    || ([thing respondsToSelector:@selector(length)] && [(NSData *)thing length] == 0)
+    || ([thing respondsToSelector:@selector(count)] && [(NSArray *)thing count] == 0);
+}
+
+//生成随机guid串的代码
+static inline CFStringRef createUniqueString(void)
+{
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    CFStringRef uuidStringRef = CFUUIDCreateString(NULL, uuid);
+    CFRelease(uuid);
+    return uuidStringRef;
+}
 
 #endif

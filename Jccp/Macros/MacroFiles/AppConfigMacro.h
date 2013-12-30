@@ -139,8 +139,57 @@ description:__VA_ARGS__];                             \
 }                                                                       \
 } while(0)
 
-//---------------------打印日志--------------------------
 
+#pragma mark -
+#pragma mark ** Log macros **
+
+// standard types
+#define LOG_BOOL(object)    (NSLog(@"" #object @" %@", (object ? @"YES" : @"NO") ));
+#define LOG_CHAR(object)    (NSLog(@"" #object @" %c", object ));
+#define LOG_INT32(object)   (NSLog(@"" #object @" %d", object ));
+#define LOG_UINT32(object)  (NSLog(@"" #object @" %u", object ));
+#define LOG_LONG(object)    (NSLog(@"" #object @" %ld", object ));
+#define LOG_ULONG(object)   (NSLog(@"" #object @" %lu", object ));
+#define LOG_INT64(object)   (NSLog(@"" #object @" %qi", object ));
+#define LOG_UINT64(object)  (NSLog(@"" #object @" %qu", object ));
+#define LOG_FLOAT(object)   (NSLog(@"" #object @" %f",object ));
+#define LOG_DOUBLE(object)  (NSLog(@"" #object @" %lf",object ));
+
+// NSInteger and NSInteger are platform independant integer types
+#if __LP64__ || (TARGET_OS_EMBEDDED && !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64
+#define LOG_INTEGER(object)     (NSLog(@"" #object @" %ld", object ));
+#define LOG_UINTEGER(object)    (NSLog(@"" #object @" %lu", object ));
+#else
+#define LOG_INTEGER(object)     (NSLog(@"" #object @" %d", object ));
+#define LOG_UINTEGER(object)    (NSLog(@"" #object @" %u", object ));
+#endif
+
+// Various Cocoa/Objective-C log macros
+#define LOG_OBJECT(object)  (NSLog(@"" #object @" %@ %@:%d", [object description], [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__));
+#define LOG_KIND_OF_CLASS(object)  (NSLog(@"[" #object @" class] %@", NSStringFromClass([object class])));
+#define LOG_METHOD          (NSLog(@"%@ %@:%d\n%@", NSStringFromSelector(_cmd), [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, self))
+#define LOG_END_METHOD      (NSLog(@"END %@", NSStringFromSelector(_cmd)))
+#define LOG_METHOD_NAME     (NSLog(@"%p %@ %@", self, NSStringFromClass([self class]), NSStringFromSelector(_cmd)))
+#define LOG_METHOD_THREAD   (NSLog(@"%@ %@ %@:%d\n%@", NSStringFromSelector(_cmd), [NSThread currentThread], [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, self))
+#define LOG_CLASS_METHOD    (NSLog(@"%@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd)))
+
+// Profiling Macros
+#define START_TIME(tag) NSDate *startTime_ ## tag = [NSDate date];NSLog(@"start           " #tag);
+#define CHECK_TIME(tag) NSLog(@"elapsed %0.5f " #tag, [[NSDate date] timeIntervalSinceDate:startTime_ ## tag]);
+
+// Various Cocoa struct log macros
+// NSRange
+#define LOG_RANGE(range)    (NSLog(@"" #range @" loc:%u len:%u", range.location, range.length ));
+// CGPoint
+#define LOG_POINT(point)    (NSLog(@"" #point @" x:%f y:%f", point.x, point.y ));
+// CGSize
+#define LOG_SIZE(size)      (NSLog(@"" #size @" width:%f height:%f", size.width, size.height ));
+// CGRect
+#define LOG_RECT(rect)      (NSLog(@"" #rect @" x:%f y:%f w:%f h:%f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height ));
+// CLLocationCoordinate2D
+#define LOG_COORD2D(coord)  (NSLog(@"" #coord @" lat,lon: %+.6f,%+.6f",coord.latitude, coord.longitude ));
+
+//---------------------打印日志--------------------------
 
 #pragma mark -该宏定义是让 AFNetworking支持4.3所定义
 
