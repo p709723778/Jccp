@@ -13,21 +13,21 @@
  *只需修改ServerAddressNumber 编号即可
  ************************************/
 
-#ifndef Jccp_APIMacro_h
-#define Jccp_APIMacro_h
+#ifndef Jccp_APIConfigMacro_h
+#define Jccp_APIConfigMacro_h
 
 
 #pragma mark -服务器地址配置
 
 //服务器地址编号   方便切换测试服务器地址
-#define ServerAddressNumber 1
+#define API_ServerAddressNumber 1
 
 //根据服务器地址编号 进行ServerAddress赋值(ServerAddress是服务器地址)
-#if (ServerAddressNumber == 1) //正式服务器
-#define ServerAddress  @"http://www.yuecp.com"
+#if (API_ServerAddressNumber == 1) //正式服务器
+#define API_ServerAddress  @"http://www.yuecp.com"
 
-#elif (ServerAddressNumber == 2)//测试服务器
-#define ServerAddress  @"http://192.168.1.93"
+#elif (API_ServerAddressNumber == 2)//测试服务器
+#define API_ServerAddress  @"http://192.168.1.93"
 
 #endif
 
@@ -46,7 +46,7 @@
  *            如果项目用的是这个框架,就没有必要用该组合了
  */
 
-#define SERVER_API(Action_API) [NSString stringWithFormat:@"%@%@",ServerAddress,Action_API]
+#define API_ServerURL_Request(API_Action) [NSString stringWithFormat:@"%@%@",API_ServerAddress,API_Action]
 
 
 
@@ -55,13 +55,13 @@
 #pragma mark -服务器返回数据格式类型设置
 
 //向服务器请求返回格式编号
-#define SERVER_RETURN_FORMAT_NUMBER 1
+#define API_SERVER_RETURN_FORMAT_NUMBER 1
 
-#if (SERVER_RETURN_FORMAT_NUMBER == 1) //返回XML格式的数据
-#define SERVER_RETURN_FORMAT @"XML"
+#if (API_SERVER_RETURN_FORMAT_NUMBER == 1) //返回XML格式的数据
+#define API_SERVER_RETURN_FORMAT @"XML"
 
-#elif (SERVER_RETURN_FORMAT_NUMBER == 2) //返回JSON格式的数据
-#define SERVER_RETURN_FORMAT @"JSON"
+#elif (API_SERVER_RETURN_FORMAT_NUMBER == 2) //返回JSON格式的数据
+#define API_SERVER_RETURN_FORMAT @"JSON"
 #endif
 
 
@@ -69,12 +69,12 @@
 #pragma mark -用户使用到的Key定义
 
 //用户操作Key
-#define Operate_KEY @"jucai"
+#define API_Operate_KEY @"jucai"
 
 //用户支付Key
-#define Pay_Key @"jucaipay"
+#define API_Pay_Key @"jucaipay"
 
 //用户投注Key
-#define Lottery_Key @"jucai0113"
+#define API_Lottery_Key @"jucai0113"
 
 #endif

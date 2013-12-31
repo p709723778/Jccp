@@ -37,10 +37,15 @@
 /* Begin PBXFileReference section */
 		4E6F3E791871AC1F000305E6 /* SingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
 		4E6F3E7A1871AFC3000305E6 /* MacroFilesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroFilesManager.h; sourceTree = "<group>"; };
-		4E6F3E7B1871B135000305E6 /* APIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIMacro.h; sourceTree = "<group>"; };
-		4E6F3E7C1871B3CD000305E6 /* RequestAddressMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestAddressMacro.h; sourceTree = "<group>"; };
+		4E6F3E7B1871B135000305E6 /* APIConfigMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIConfigMacro.h; sourceTree = "<group>"; };
+		4E6F3E7C1871B3CD000305E6 /* APIRequestMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequestMacro.h; sourceTree = "<group>"; };
 		4E6F3E7D1871B675000305E6 /* AppConfigMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfigMacro.h; sourceTree = "<group>"; };
 		4E6F3E7E1871B792000305E6 /* ShorthandMethodMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShorthandMethodMacro.h; sourceTree = "<group>"; };
+		4EC5D6CC187250550084B017 /* LogMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogMacro.h; sourceTree = "<group>"; };
+		4EC5D6CD187252280084B017 /* ColorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
+		4EC5D6CF1872530A0084B017 /* FontMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontMacro.h; sourceTree = "<group>"; };
+		4EC5D6D0187253980084B017 /* GCDMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDMacro.h; sourceTree = "<group>"; };
+		4EC5D6D1187254C80084B017 /* ImageMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageMacro.h; sourceTree = "<group>"; };
 		4ED193D3187100FC00F643DC /* Jccp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jccp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED193D6187100FC00F643DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4ED193D8187100FC00F643DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,11 +106,16 @@
 		4E6F3E781871AC1F000305E6 /* MacroFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4E6F3E7B1871B135000305E6 /* APIMacro.h */,
-				4E6F3E7C1871B3CD000305E6 /* RequestAddressMacro.h */,
+				4E6F3E7B1871B135000305E6 /* APIConfigMacro.h */,
+				4E6F3E7C1871B3CD000305E6 /* APIRequestMacro.h */,
 				4E6F3E7D1871B675000305E6 /* AppConfigMacro.h */,
 				4E6F3E7E1871B792000305E6 /* ShorthandMethodMacro.h */,
 				4E6F3E791871AC1F000305E6 /* SingletonMacro.h */,
+				4EC5D6CC187250550084B017 /* LogMacro.h */,
+				4EC5D6CD187252280084B017 /* ColorMacro.h */,
+				4EC5D6CF1872530A0084B017 /* FontMacro.h */,
+				4EC5D6D0187253980084B017 /* GCDMacro.h */,
+				4EC5D6D1187254C80084B017 /* ImageMacro.h */,
 			);
 			path = MacroFiles;
 			sourceTree = "<group>";

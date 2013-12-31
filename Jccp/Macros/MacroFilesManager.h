@@ -9,10 +9,15 @@
 #ifndef Jccp_MacroFilesManager_h
 #define Jccp_MacroFilesManager_h
 
-#import "APIMacro.h"
-#import "RequestAddressMacro.h"
+#import "APIConfigMacro.h"
+#import "APIRequestMacro.h"
 #import "AppConfigMacro.h"
 #import "ShorthandMethodMacro.h"
 #import "SingletonMacro.h"
+#import "ColorMacro.h"
+#import "LogMacro.h"
+#import "FontMacro.h"
+#import "GCDMacro.h"
+#import "ImageMacro.h"
 
 #endif
