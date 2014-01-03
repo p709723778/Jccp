@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4E0F8A8918768E88002C2DD6 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */; };
+		4E3C8A791876C150008CA0D1 /* Empty in Resources */ = {isa = PBXBuildFile; fileRef = 4E3C8A781876C150008CA0D1 /* Empty */; };
+		4E3C8A7B1876C156008CA0D1 /* Empty in Resources */ = {isa = PBXBuildFile; fileRef = 4E3C8A7A1876C156008CA0D1 /* Empty */; };
+		4E3C8A7D1876C15D008CA0D1 /* Empty in Resources */ = {isa = PBXBuildFile; fileRef = 4E3C8A7C1876C15D008CA0D1 /* Empty */; };
+		4E3C8A7F1876C164008CA0D1 /* Empty in Resources */ = {isa = PBXBuildFile; fileRef = 4E3C8A7E1876C164008CA0D1 /* Empty */; };
+		4E3C8A811876C17D008CA0D1 /* Empty in Resources */ = {isa = PBXBuildFile; fileRef = 4E3C8A801876C17D008CA0D1 /* Empty */; };
 		4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B7E187649AA0009991E /* UIView+Utils.m */; };
 		4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8518764D790009991E /* AFAppDotNetAPIClient.m */; };
 		4EBA8B8C187651B40009991E /* RegularVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8B187651B40009991E /* RegularVerification.m */; };
@@ -46,6 +51,11 @@
 		4E0F8A85187686C9002C2DD6 /* PodsHeaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsHeaderManager.h; sourceTree = "<group>"; };
 		4E0F8A8718768E88002C2DD6 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		4E3C8A781876C150008CA0D1 /* Empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty; sourceTree = "<group>"; };
+		4E3C8A7A1876C156008CA0D1 /* Empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty; sourceTree = "<group>"; };
+		4E3C8A7C1876C15D008CA0D1 /* Empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty; sourceTree = "<group>"; };
+		4E3C8A7E1876C164008CA0D1 /* Empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty; sourceTree = "<group>"; };
+		4E3C8A801876C17D008CA0D1 /* Empty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty; sourceTree = "<group>"; };
 		4EBA8B7D187649AA0009991E /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		4EBA8B7E187649AA0009991E /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
 		4EBA8B80187649DD0009991E /* CategoryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryManager.h; sourceTree = "<group>"; };
@@ -90,8 +100,8 @@
 		4EF2108418769ABB00D8634F /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		4EF2108F18769C6C00D8634F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4EF2109318769C9700D8634F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		4EF2109518769C9D00D8634F /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4EF2109718769CA000D8634F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4EF2109518769C9D00D8634F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4EF2109718769CA000D8634F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4EF210991876A00B00D8634F /* read */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read; sourceTree = "<group>"; };
 		5B1710CFFD3D482A9842F83A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AFF1817C270646BE98E53A43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,6 +282,11 @@
 		4ED193DC187100FD00F643DC /* Jccp */ = {
 			isa = PBXGroup;
 			children = (
+				4EF2109D1876A3ED00D8634F /* Utility */,
+				4EF2109C1876A3ED00D8634F /* Model */,
+				4EF2109E1876A3ED00D8634F /* View_iPad */,
+				4EF2109F1876A3ED00D8634F /* View_iPhone */,
+				4EF2109B1876A3ED00D8634F /* Controller */,
 				4ED193E5187100FD00F643DC /* AppDelegate.h */,
 				4ED193E6187100FD00F643DC /* AppDelegate.m */,
 				4ED8F6AB18713B6A00F97F98 /* ViewController.h */,
@@ -370,6 +385,46 @@
 			path = Librarys;
 			sourceTree = "<group>";
 		};
+		4EF2109B1876A3ED00D8634F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C8A801876C17D008CA0D1 /* Empty */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4EF2109C1876A3ED00D8634F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C8A7A1876C156008CA0D1 /* Empty */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EF2109D1876A3ED00D8634F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C8A781876C150008CA0D1 /* Empty */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4EF2109E1876A3ED00D8634F /* View_iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C8A7C1876C15D008CA0D1 /* Empty */,
+			);
+			path = View_iPad;
+			sourceTree = "<group>";
+		};
+		4EF2109F1876A3ED00D8634F /* View_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4E3C8A7E1876C164008CA0D1 /* Empty */,
+			);
+			path = View_iPhone;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,11 +504,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E3C8A811876C17D008CA0D1 /* Empty in Resources */,
 				4EF2109418769C9D00D8634F /* Localizable.strings in Resources */,
 				4ED193F2187100FD00F643DC /* Images.xcassets in Resources */,
 				4EF2109018769C6C00D8634F /* InfoPlist.strings in Resources */,
+				4E3C8A7D1876C15D008CA0D1 /* Empty in Resources */,
 				4ED8F6AF18713B6A00F97F98 /* ViewController.xib in Resources */,
+				4E3C8A7B1876C156008CA0D1 /* Empty in Resources */,
+				4E3C8A7F1876C164008CA0D1 /* Empty in Resources */,
 				4EF2109A1876A00B00D8634F /* read in Resources */,
+				4E3C8A791876C150008CA0D1 /* Empty in Resources */,
 				4EF2108518769ABB00D8634F /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
