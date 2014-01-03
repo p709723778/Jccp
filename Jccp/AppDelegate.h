@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "UncaughtExceptionHandler.h"
+
 @class ViewController;
 
 

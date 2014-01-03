@@ -15,4 +15,6 @@
     #import <Foundation/Foundation.h>
 
     #import "MacroFilesManager.h"
+    #import "PodsHeaderManager.h"
+
 #endif

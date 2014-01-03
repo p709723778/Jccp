@@ -26,6 +26,8 @@
 {
     // Override point for customization after application launch.
     
+    InstallUncaughtExceptionHandler();//异常监听
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     //根据iPhone / iPad 进行界面初始化

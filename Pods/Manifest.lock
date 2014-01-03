@@ -18,13 +18,19 @@ PODS:
   - AFNetworking/UIKit (2.0.3):
     - AFNetworking/NSURLConnection
   - CBIntrospect (0.4.2)
+  - OpenUDID (1.0.0)
+  - Reachability (3.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.3)
   - CBIntrospect (~> 0.4.2)
+  - OpenUDID (~> 1.0.0)
+  - Reachability (~> 3.1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
   CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
+  OpenUDID: 13ab988776ef38dca1e2e799e961448cf83a8111
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
 
 COCOAPODS: 0.27.1
