@@ -11,7 +11,7 @@
 
 #pragma mark - G－C－D
 
-#define G_GCDBackground(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+#define GY_GCDBackground(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
 
 #define G_GCDMain(block)       dispatch_async(dispatch_get_main_queue(),block)
 

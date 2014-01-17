@@ -11,48 +11,48 @@
 
 #pragma mark - 简写系统中一些方法
 
-#define G_AppDelegate        (AppDelegate *)[[UIApplication sharedApplication] delegate]
-#define G_NavigationController ((AppDelegate *)[UIApplication sharedApplication].delegate.navigationController)
-#define G_Window             [[[UIApplication sharedApplication] windows] lastObject]
-#define G_KeyWindow          [[UIApplication sharedApplication] keyWindow]
-#define G_UserDefaults       [NSUserDefaults standardUserDefaults]
-#define G_NotificationCenter [NSNotificationCenter defaultCenter]
+#define GY_AppDelegate        (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#define GY_NavigationController ((AppDelegate *)[UIApplication sharedApplication].delegate.navigationController)
+#define GY_Window             [[[UIApplication sharedApplication] windows] lastObject]
+#define GY_KeyWindow          [[UIApplication sharedApplication] keyWindow]
+#define GY_UserDefaults       [NSUserDefaults standardUserDefaults]
+#define GY_NotificationCenter [NSNotificationCenter defaultCenter]
 
 
 
 //----------------------其他----------------------------
 
 //判断是否为 闰年
-#define  G_IS_LEAP_YEAR(y)  y%4==0&&y%100!=0||y%400==0
+#define  GY_IS_LEAP_YEAR(y)  y%4==0&&y%100!=0||y%400==0
 
 #pragma mark -设置View的tag属性
 //设置View的tag属性
-#define G_VIEWWITHTAG(_OBJECT, _TAG)    [_OBJECT viewWithTag : _TAG]
+#define GY_VIEWWITHTAG(_OBJECT, _TAG)    [_OBJECT viewWithTag : _TAG]
 
 
 //拨打电话
-#define G_canTel                 ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tel:"]])
-#define G_tel(phoneNumber)       ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]])
-#define G_telprompt(phoneNumber) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt:%@",phoneNumber]]])
+#define GY_canTel                 ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tel:"]])
+#define GY_tel(phoneNumber)       ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]])
+#define GY_telprompt(phoneNumber) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt:%@",phoneNumber]]])
 
 //打开URL
-#define G_canOpenURL(appScheme) ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appScheme]])
-#define G_openURL(appScheme) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appScheme]])
+#define GY_canOpenURL(appScheme) ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appScheme]])
+#define GY_openURL(appScheme) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appScheme]])
 
 //读取文件的文本内容,默认编码为UTF-8
-#define G_FileString(name,ext)            [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(name) ofType:(ext)] encoding:NSUTF8StringEncoding error:nil]
-#define G_FileDictionary(name,ext)        [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(name) ofType:(ext)]]
-#define G_FileArray(name,ext)             [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(name) ofType:(ext)]]
+#define GY_FileString(name,ext)            [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(name) ofType:(ext)] encoding:NSUTF8StringEncoding error:nil]
+#define GY_FileDictionary(name,ext)        [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(name) ofType:(ext)]]
+#define GY_FileArray(name,ext)             [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(name) ofType:(ext)]]
 
 
 //System  剪贴板
-#define G_PasteString(string)   [[UIPasteboard generalPasteboard] setString:string];
-#define G_PasteImage(image)     [[UIPasteboard generalPasteboard] setImage:image];
+#define GY_PasteString(string)   [[UIPasteboard generalPasteboard] setString:string];
+#define GY_PasteImage(image)     [[UIPasteboard generalPasteboard] setImage:image];
 
 
 #pragma mark -度弧度转换
-#define G_DegreesToRadian(degrees)      (M_PI * (degrees) / 180.0)
-#define G_RadianToDegrees(radians) (radians * 180.0) / (M_PI)
+#define GY_DegreesToRadian(degrees)      (M_PI * (degrees) / 180.0)
+#define GY_RadianToDegrees(radians) (radians * 180.0) / (M_PI)
 
 
 

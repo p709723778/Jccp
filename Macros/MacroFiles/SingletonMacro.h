@@ -19,11 +19,11 @@
 
 #if __has_feature(objc_arc)
 
-  #define G_SINGLETON_FOR_HEADER(className) \
+  #define GY_SINGLETON_FOR_HEADER(className) \
                                                  \
     + (className *)shared##className;
 
-  #define G_SINGLETON_FOR_CLASS(className)           \
+  #define GY_SINGLETON_FOR_CLASS(className)           \
                                                           \
     + (className *)shared##className {                    \
         static className        *shared##className = nil; \
@@ -36,11 +36,11 @@
 
 #else
 
-  #define G_SINGLETON_FOR_HEADER(className) \
+  #define GY_SINGLETON_FOR_HEADER(className) \
                                                  \
     + (className *)shared##className;
 
-  #define G_SINGLETON_FOR_CLASS(classname)                 \
+  #define GY_SINGLETON_FOR_CLASS(classname)                 \
                                                                 \
     static classname * shared##classname = nil;                 \
                                                                 \
