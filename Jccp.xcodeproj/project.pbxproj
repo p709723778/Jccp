@@ -51,6 +51,7 @@
 		4E0F8A85187686C9002C2DD6 /* PodsHeaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsHeaderManager.h; sourceTree = "<group>"; };
 		4E0F8A8718768E88002C2DD6 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		4E48252818AA42F900C2F99F /* libPods-ReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-ReactiveCocoa.a"; path = "Pods/build/Debug-iphoneos/libPods-ReactiveCocoa.a"; sourceTree = "<group>"; };
 		4EB771B618891FEE00EBF933 /* Utility */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Utility; sourceTree = "<group>"; };
 		4EB771B818891FFD00EBF933 /* Model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Model; sourceTree = "<group>"; };
 		4EB771BA1889200900EBF933 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
@@ -270,6 +271,7 @@
 		4ED193D5187100FC00F643DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E48252818AA42F900C2F99F /* libPods-ReactiveCocoa.a */,
 				4ED193D6187100FC00F643DC /* Foundation.framework */,
 				4ED193D8187100FC00F643DC /* CoreGraphics.framework */,
 				4ED193DA187100FC00F643DC /* UIKit.framework */,
@@ -700,6 +702,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jccp/Jccp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/CBIntrospect\"",
+					"\"${PODS_ROOT}/Headers/FMDB\"",
+					"\"${PODS_ROOT}/Headers/OpenUDID\"",
+					"\"${PODS_ROOT}/Headers/Reachability\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
+				);
 				INFOPLIST_FILE = "Jccp/Jccp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -717,6 +729,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jccp/Jccp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/CBIntrospect\"",
+					"\"${PODS_ROOT}/Headers/FMDB\"",
+					"\"${PODS_ROOT}/Headers/OpenUDID\"",
+					"\"${PODS_ROOT}/Headers/Reachability\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
+				);
 				INFOPLIST_FILE = "Jccp/Jccp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
