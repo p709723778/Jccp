@@ -33,6 +33,8 @@
 #define GY_MainHeight (GY_ScreenHeight - GY_StateBarHeight)//减去状态栏屏幕高度
 #define GY_MainWidth GY_ScreenWidth//主屏宽度
 
+#pragma mark - 是否为IOS7
+#define GY_IS_IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
 
 #pragma mark -App Id , 下载地址 , 评价地址
 

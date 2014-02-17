@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-#import "UncaughtExceptionHandler.h"
 
-@class ViewController;
+
+@class AppTabBarController;
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) AppTabBarController *appTabBarController;
 
 @end

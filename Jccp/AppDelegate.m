@@ -7,14 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "UncaughtExceptionHandler.h"
+#import "AppDelegateHelper.h"
+#import "AppTabBarController.h"
 
 @implementation AppDelegate
 
 - (void)dealloc
 {
     self.window = nil;
-    self.viewController = nil;
+    self.appTabBarController = nil;
 }
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
@@ -28,16 +30,19 @@
     
     InstallUncaughtExceptionHandler();//异常监听
     
+    //设置导航栏风格
+    [AppDelegateHelper setNavigationBarStyle];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    //根据iPhone / iPad 进行界面初始化
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    } else {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
-    
-    self.window.rootViewController = self.viewController;
+//    //根据iPhone / iPad 进行界面初始化
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+//        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+//    } else {
+//        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
+//    }
+    self.appTabBarController = [AppDelegateHelper loadTabBarController];
+    self.window.rootViewController = _appTabBarController;
     [self.window makeKeyAndVisible];
     
     return YES;

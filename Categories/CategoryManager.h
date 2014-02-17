@@ -9,7 +9,18 @@
 #ifndef Jccp_CategoryManager_h
 #define Jccp_CategoryManager_h
 
+
+//UIView
 #import "UIView+Utils.h"
+
+//UIDevice
 #import "UIDevice+SystemInfo.h"
+
+//UIColor
+#import "UIColor+Colours.h"
+#import "UIColor+UIImage.h"
+
+//UIViewController
+#import "UIViewController+Shake.h"
 
 #endif
