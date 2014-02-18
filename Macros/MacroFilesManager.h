@@ -27,6 +27,7 @@
 #import "FontMacro.h"
 #import "GCDMacro.h"
 #import "ImageMacro.h"
+#import "LotteryNameCodeMacro.h"
 
 
 #pragma mark -非宏定义文件管理

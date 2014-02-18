@@ -23,4 +23,7 @@
 //UIViewController
 #import "UIViewController+Shake.h"
 
+//NSString
+#import "NSString+LotteryNameCode.h"
+
 #endif

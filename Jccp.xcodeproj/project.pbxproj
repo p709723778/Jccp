@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4E0F8A8918768E88002C2DD6 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */; };
+		4E305A2818B3744000ACDEB5 /* NSString+LotteryNameCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A2718B3744000ACDEB5 /* NSString+LotteryNameCode.m */; };
+		4E305A2B18B3752100ACDEB5 /* NSString+JSONCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A2A18B3752100ACDEB5 /* NSString+JSONCategory.m */; };
+		4E305A2E18B3754600ACDEB5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A2D18B3754600ACDEB5 /* NSString+MD5.m */; };
+		4E305A3118B375A200ACDEB5 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A3018B375A200ACDEB5 /* NSString+Category.m */; };
 		4E44FF3518B232FF0066B9E9 /* AppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF3418B232FF0066B9E9 /* AppTabBarController.m */; };
 		4E44FF3B18B234740066B9E9 /* AppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF3A18B234740066B9E9 /* AppDelegateHelper.m */; };
 		4E44FF4118B236100066B9E9 /* UIColor+Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF3E18B236100066B9E9 /* UIColor+Colours.m */; };
@@ -89,6 +93,15 @@
 		4E0F8A85187686C9002C2DD6 /* PodsHeaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsHeaderManager.h; sourceTree = "<group>"; };
 		4E0F8A8718768E88002C2DD6 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		4E305A2418B373BD00ACDEB5 /* LotteryNameCodeMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryNameCodeMacro.h; sourceTree = "<group>"; };
+		4E305A2618B3744000ACDEB5 /* NSString+LotteryNameCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LotteryNameCode.h"; sourceTree = "<group>"; };
+		4E305A2718B3744000ACDEB5 /* NSString+LotteryNameCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LotteryNameCode.m"; sourceTree = "<group>"; };
+		4E305A2918B3752100ACDEB5 /* NSString+JSONCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSONCategory.h"; sourceTree = "<group>"; };
+		4E305A2A18B3752100ACDEB5 /* NSString+JSONCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONCategory.m"; sourceTree = "<group>"; };
+		4E305A2C18B3754600ACDEB5 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		4E305A2D18B3754600ACDEB5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		4E305A2F18B375A100ACDEB5 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		4E305A3018B375A200ACDEB5 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		4E44FF3318B232FF0066B9E9 /* AppTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabBarController.h; sourceTree = "<group>"; };
 		4E44FF3418B232FF0066B9E9 /* AppTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTabBarController.m; sourceTree = "<group>"; };
 		4E44FF3918B234740066B9E9 /* AppDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateHelper.h; sourceTree = "<group>"; };
@@ -233,6 +246,21 @@
 			path = ExceptionHelper;
 			sourceTree = "<group>";
 		};
+		4E305A2518B3742C00ACDEB5 /* NSString+Category */ = {
+			isa = PBXGroup;
+			children = (
+				4E305A2618B3744000ACDEB5 /* NSString+LotteryNameCode.h */,
+				4E305A2718B3744000ACDEB5 /* NSString+LotteryNameCode.m */,
+				4E305A2918B3752100ACDEB5 /* NSString+JSONCategory.h */,
+				4E305A2A18B3752100ACDEB5 /* NSString+JSONCategory.m */,
+				4E305A2C18B3754600ACDEB5 /* NSString+MD5.h */,
+				4E305A2D18B3754600ACDEB5 /* NSString+MD5.m */,
+				4E305A2F18B375A100ACDEB5 /* NSString+Category.h */,
+				4E305A3018B375A200ACDEB5 /* NSString+Category.m */,
+			);
+			path = "NSString+Category";
+			sourceTree = "<group>";
+		};
 		4E44FF3618B233430066B9E9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +385,7 @@
 		4EBA8B7B187649AA0009991E /* CategoryFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4E305A2518B3742C00ACDEB5 /* NSString+Category */,
 				4E44FF7B18B24C4C0066B9E9 /* UIViewController+Category */,
 				4E44FF3C18B236100066B9E9 /* UIColor+Category */,
 				4EBA8B961876633D0009991E /* UIDevice+Category */,
@@ -550,6 +579,7 @@
 				4EF2107D18769A0000D8634F /* LogMacro.h */,
 				4EF2107E18769A0000D8634F /* ShorthandMethodMacro.h */,
 				4EF2107F18769A0000D8634F /* SingletonMacro.h */,
+				4E305A2418B373BD00ACDEB5 /* LotteryNameCodeMacro.h */,
 			);
 			path = MacroFiles;
 			sourceTree = "<group>";
@@ -794,13 +824,17 @@
 				4E44FF4218B236100066B9E9 /* UIColor+UIImage.m in Sources */,
 				4ED8F6AE18713B6A00F97F98 /* ViewController.m in Sources */,
 				4ED193E7187100FD00F643DC /* AppDelegate.m in Sources */,
+				4E305A2B18B3752100ACDEB5 /* NSString+JSONCategory.m in Sources */,
 				4E0F8A8918768E88002C2DD6 /* UncaughtExceptionHandler.m in Sources */,
 				4EBA8B991876633D0009991E /* UIDevice+SystemInfo.m in Sources */,
 				4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */,
 				4E44FF3B18B234740066B9E9 /* AppDelegateHelper.m in Sources */,
+				4E305A2818B3744000ACDEB5 /* NSString+LotteryNameCode.m in Sources */,
 				4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */,
 				4E44FF4118B236100066B9E9 /* UIColor+Colours.m in Sources */,
+				4E305A3118B375A200ACDEB5 /* NSString+Category.m in Sources */,
 				4EBA8B911876532D0009991E /* GaryPersonalLog.m in Sources */,
+				4E305A2E18B3754600ACDEB5 /* NSString+MD5.m in Sources */,
 				4E44FF4618B237C80066B9E9 /* AppTabBarItem.m in Sources */,
 				4E44FF3518B232FF0066B9E9 /* AppTabBarController.m in Sources */,
 				4ED193E3187100FD00F643DC /* main.m in Sources */,
