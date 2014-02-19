@@ -12,7 +12,9 @@
 
 @interface AppDelegateHelper : NSObject
 
+GY_SINGLETON_FOR_HEADER(AppDelegateHelper);
 
+///是否第一次启动
 @property(assign, nonatomic)BOOL isFirst;
 
 

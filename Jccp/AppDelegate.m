@@ -10,6 +10,8 @@
 #import "UncaughtExceptionHandler.h"
 #import "AppDelegateHelper.h"
 #import "AppTabBarController.h"
+#import "CBIntrospect.h"
+#import "GaryPersonalLog.h"
 
 @implementation AppDelegate
 
@@ -20,31 +22,50 @@
 }
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
-{
-    
-}
+{}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    InstallUncaughtExceptionHandler();//异常监听
-    
-    //设置导航栏风格
+
+    // 本人版权日志输出
+    [GaryPersonalLog outPutPersonalLog];
+    // must be set before any nib is called
+    [CBIntrospect setIntrospectorKeyName:@"introspectorName"];
+
+    if ([AppDelegateHelper sharedAppDelegateHelper].isFirst) {
+        AppDelegateHelper *ppDelegateHelper = [AppDelegateHelper sharedAppDelegateHelper];
+        NSLog(@"%@", (ppDelegateHelper.isFirst) ? @"是" : @"否");
+    }
+
+    InstallUncaughtExceptionHandler(); // 异常监听
+
+    // 设置导航栏风格
     [AppDelegateHelper setNavigationBarStyle];
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-//    //根据iPhone / iPad 进行界面初始化
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-//        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-//    } else {
-//        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-//    }
+    //    //根据iPhone / iPad 进行界面初始化
+    //    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+    //        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    //    } else {
+    //        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
+    //    }
     self.appTabBarController = [AppDelegateHelper loadTabBarController];
     self.window.rootViewController = _appTabBarController;
     [self.window makeKeyAndVisible];
-    
+
+    // UI调试工具加载  在模拟器模式下使用
+#ifdef TARGET_IPHONE_SIMULATOR
+        [[CBIntrospect sharedIntrospector] start];
+
+        /**
+         *   Listen for remote notification messages.
+         *   Notifications can be sent from View Introspector, using the Messenger window.
+         */
+        [[CBIntrospect sharedIntrospector] listenForRemoteNotifications];
+#endif
+
     return YES;
 }
 

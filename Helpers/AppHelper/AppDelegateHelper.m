@@ -12,7 +12,10 @@
 #import "AppTabBarItem.h"
 
 #import "ViewController.h"
+
 @implementation AppDelegateHelper
+
+GY_SINGLETON_FOR_CLASS(AppDelegateHelper);
 
 - (id)init
 {
