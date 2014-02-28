@@ -25,12 +25,12 @@ PODS:
     - FMDB/common
   - OpenUDID (1.0.0)
   - Reachability (3.1.1)
-  - ReactiveCocoa (2.2.3):
+  - ReactiveCocoa (2.2.4):
     - ReactiveCocoa/Core
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/Core (2.2.3):
+  - ReactiveCocoa/Core (2.2.4):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.2.3)
+  - ReactiveCocoa/no-arc (2.2.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.1.0)
@@ -38,7 +38,7 @@ DEPENDENCIES:
   - FMDB (~> 2.2)
   - OpenUDID (~> 1.0.0)
   - Reachability (~> 3.1.1)
-  - ReactiveCocoa (~> 2.2.3)
+  - ReactiveCocoa (~> 2.2.4)
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
@@ -46,6 +46,6 @@ SPEC CHECKSUMS:
   FMDB: 97472cfacf0d9e445e915704fb43b4b142799c36
   OpenUDID: 13ab988776ef38dca1e2e799e961448cf83a8111
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  ReactiveCocoa: b3cb6ebd50f1a0f2e39c6fd7ce3c428b6efcb22b
+  ReactiveCocoa: 953a45dda30674fe704d1d9c77cc874141742f47
 
 COCOAPODS: 0.29.0
