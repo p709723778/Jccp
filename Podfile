@@ -1,5 +1,6 @@
 #如果单独类库中有解决不了或担心修改出错的警告  可以用 :inhibit_warnings => true 忽略警告 false就相反了
 #如果inhibit_warnings => true 放到platform :ios, 'XX'后面  指的是所有类库都忽略警告
+#添加后要 pod update
 platform :ios, '6.0'
 pod 'CBIntrospect', '~> 0.4.2'
 pod 'AFNetworking', '~> 2.1.0'
