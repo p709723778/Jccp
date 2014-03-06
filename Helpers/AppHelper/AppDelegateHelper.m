@@ -11,7 +11,11 @@
 #import "AppTabBarController.h"
 #import "AppTabBarItem.h"
 
-#import "ViewController.h"
+#import "GameHallViewController.h"
+#import "UserInterfaceViewController.h"
+#import "OpenPrizeInfoViewController.h"
+#import "NewsInfoViewController.h"
+#import "MoreInterfaceViewController.h"
 
 @implementation AppDelegateHelper
 
@@ -101,35 +105,60 @@ GY_SINGLETON_FOR_CLASS(AppDelegateHelper);
 
 + (AppTabBarController *)loadTabBarController
 {
+    //TabBarController管理控制器
     AppTabBarController *appTabBarController = [[AppTabBarController alloc] init];
     
-    ViewController *viewController = [[ViewController alloc] init];
+    //彩票大厅
+    GameHallViewController *gameViewController = [[GameHallViewController alloc] init];
+    AppTabBarItem *theItemGameView = [[AppTabBarItem alloc] initWithTitle:@"购彩大厅" image:[UIImage imageNamed:@"tab_icon1"] tag:0];
+    theItemGameView.selectedImage = [[UIImage imageNamed:@"tab_icon1_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *navGameView = [[UINavigationController alloc] initWithRootViewController:gameViewController];
+    [gameViewController setTabBarItem:theItemGameView];
     
-    AppTabBarItem *theItemOne = [[AppTabBarItem alloc] initWithTitle:@"index" image:[UIImage imageNamed:@"tab_icon1"] tag:0];
-//    theItemOne.selectedImage = [UIImage imageNamed:@"tab_icon1_Press"];
+    //我的彩票
+    UserInterfaceViewController *viewControllerUserInterface = [[UserInterfaceViewController alloc] init];
+    AppTabBarItem *theItemUserInterface = [[AppTabBarItem alloc] initWithTitle:@"我的彩票" image:[UIImage imageNamed:@"tab_icon2"] tag:0];
+    theItemUserInterface.selectedImage = [[UIImage imageNamed:@"tab_icon2_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *navUserInterface = [[UINavigationController alloc] initWithRootViewController:viewControllerUserInterface];
     
-    UINavigationController *navOne = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [viewControllerUserInterface setTabBarItem:theItemUserInterface];
     
-    [viewController setTabBarItem:theItemOne];
+    //开奖信息
+    OpenPrizeInfoViewController *viewControllerOpenPrizeInfo = [[OpenPrizeInfoViewController alloc] init];
+    AppTabBarItem *theItemOpenPrizeInfo = [[AppTabBarItem alloc] initWithTitle:@"开奖信息" image:[UIImage imageNamed:@"tab_icon3"] tag:0];
+    theItemOpenPrizeInfo.selectedImage = [[UIImage imageNamed:@"tab_icon3_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *navOpenPrizeInfo = [[UINavigationController alloc] initWithRootViewController:viewControllerOpenPrizeInfo];
     
+    [viewControllerOpenPrizeInfo setTabBarItem:theItemOpenPrizeInfo];
     
-    ViewController *viewController1 = [[ViewController alloc] init];
+    //新闻资讯
+    NewsInfoViewController *viewControllerNewsInfo = [[NewsInfoViewController alloc] init];
+    AppTabBarItem *theItemNewsInfo = [[AppTabBarItem alloc] initWithTitle:@"新闻资讯" image:[UIImage imageNamed:@"tab_icon4"] tag:0];
+    theItemNewsInfo.selectedImage = [[UIImage imageNamed:@"tab_icon4_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *navNewsInfo = [[UINavigationController alloc] initWithRootViewController:viewControllerNewsInfo];
     
-    AppTabBarItem *theItemOne1 = [[AppTabBarItem alloc] initWithTitle:@"index" image:[UIImage imageNamed:@"tab_icon1"] tag:0];
-//    theItemOne1.selectedImage = [[UIImage imageNamed:@"tab_icon1_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [[UITabBar appearance] setTintColor:[UIColor greenColor]];
+    [viewControllerNewsInfo setTabBarItem:theItemNewsInfo];
     
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor], NSForegroundColorAttributeName, nil]forState:UIControlStateNormal];
-    
-    UINavigationController *navOne1 = [[UINavigationController alloc] initWithRootViewController:viewController1];
-    
-    [viewController1 setTabBarItem:theItemOne1];
+    //更多
+    MoreInterfaceViewController *viewControllerMoreInterface = [[MoreInterfaceViewController alloc] init];
+    AppTabBarItem *theItemMoreInterface = [[AppTabBarItem alloc] initWithTitle:@"更多" image:[UIImage imageNamed:@"tab_icon5"] tag:0];
+    theItemMoreInterface.selectedImage = [[UIImage imageNamed:@"tab_icon5_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *navMoreInterface = [[UINavigationController alloc] initWithRootViewController:viewControllerMoreInterface];
+    [viewControllerMoreInterface setTabBarItem:theItemMoreInterface];
     
     
     NSArray *controllers = [[NSArray alloc] initWithObjects:
-                            navOne, navOne1, nil];
-    
+                            navGameView, navUserInterface, navOpenPrizeInfo, navNewsInfo, navMoreInterface, nil];
     [appTabBarController setViewControllers:controllers];
+    
+    //设置UITabBar选中背景颜色
+    [[UITabBar appearance] setTintColor:[UIColor greenColor]];
+    
+    //设置UITabBarItem 普通状态 字体 颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.57f green:0.57f blue:0.57f alpha:1.00f], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:10.0f],NSFontAttributeName, nil]forState:UIControlStateNormal];
+    
+    //设置UITabBarItem 选中状态 字体 颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.79f green:0.25f blue:0.28f alpha:1.00f], NSForegroundColorAttributeName, [UIFont boldSystemFontOfSize:10.0f],NSFontAttributeName, nil]forState:UIControlStateSelected];
     
     return appTabBarController;
 }

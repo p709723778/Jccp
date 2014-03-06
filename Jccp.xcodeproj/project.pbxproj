@@ -51,9 +51,20 @@
 		4E44FFC118B250F50066B9E9 /* tab_icon5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FFA018B250F50066B9E9 /* tab_icon5@2x.png */; };
 		4E44FFC218B250F50066B9E9 /* tab_icon5_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FFA118B250F50066B9E9 /* tab_icon5_Press.png */; };
 		4E44FFC318B250F50066B9E9 /* tab_icon5_Press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */; };
+		4E680EFC18C8C95300D23325 /* View_iPad in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EF918C8C95300D23325 /* View_iPad */; };
+		4E680EFD18C8C95300D23325 /* View_iPhone in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EFB18C8C95300D23325 /* View_iPhone */; };
+		4E680F0618C8CAF000D23325 /* MoreInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F0418C8CAF000D23325 /* MoreInterfaceViewController.m */; };
+		4E680F0718C8CAF000D23325 /* MoreInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F0518C8CAF000D23325 /* MoreInterfaceViewController.xib */; };
+		4E680F0B18C8CE3E00D23325 /* NewsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F0918C8CE3E00D23325 /* NewsInfoViewController.m */; };
+		4E680F0C18C8CE3E00D23325 /* NewsInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F0A18C8CE3E00D23325 /* NewsInfoViewController.xib */; };
+		4E680F1018C8CE4900D23325 /* OpenPrizeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F0E18C8CE4900D23325 /* OpenPrizeInfoViewController.m */; };
+		4E680F1118C8CE4900D23325 /* OpenPrizeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F0F18C8CE4900D23325 /* OpenPrizeInfoViewController.xib */; };
+		4E680F1518C8CE5500D23325 /* UserInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F1318C8CE5500D23325 /* UserInterfaceViewController.m */; };
+		4E680F1618C8CE5500D23325 /* UserInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1418C8CE5500D23325 /* UserInterfaceViewController.xib */; };
+		4E680F1A18C8CE5E00D23325 /* GameHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F1818C8CE5E00D23325 /* GameHallViewController.m */; };
+		4E680F1B18C8CE5E00D23325 /* GameHallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1918C8CE5E00D23325 /* GameHallViewController.xib */; };
+		4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */; };
 		4EB771B918891FFD00EBF933 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 4EB771B818891FFD00EBF933 /* Model */; };
-		4EB771BB1889200900EBF933 /* View_iPad in Resources */ = {isa = PBXBuildFile; fileRef = 4EB771BA1889200900EBF933 /* View_iPad */; };
-		4EB771BD1889201200EBF933 /* View_iPhone in Resources */ = {isa = PBXBuildFile; fileRef = 4EB771BC1889201200EBF933 /* View_iPhone */; };
 		4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B7E187649AA0009991E /* UIView+Utils.m */; };
 		4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8518764D790009991E /* AFAppDotNetAPIClient.m */; };
 		4EBA8B8C187651B40009991E /* RegularVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8B187651B40009991E /* RegularVerification.m */; };
@@ -70,8 +81,6 @@
 		4ED193FA187100FD00F643DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED193D6187100FC00F643DC /* Foundation.framework */; };
 		4ED193FB187100FD00F643DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED193DA187100FC00F643DC /* UIKit.framework */; };
 		4ED19405187100FD00F643DC /* JccpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED19404187100FD00F643DC /* JccpTests.m */; };
-		4ED8F6AE18713B6A00F97F98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8F6AC18713B6A00F97F98 /* ViewController.m */; };
-		4ED8F6AF18713B6A00F97F98 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED8F6AD18713B6A00F97F98 /* ViewController.xib */; };
 		4EF2108518769ABB00D8634F /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2108418769ABB00D8634F /* digital-7.ttf */; };
 		4EF2109018769C6C00D8634F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2108E18769C6C00D8634F /* InfoPlist.strings */; };
 		4EF2109418769C9D00D8634F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2109618769C9D00D8634F /* Localizable.strings */; };
@@ -149,9 +158,25 @@
 		4E44FFA118B250F50066B9E9 /* tab_icon5_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon5_Press.png; sourceTree = "<group>"; };
 		4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon5_Press@2x.png"; sourceTree = "<group>"; };
 		4E48252818AA42F900C2F99F /* libPods-ReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ReactiveCocoa.a"; path = "Pods/build/Debug-iphoneos/libPods-ReactiveCocoa.a"; sourceTree = "<group>"; };
+		4E680EF918C8C95300D23325 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
+		4E680EFB18C8C95300D23325 /* View_iPhone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPhone; sourceTree = "<group>"; };
+		4E680F0318C8CAF000D23325 /* MoreInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInterfaceViewController.h; sourceTree = "<group>"; };
+		4E680F0418C8CAF000D23325 /* MoreInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInterfaceViewController.m; sourceTree = "<group>"; };
+		4E680F0518C8CAF000D23325 /* MoreInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInterfaceViewController.xib; sourceTree = "<group>"; };
+		4E680F0818C8CE3E00D23325 /* NewsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfoViewController.h; sourceTree = "<group>"; };
+		4E680F0918C8CE3E00D23325 /* NewsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfoViewController.m; sourceTree = "<group>"; };
+		4E680F0A18C8CE3E00D23325 /* NewsInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsInfoViewController.xib; sourceTree = "<group>"; };
+		4E680F0D18C8CE4900D23325 /* OpenPrizeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPrizeInfoViewController.h; sourceTree = "<group>"; };
+		4E680F0E18C8CE4900D23325 /* OpenPrizeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPrizeInfoViewController.m; sourceTree = "<group>"; };
+		4E680F0F18C8CE4900D23325 /* OpenPrizeInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenPrizeInfoViewController.xib; sourceTree = "<group>"; };
+		4E680F1218C8CE5500D23325 /* UserInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInterfaceViewController.h; sourceTree = "<group>"; };
+		4E680F1318C8CE5500D23325 /* UserInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInterfaceViewController.m; sourceTree = "<group>"; };
+		4E680F1418C8CE5500D23325 /* UserInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInterfaceViewController.xib; sourceTree = "<group>"; };
+		4E680F1718C8CE5E00D23325 /* GameHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHallViewController.h; sourceTree = "<group>"; };
+		4E680F1818C8CE5E00D23325 /* GameHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHallViewController.m; sourceTree = "<group>"; };
+		4E680F1918C8CE5E00D23325 /* GameHallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameHallViewController.xib; sourceTree = "<group>"; };
+		4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreInterfaceTableItem.plist; sourceTree = "<group>"; };
 		4EB771B818891FFD00EBF933 /* Model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Model; sourceTree = "<group>"; };
-		4EB771BA1889200900EBF933 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
-		4EB771BC1889201200EBF933 /* View_iPhone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPhone; sourceTree = "<group>"; };
 		4EBA8B7D187649AA0009991E /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		4EBA8B7E187649AA0009991E /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
 		4EBA8B80187649DD0009991E /* CategoryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryManager.h; sourceTree = "<group>"; };
@@ -181,9 +206,6 @@
 		4ED193F8187100FD00F643DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4ED19400187100FD00F643DC /* JccpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JccpTests-Info.plist"; sourceTree = "<group>"; };
 		4ED19404187100FD00F643DC /* JccpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JccpTests.m; sourceTree = "<group>"; };
-		4ED8F6AB18713B6A00F97F98 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4ED8F6AC18713B6A00F97F98 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4ED8F6AD18713B6A00F97F98 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		4EF2107618769A0000D8634F /* APIConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfigMacro.h; sourceTree = "<group>"; };
 		4EF2107718769A0000D8634F /* APIRequestMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequestMacro.h; sourceTree = "<group>"; };
 		4EF2107818769A0000D8634F /* AppConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfigMacro.h; sourceTree = "<group>"; };
@@ -266,6 +288,11 @@
 			isa = PBXGroup;
 			children = (
 				4E44FF3718B233660066B9E9 /* UITabBarController */,
+				4E680EFE18C8CA4A00D23325 /* GameHall */,
+				4E680F0218C8CA4A00D23325 /* UserInterface */,
+				4E680F0118C8CA4A00D23325 /* OpenPrizeInfo */,
+				4E680F0018C8CA4A00D23325 /* NewsInfo */,
+				4E680EFF18C8CA4A00D23325 /* MoreInterface */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,6 +399,82 @@
 				4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */,
 			);
 			path = iPhone_TabBar;
+			sourceTree = "<group>";
+		};
+		4E680EF718C8C95300D23325 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4E680EF818C8C95300D23325 /* View_iPad */,
+				4E680EFA18C8C95300D23325 /* View_iPhone */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4E680EF818C8C95300D23325 /* View_iPad */ = {
+			isa = PBXGroup;
+			children = (
+				4E680EF918C8C95300D23325 /* View_iPad */,
+			);
+			path = View_iPad;
+			sourceTree = "<group>";
+		};
+		4E680EFA18C8C95300D23325 /* View_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4E680EFB18C8C95300D23325 /* View_iPhone */,
+			);
+			path = View_iPhone;
+			sourceTree = "<group>";
+		};
+		4E680EFE18C8CA4A00D23325 /* GameHall */ = {
+			isa = PBXGroup;
+			children = (
+				4E680F1718C8CE5E00D23325 /* GameHallViewController.h */,
+				4E680F1818C8CE5E00D23325 /* GameHallViewController.m */,
+				4E680F1918C8CE5E00D23325 /* GameHallViewController.xib */,
+			);
+			path = GameHall;
+			sourceTree = "<group>";
+		};
+		4E680EFF18C8CA4A00D23325 /* MoreInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4E680F0318C8CAF000D23325 /* MoreInterfaceViewController.h */,
+				4E680F0418C8CAF000D23325 /* MoreInterfaceViewController.m */,
+				4E680F0518C8CAF000D23325 /* MoreInterfaceViewController.xib */,
+				4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */,
+			);
+			path = MoreInterface;
+			sourceTree = "<group>";
+		};
+		4E680F0018C8CA4A00D23325 /* NewsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				4E680F0818C8CE3E00D23325 /* NewsInfoViewController.h */,
+				4E680F0918C8CE3E00D23325 /* NewsInfoViewController.m */,
+				4E680F0A18C8CE3E00D23325 /* NewsInfoViewController.xib */,
+			);
+			path = NewsInfo;
+			sourceTree = "<group>";
+		};
+		4E680F0118C8CA4A00D23325 /* OpenPrizeInfo */ = {
+			isa = PBXGroup;
+			children = (
+				4E680F0D18C8CE4900D23325 /* OpenPrizeInfoViewController.h */,
+				4E680F0E18C8CE4900D23325 /* OpenPrizeInfoViewController.m */,
+				4E680F0F18C8CE4900D23325 /* OpenPrizeInfoViewController.xib */,
+			);
+			path = OpenPrizeInfo;
+			sourceTree = "<group>";
+		};
+		4E680F0218C8CA4A00D23325 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4E680F1218C8CE5500D23325 /* UserInterfaceViewController.h */,
+				4E680F1318C8CE5500D23325 /* UserInterfaceViewController.m */,
+				4E680F1418C8CE5500D23325 /* UserInterfaceViewController.xib */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 		4EBA8B7A187649AA0009991E /* Categories */ = {
@@ -532,14 +635,10 @@
 			children = (
 				4EBB0AD918B440670034209E /* Utility */,
 				4EF2109C1876A3ED00D8634F /* Model */,
-				4EF2109E1876A3ED00D8634F /* View_iPad */,
-				4EF2109F1876A3ED00D8634F /* View_iPhone */,
+				4E680EF718C8C95300D23325 /* UI */,
 				4E44FF3618B233430066B9E9 /* Controller */,
 				4ED193E5187100FD00F643DC /* AppDelegate.h */,
 				4ED193E6187100FD00F643DC /* AppDelegate.m */,
-				4ED8F6AB18713B6A00F97F98 /* ViewController.h */,
-				4ED8F6AC18713B6A00F97F98 /* ViewController.m */,
-				4ED8F6AD18713B6A00F97F98 /* ViewController.xib */,
 				4ED193F1187100FD00F643DC /* Images.xcassets */,
 				4ED193DD187100FD00F643DC /* Supporting Files */,
 			);
@@ -643,22 +742,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4EF2109E1876A3ED00D8634F /* View_iPad */ = {
-			isa = PBXGroup;
-			children = (
-				4EB771BA1889200900EBF933 /* View_iPad */,
-			);
-			path = View_iPad;
-			sourceTree = "<group>";
-		};
-		4EF2109F1876A3ED00D8634F /* View_iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				4EB771BC1889201200EBF933 /* View_iPhone */,
-			);
-			path = View_iPhone;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -754,14 +837,19 @@
 				4E44FFC018B250F50066B9E9 /* tab_icon5.png in Resources */,
 				4E44FFB418B250F50066B9E9 /* tab_icon2.png in Resources */,
 				4ED193F2187100FD00F643DC /* Images.xcassets in Resources */,
-				4EB771BB1889200900EBF933 /* View_iPad in Resources */,
 				4E44FFBE18B250F50066B9E9 /* tab_icon4_Press.png in Resources */,
+				4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */,
 				4E44FFBC18B250F50066B9E9 /* tab_icon4.png in Resources */,
+				4E680EFD18C8C95300D23325 /* View_iPhone in Resources */,
+				4E680F1118C8CE4900D23325 /* OpenPrizeInfoViewController.xib in Resources */,
 				4EF2109018769C6C00D8634F /* InfoPlist.strings in Resources */,
-				4ED8F6AF18713B6A00F97F98 /* ViewController.xib in Resources */,
+				4E680F1618C8CE5500D23325 /* UserInterfaceViewController.xib in Resources */,
+				4E680EFC18C8C95300D23325 /* View_iPad in Resources */,
 				4E44FFA518B250F50066B9E9 /* NavBackButtonPressed@2x.png in Resources */,
+				4E680F0C18C8CE3E00D23325 /* NewsInfoViewController.xib in Resources */,
 				4E44FFA618B250F50066B9E9 /* NavBar.png in Resources */,
 				4E44FFB818B250F50066B9E9 /* tab_icon3.png in Resources */,
+				4E680F0718C8CAF000D23325 /* MoreInterfaceViewController.xib in Resources */,
 				4EF2109A1876A00B00D8634F /* read in Resources */,
 				4E44FFC118B250F50066B9E9 /* tab_icon5@2x.png in Resources */,
 				4E44FFB118B250F50066B9E9 /* tab_icon1@2x.png in Resources */,
@@ -772,10 +860,10 @@
 				4E44FFC218B250F50066B9E9 /* tab_icon5_Press.png in Resources */,
 				4E44FFAD18B250F50066B9E9 /* NavButtonPressed@2x.png in Resources */,
 				4E44FFA718B250F50066B9E9 /* NavBar64.png in Resources */,
+				4E680F1B18C8CE5E00D23325 /* GameHallViewController.xib in Resources */,
 				4E44FFBD18B250F50066B9E9 /* tab_icon4@2x.png in Resources */,
 				4E44FFA418B250F50066B9E9 /* NavBackButton@2x.png in Resources */,
 				4E44FFB218B250F50066B9E9 /* tab_icon1_Press.png in Resources */,
-				4EB771BD1889201200EBF933 /* View_iPhone in Resources */,
 				4E44FFB918B250F50066B9E9 /* tab_icon3@2x.png in Resources */,
 				4EB771B918891FFD00EBF933 /* Model in Resources */,
 				4EF2108518769ABB00D8634F /* digital-7.ttf in Resources */,
@@ -830,14 +918,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E680F1018C8CE4900D23325 /* OpenPrizeInfoViewController.m in Sources */,
 				4E44FF4218B236100066B9E9 /* UIColor+UIImage.m in Sources */,
-				4ED8F6AE18713B6A00F97F98 /* ViewController.m in Sources */,
+				4E680F0B18C8CE3E00D23325 /* NewsInfoViewController.m in Sources */,
 				4EBB0ADD18B4409B0034209E /* JSONUtility.m in Sources */,
 				4ED193E7187100FD00F643DC /* AppDelegate.m in Sources */,
 				4E305A2B18B3752100ACDEB5 /* NSString+JSONCategory.m in Sources */,
 				4E0F8A8918768E88002C2DD6 /* UncaughtExceptionHandler.m in Sources */,
 				4EBA8B991876633D0009991E /* UIDevice+SystemInfo.m in Sources */,
 				4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */,
+				4E680F0618C8CAF000D23325 /* MoreInterfaceViewController.m in Sources */,
 				4E44FF3B18B234740066B9E9 /* AppDelegateHelper.m in Sources */,
 				4E305A2818B3744000ACDEB5 /* NSString+LotteryNameCode.m in Sources */,
 				4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */,
@@ -850,6 +940,8 @@
 				4ED193E3187100FD00F643DC /* main.m in Sources */,
 				4E44FF7E18B24C750066B9E9 /* UIViewController+Shake.m in Sources */,
 				4EBA8B8C187651B40009991E /* RegularVerification.m in Sources */,
+				4E680F1A18C8CE5E00D23325 /* GameHallViewController.m in Sources */,
+				4E680F1518C8CE5500D23325 /* UserInterfaceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

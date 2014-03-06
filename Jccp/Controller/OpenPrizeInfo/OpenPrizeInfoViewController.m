@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  OpenPrizeInfoViewController.m
 //  Jccp
 //
-//  Created by Gary on 13-12-30.
-//  Copyright (c) 2013年 蒲晓涛. All rights reserved.
+//  Created by Gary on 14-3-6.
+//  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "OpenPrizeInfoViewController.h"
 
-@interface ViewController ()
+@interface OpenPrizeInfoViewController ()
 
 @end
 
-@implementation ViewController
+@implementation OpenPrizeInfoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor = [UIColor redColor];
+    self.title = @"开奖信息";
 }
 
 - (void)didReceiveMemoryWarning
