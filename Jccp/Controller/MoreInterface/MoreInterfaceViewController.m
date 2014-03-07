@@ -75,12 +75,18 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"测试";
+    return @"";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, GY_MainWidth, 50)];
+    //cell重用机制
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
     NSDictionary    *dic = dataSourceArray[indexPath.section][@"itemContent"][indexPath.row];
 
     cell.textLabel.text = dic[@"itemContent"];
