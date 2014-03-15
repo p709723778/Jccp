@@ -158,7 +158,6 @@
 		4E44FFA018B250F50066B9E9 /* tab_icon5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon5@2x.png"; sourceTree = "<group>"; };
 		4E44FFA118B250F50066B9E9 /* tab_icon5_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon5_Press.png; sourceTree = "<group>"; };
 		4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon5_Press@2x.png"; sourceTree = "<group>"; };
-		4E48252818AA42F900C2F99F /* libPods-ReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ReactiveCocoa.a"; path = "Pods/build/Debug-iphoneos/libPods-ReactiveCocoa.a"; sourceTree = "<group>"; };
 		4E680EF918C8C95300D23325 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
 		4E680EFB18C8C95300D23325 /* View_iPhone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPhone; sourceTree = "<group>"; };
 		4E680F0318C8CAF000D23325 /* MoreInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInterfaceViewController.h; sourceTree = "<group>"; };
@@ -625,7 +624,6 @@
 			isa = PBXGroup;
 			children = (
 				4E44FF7818B2481F0066B9E9 /* CoreMotion.framework */,
-				4E48252818AA42F900C2F99F /* libPods-ReactiveCocoa.a */,
 				4ED193D6187100FC00F643DC /* Foundation.framework */,
 				4ED193D8187100FC00F643DC /* CoreGraphics.framework */,
 				4ED193DA187100FC00F643DC /* UIKit.framework */,
