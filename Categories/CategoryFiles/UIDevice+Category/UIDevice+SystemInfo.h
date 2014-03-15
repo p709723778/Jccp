@@ -49,14 +49,11 @@
 //获取App版本
 + (NSString *)appVersion;
 
-//获取appID  例如:com.XX.XX
+//获取appID BundleID 例如:com.XX.XX
 + (NSString *)appIdentifier;
 
 //获取当前设备名称    比如: iPad, iPhone, iPod, iPad Simulator等
 + (NSString *)deviceModel;
-
-//获取设备UUID
-+ (NSString *)deviceUUID;
 
 //是否越狱
 + (BOOL)isJailBroken		NS_AVAILABLE_IOS(4_0);

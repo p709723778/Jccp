@@ -15,6 +15,7 @@
 
 //UIDevice
 #import "UIDevice+SystemInfo.h"
+#import "UIDevice+UDID.h"
 
 //UIColor
 #import "UIColor+Colours.h"

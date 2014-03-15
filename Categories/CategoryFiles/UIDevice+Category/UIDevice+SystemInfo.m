@@ -8,8 +8,6 @@
 
 #import "UIDevice+SystemInfo.h"
 
-#import "OpenUDID.h"
-
 @implementation UIDevice (SystemInfo)
 
 + (NSString *)SystemVersion
@@ -70,23 +68,6 @@
 {
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 	return [UIDevice currentDevice].model;
-#else	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
-	return nil;
-#endif	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
-}
-
-+ (NSString *)deviceUUID
-{
-#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR || TARGET_OS_MAC)
-	Class openUDID = NSClassFromString( @"OpenUDID");
-	if ( openUDID )
-	{
-		return [openUDID value];
-	}
-	else
-	{
-		return nil; // [UIDevice currentDevice].uniqueIdentifier;
-	}
 #else	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 	return nil;
 #endif	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)

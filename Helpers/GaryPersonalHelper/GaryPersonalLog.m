@@ -53,7 +53,7 @@
     fprintf( stderr, "      越狱信息 	%s	\n", [UIDevice jailBreaker].UTF8String );
     fprintf( stderr, "    	%s	\n", [UIDevice OSVersion].UTF8String );
     fprintf( stderr, "    	%s	\n", [UIDevice deviceModel].UTF8String );
-    fprintf( stderr, "    	UUID: %s  \n", [UIDevice deviceUUID].UTF8String );
+    fprintf( stderr, "    	UUID: %s  \n", [UIDevice deviceIdentifierForVendor].UTF8String );
     fprintf( stderr, "    	Home: %s	\n", [NSBundle mainBundle].bundlePath.UTF8String );
     fprintf( stderr, "    												\n" );
     fprintf( stderr, "    												\n" );

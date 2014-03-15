@@ -81,6 +81,7 @@
 		4ED193FA187100FD00F643DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED193D6187100FC00F643DC /* Foundation.framework */; };
 		4ED193FB187100FD00F643DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED193DA187100FC00F643DC /* UIKit.framework */; };
 		4ED19405187100FD00F643DC /* JccpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED19404187100FD00F643DC /* JccpTests.m */; };
+		4ED43C9218D4415E003D56F1 /* UIDevice+UDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43C9118D4415E003D56F1 /* UIDevice+UDID.m */; };
 		4EF2108518769ABB00D8634F /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2108418769ABB00D8634F /* digital-7.ttf */; };
 		4EF2109018769C6C00D8634F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2108E18769C6C00D8634F /* InfoPlist.strings */; };
 		4EF2109418769C9D00D8634F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2109618769C9D00D8634F /* Localizable.strings */; };
@@ -206,6 +207,8 @@
 		4ED193F8187100FD00F643DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4ED19400187100FD00F643DC /* JccpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JccpTests-Info.plist"; sourceTree = "<group>"; };
 		4ED19404187100FD00F643DC /* JccpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JccpTests.m; sourceTree = "<group>"; };
+		4ED43C9018D4415E003D56F1 /* UIDevice+UDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+UDID.h"; sourceTree = "<group>"; };
+		4ED43C9118D4415E003D56F1 /* UIDevice+UDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+UDID.m"; sourceTree = "<group>"; };
 		4EF2107618769A0000D8634F /* APIConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConfigMacro.h; sourceTree = "<group>"; };
 		4EF2107718769A0000D8634F /* APIRequestMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequestMacro.h; sourceTree = "<group>"; };
 		4EF2107818769A0000D8634F /* AppConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfigMacro.h; sourceTree = "<group>"; };
@@ -569,6 +572,8 @@
 			children = (
 				4EBA8B971876633D0009991E /* UIDevice+SystemInfo.h */,
 				4EBA8B981876633D0009991E /* UIDevice+SystemInfo.m */,
+				4ED43C9018D4415E003D56F1 /* UIDevice+UDID.h */,
+				4ED43C9118D4415E003D56F1 /* UIDevice+UDID.m */,
 			);
 			path = "UIDevice+Category";
 			sourceTree = "<group>";
@@ -938,6 +943,7 @@
 				4E44FF4618B237C80066B9E9 /* AppTabBarItem.m in Sources */,
 				4E44FF3518B232FF0066B9E9 /* AppTabBarController.m in Sources */,
 				4ED193E3187100FD00F643DC /* main.m in Sources */,
+				4ED43C9218D4415E003D56F1 /* UIDevice+UDID.m in Sources */,
 				4E44FF7E18B24C750066B9E9 /* UIViewController+Shake.m in Sources */,
 				4EBA8B8C187651B40009991E /* RegularVerification.m in Sources */,
 				4E680F1A18C8CE5E00D23325 /* GameHallViewController.m in Sources */,
