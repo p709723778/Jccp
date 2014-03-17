@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-OpenUDID.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0ED74D65748746BC84FC1EE3</key>
+		<key>1A1CEF28C48F4B83A282EF98</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19BB16519CCE4E2BAC4FB03E</key>
+		<key>2315CB9C43EC4AEC99F06962</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AB5F0736D3A48FF923296F3</key>
+		<key>4252C154777D4EA3AAAC8EEE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6F050AF22354768AB39BC0C</key>
+		<key>881B16A987A1429D94EEF5D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DFAE4AF67F37499E9C7D5498</key>
+		<key>A940519250874B25AC2102C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8BF35102DB2494C8D17AE72</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FB6AF1A745CA437F97A9DF7B</key>
+		<key>E34AB7D5BDA04D54BB035BE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

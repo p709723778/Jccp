@@ -2,9 +2,8 @@
 #如果inhibit_warnings => true 放到platform :ios, 'XX'后面  指的是所有类库都忽略警告
 #添加后要 pod update
 platform :ios, '6.0'
-pod 'CBIntrospect', '~> 0.4.2'
+pod 'CBIntrospect', '~> 0.4.2' , :inhibit_warnings => true  #这里有警告,要处理 这里只是做演示,没有处理
 pod 'AFNetworking', '~> 2.2.0'
 pod 'ReactiveCocoa', '~> 2.2.4'
-pod 'OpenUDID', '~> 1.0.0' , :inhibit_warnings => true  #这里有警告,要处理 这里只是做演示,没有处理
 pod 'Reachability', '~> 3.1.1'
 pod 'FMDB', '~> 2.2'
