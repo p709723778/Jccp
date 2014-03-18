@@ -56,15 +56,16 @@
     [self.window makeKeyAndVisible];
 
     // UI调试工具加载  在模拟器模式下使用
-#ifdef TARGET_IPHONE_SIMULATOR
+    if (TARGET_IPHONE_SIMULATOR) {
         [[CBIntrospect sharedIntrospector] start];
 
         /**
          *   Listen for remote notification messages.
          *   Notifications can be sent from View Introspector, using the Messenger window.
+         *该方法执行后,didRegisterForRemoteNotificationsWithDeviceToken会接收一个96位字符的token
          */
         [[CBIntrospect sharedIntrospector] listenForRemoteNotifications];
-#endif
+    }
 
     return YES;
 }
