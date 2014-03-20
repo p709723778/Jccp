@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "UncaughtExceptionHandler.h"
-#import "AppDelegateHelper.h"
-#import "AppTabBarController.h"
+#import "GYUncaughtExceptionHandler.h"
+#import "GYAppDelegateHelper.h"
+#import "GYAppTabBarController.h"
 #import "CBIntrospect.h"
-#import "GaryPersonalLog.h"
+#import "GYGaryPersonalLog.h"
 
 @implementation AppDelegate
 
@@ -29,19 +29,19 @@
     // Override point for customization after application launch.
 
     // 本人版权日志输出
-    [GaryPersonalLog outPutPersonalLog];
+    [GYGaryPersonalLog outPutPersonalLog];
     // must be set before any nib is called
     [CBIntrospect setIntrospectorKeyName:@"introspectorName"];
 
-    if ([AppDelegateHelper sharedAppDelegateHelper].isFirst) {
-        AppDelegateHelper *ppDelegateHelper = [AppDelegateHelper sharedAppDelegateHelper];
-        NSLog(@"%@", (ppDelegateHelper.isFirst) ? @"是" : @"否");
+    if ([GYAppDelegateHelper sharedGYAppDelegateHelper].isFirst) {
+        GYAppDelegateHelper *appDelegateHelper = [GYAppDelegateHelper sharedGYAppDelegateHelper];
+        NSLog(@"%@", (appDelegateHelper.isFirst) ? @"是" : @"否");
     }
 
     InstallUncaughtExceptionHandler(); // 异常监听
 
     // 设置导航栏风格
-    [AppDelegateHelper setNavigationBarStyle];
+    [GYAppDelegateHelper setNavigationBarStyle];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
@@ -51,7 +51,7 @@
     //    } else {
     //        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
     //    }
-    self.appTabBarController = [AppDelegateHelper loadTabBarController];
+    self.appTabBarController = [GYAppDelegateHelper loadTabBarController];
     self.window.rootViewController = _appTabBarController;
     [self.window makeKeyAndVisible];
 
@@ -68,6 +68,11 @@
     }
 
     return YES;
+}
+
+//推送接收方法
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

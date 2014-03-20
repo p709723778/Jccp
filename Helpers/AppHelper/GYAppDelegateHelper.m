@@ -1,25 +1,25 @@
 //
-//  AppDelegateHelper.m
+//  GYAppDelegateHelper.m
 //  Jccp
 //
-//  Created by Gary on 14-2-17.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "AppDelegateHelper.h"
+#import "GYAppDelegateHelper.h"
 
-#import "AppTabBarController.h"
-#import "AppTabBarItem.h"
+#import "GYAppTabBarController.h"
+#import "GYAppTabBarItem.h"
 
-#import "GameHallViewController.h"
-#import "UserInterfaceViewController.h"
-#import "OpenPrizeInfoViewController.h"
-#import "NewsInfoViewController.h"
-#import "MoreInterfaceViewController.h"
+#import "GYGameHallViewController.h"
+#import "GYUserInterfaceViewController.h"
+#import "GYOpenPrizeInfoViewController.h"
+#import "GYNewsInfoViewController.h"
+#import "GYMoreInterfaceViewController.h"
 
-@implementation AppDelegateHelper
+@implementation GYAppDelegateHelper
 
-GY_SINGLETON_FOR_CLASS(AppDelegateHelper);
+GY_SINGLETON_FOR_CLASS(GYAppDelegateHelper);
 
 - (id)init
 {
@@ -103,45 +103,45 @@ GY_SINGLETON_FOR_CLASS(AppDelegateHelper);
      ];
 }
 
-+ (AppTabBarController *)loadTabBarController
++ (GYAppTabBarController *)loadTabBarController
 {
     //TabBarController管理控制器
-    AppTabBarController *appTabBarController = [[AppTabBarController alloc] init];
+    GYAppTabBarController *appTabBarController = [[GYAppTabBarController alloc] init];
     
     //彩票大厅
-    GameHallViewController *gameViewController = [[GameHallViewController alloc] init];
-    AppTabBarItem *theItemGameView = [[AppTabBarItem alloc] initWithTitle:@"购彩大厅" image:[UIImage imageNamed:@"tab_icon1"] tag:0];
+    GYGameHallViewController *gameViewController = [[GYGameHallViewController alloc] init];
+    GYAppTabBarItem *theItemGameView = [[GYAppTabBarItem alloc] initWithTitle:@"购彩大厅" image:[UIImage imageNamed:@"tab_icon1"] tag:0];
     theItemGameView.selectedImage = [[UIImage imageNamed:@"tab_icon1_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *navGameView = [[UINavigationController alloc] initWithRootViewController:gameViewController];
     [gameViewController setTabBarItem:theItemGameView];
     
     //我的彩票
-    UserInterfaceViewController *viewControllerUserInterface = [[UserInterfaceViewController alloc] init];
-    AppTabBarItem *theItemUserInterface = [[AppTabBarItem alloc] initWithTitle:@"我的彩票" image:[UIImage imageNamed:@"tab_icon2"] tag:0];
+    GYUserInterfaceViewController *viewControllerUserInterface = [[GYUserInterfaceViewController alloc] init];
+    GYAppTabBarItem *theItemUserInterface = [[GYAppTabBarItem alloc] initWithTitle:@"我的彩票" image:[UIImage imageNamed:@"tab_icon2"] tag:0];
     theItemUserInterface.selectedImage = [[UIImage imageNamed:@"tab_icon2_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *navUserInterface = [[UINavigationController alloc] initWithRootViewController:viewControllerUserInterface];
     
     [viewControllerUserInterface setTabBarItem:theItemUserInterface];
     
     //开奖信息
-    OpenPrizeInfoViewController *viewControllerOpenPrizeInfo = [[OpenPrizeInfoViewController alloc] init];
-    AppTabBarItem *theItemOpenPrizeInfo = [[AppTabBarItem alloc] initWithTitle:@"开奖信息" image:[UIImage imageNamed:@"tab_icon3"] tag:0];
+    GYOpenPrizeInfoViewController *viewControllerOpenPrizeInfo = [[GYOpenPrizeInfoViewController alloc] init];
+    GYAppTabBarItem *theItemOpenPrizeInfo = [[GYAppTabBarItem alloc] initWithTitle:@"开奖信息" image:[UIImage imageNamed:@"tab_icon3"] tag:0];
     theItemOpenPrizeInfo.selectedImage = [[UIImage imageNamed:@"tab_icon3_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *navOpenPrizeInfo = [[UINavigationController alloc] initWithRootViewController:viewControllerOpenPrizeInfo];
     
     [viewControllerOpenPrizeInfo setTabBarItem:theItemOpenPrizeInfo];
     
     //新闻资讯
-    NewsInfoViewController *viewControllerNewsInfo = [[NewsInfoViewController alloc] init];
-    AppTabBarItem *theItemNewsInfo = [[AppTabBarItem alloc] initWithTitle:@"新闻资讯" image:[UIImage imageNamed:@"tab_icon4"] tag:0];
+    GYNewsInfoViewController *viewControllerNewsInfo = [[GYNewsInfoViewController alloc] init];
+    GYAppTabBarItem *theItemNewsInfo = [[GYAppTabBarItem alloc] initWithTitle:@"新闻资讯" image:[UIImage imageNamed:@"tab_icon4"] tag:0];
     theItemNewsInfo.selectedImage = [[UIImage imageNamed:@"tab_icon4_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *navNewsInfo = [[UINavigationController alloc] initWithRootViewController:viewControllerNewsInfo];
     
     [viewControllerNewsInfo setTabBarItem:theItemNewsInfo];
     
     //更多
-    MoreInterfaceViewController *viewControllerMoreInterface = [[MoreInterfaceViewController alloc] init];
-    AppTabBarItem *theItemMoreInterface = [[AppTabBarItem alloc] initWithTitle:@"更多" image:[UIImage imageNamed:@"tab_icon5"] tag:0];
+    GYMoreInterfaceViewController *viewControllerMoreInterface = [[GYMoreInterfaceViewController alloc] init];
+    GYAppTabBarItem *theItemMoreInterface = [[GYAppTabBarItem alloc] initWithTitle:@"更多" image:[UIImage imageNamed:@"tab_icon5"] tag:0];
     theItemMoreInterface.selectedImage = [[UIImage imageNamed:@"tab_icon5_Press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *navMoreInterface = [[UINavigationController alloc] initWithRootViewController:viewControllerMoreInterface];
     [viewControllerMoreInterface setTabBarItem:theItemMoreInterface];
@@ -179,23 +179,23 @@ GY_SINGLETON_FOR_CLASS(AppDelegateHelper);
                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
                                                           shadow, NSShadowAttributeName,
                                                           [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
-        
-        //定制返回按钮的颜
-        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-        
-        //返回按钮背景图
-        //[[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back_btn.png"]];
-        //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back_btn.png"]];
-        
-        //修改状态栏的风格
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-        
-        //在导航栏中使用背景图片
-        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavBar64.png"] forBarMetrics:UIBarMetricsDefault];
-        
-        [[UINavigationBar appearance] setShadowImage:[UIColor conversionImageWithColor:[UIColor clearColor]]];
-        //设置导航栏的背景颜色
-        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.82f green:0.23f blue:0.28f alpha:1.00f]];
+    
+    //定制返回按钮的颜
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //返回按钮背景图
+    //[[UINavigationBar appearance] setBackIndicatorImage:[UIImage imageNamed:@"back_btn.png"]];
+    //[[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@"back_btn.png"]];
+    
+    //修改状态栏的风格
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    //在导航栏中使用背景图片
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavBar64.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    [[UINavigationBar appearance] setShadowImage:[UIColor conversionImageWithColor:[UIColor clearColor]]];
+    //设置导航栏的背景颜色
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.82f green:0.23f blue:0.28f alpha:1.00f]];
     
 }
 

@@ -1,19 +1,19 @@
 //
-//  GaryPersonalLog.m
+//  GYGaryPersonalLog.m
 //  Jccp
 //
-//  Created by Gary on 14-1-3.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "GaryPersonalLog.h"
+#import "GYGaryPersonalLog.h"
 
 /**
  *	@brief	个人框架版本
  */
 #define GARY_VERSION		@"1.0.0 β"
 
-@implementation GaryPersonalLog
+@implementation GYGaryPersonalLog
 
 + (void)outPutPersonalLog
 {

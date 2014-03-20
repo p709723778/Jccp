@@ -1,18 +1,18 @@
 //
-//  UserInterfaceViewController.m
+//  GYOpenPrizeInfoViewController.m
 //  Jccp
 //
-//  Created by Gary on 14-3-6.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "UserInterfaceViewController.h"
+#import "GYOpenPrizeInfoViewController.h"
 
-@interface UserInterfaceViewController ()
+@interface GYOpenPrizeInfoViewController ()
 
 @end
 
-@implementation UserInterfaceViewController
+@implementation GYOpenPrizeInfoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"我的彩票";
+    self.title = @"开奖信息";
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,18 +1,18 @@
 //
-//  GameHallViewController.m
+//  GYNewsInfoViewController.m
 //  Jccp
 //
-//  Created by Gary on 14-3-6.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "GameHallViewController.h"
+#import "GYNewsInfoViewController.h"
 
-@interface GameHallViewController ()
+@interface GYNewsInfoViewController ()
 
 @end
 
-@implementation GameHallViewController
+@implementation GYNewsInfoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"购彩大厅";
+    self.title = @"新闻咨询";
 }
 
 - (void)didReceiveMemoryWarning

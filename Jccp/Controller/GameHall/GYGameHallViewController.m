@@ -1,18 +1,18 @@
 //
-//  OpenPrizeInfoViewController.m
+//  GYGameHallViewController.m
 //  Jccp
 //
-//  Created by Gary on 14-3-6.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "OpenPrizeInfoViewController.h"
+#import "GYGameHallViewController.h"
 
-@interface OpenPrizeInfoViewController ()
+@interface GYGameHallViewController ()
 
 @end
 
-@implementation OpenPrizeInfoViewController
+@implementation GYGameHallViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"开奖信息";
+    self.title = @"购彩大厅";
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,6 +10,6 @@
 #define Jccp_ToolsManager_h
 
 //正则验证
-#import "RegularVerification.h"
+#import "GYRegularVerification.h"
 
 #endif

@@ -1,14 +1,14 @@
 //
-//  RegularVerification.m
+//  GYRegularVerification.m
 //  Jccp
 //
-//  Created by Gary on 14-1-3.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "RegularVerification.h"
+#import "GYRegularVerification.h"
 
-@implementation RegularVerification
+@implementation GYRegularVerification
 
 //账号检查
 + (BOOL)validateAccountWithString:(NSString*)strAccount

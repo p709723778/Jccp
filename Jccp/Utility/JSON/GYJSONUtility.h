@@ -1,14 +1,14 @@
 //
-//  JSONUtility.h
+//  GYJSONUtility.h
 //  Jccp
 //
-//  Created by Gary on 14-2-19.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface JSONUtility : NSObject
+@interface GYJSONUtility : NSObject
 
 /**
  *   Converts a given JSON String to an object

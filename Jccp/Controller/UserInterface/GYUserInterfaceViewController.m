@@ -1,18 +1,18 @@
 //
-//  AppTabBarController.m
+//  GYUserInterfaceViewController.m
 //  Jccp
 //
-//  Created by Gary on 14-2-17.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
-#import "AppTabBarController.h"
+#import "GYUserInterfaceViewController.h"
 
-@interface AppTabBarController ()
+@interface GYUserInterfaceViewController ()
 
 @end
 
-@implementation AppTabBarController
+@implementation GYUserInterfaceViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
+    self.title = @"我的彩票";
 }
 
 - (void)didReceiveMemoryWarning

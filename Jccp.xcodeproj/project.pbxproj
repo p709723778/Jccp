@@ -7,16 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0F8A8918768E88002C2DD6 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */; };
+		4E0A0F5B18DA9798004082C6 /* GYJSONUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F5A18DA9798004082C6 /* GYJSONUtility.m */; };
+		4E0A0F5E18DA9836004082C6 /* GYAppTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F5D18DA9836004082C6 /* GYAppTabBarItem.m */; };
+		4E0A0F6718DA9902004082C6 /* GYAppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F6618DA9902004082C6 /* GYAppTabBarController.m */; };
+		4E0A0F6B18DA9A78004082C6 /* GYGameHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F6918DA9A78004082C6 /* GYGameHallViewController.m */; };
+		4E0A0F6C18DA9A78004082C6 /* GYGameHallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A0F6A18DA9A78004082C6 /* GYGameHallViewController.xib */; };
+		4E0A0F7018DA9ACD004082C6 /* GYUserInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F6E18DA9ACD004082C6 /* GYUserInterfaceViewController.m */; };
+		4E0A0F7118DA9ACD004082C6 /* GYUserInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A0F6F18DA9ACD004082C6 /* GYUserInterfaceViewController.xib */; };
+		4E0A0F7518DA9B1B004082C6 /* GYOpenPrizeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F7318DA9B1B004082C6 /* GYOpenPrizeInfoViewController.m */; };
+		4E0A0F7618DA9B1B004082C6 /* GYOpenPrizeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A0F7418DA9B1B004082C6 /* GYOpenPrizeInfoViewController.xib */; };
+		4E0A0F7A18DA9B59004082C6 /* GYNewsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F7818DA9B59004082C6 /* GYNewsInfoViewController.m */; };
+		4E0A0F7B18DA9B59004082C6 /* GYNewsInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A0F7918DA9B59004082C6 /* GYNewsInfoViewController.xib */; };
+		4E0A0F7F18DA9B97004082C6 /* GYMoreInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F7D18DA9B97004082C6 /* GYMoreInterfaceViewController.m */; };
+		4E0A0F8018DA9B97004082C6 /* GYMoreInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0A0F7E18DA9B97004082C6 /* GYMoreInterfaceViewController.xib */; };
+		4E0A0F8318DA9C93004082C6 /* GYRegularVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F8218DA9C93004082C6 /* GYRegularVerification.m */; };
+		4E0A0F8618DA9CF0004082C6 /* GYAppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F8518DA9CF0004082C6 /* GYAppDelegateHelper.m */; };
+		4E0A0F8918DAA1B5004082C6 /* GYUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F8818DAA1B5004082C6 /* GYUncaughtExceptionHandler.m */; };
+		4E0A0F8C18DAA2AB004082C6 /* GYGaryPersonalLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F8B18DAA2AB004082C6 /* GYGaryPersonalLog.m */; };
 		4E305A2818B3744000ACDEB5 /* NSString+LotteryNameCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A2718B3744000ACDEB5 /* NSString+LotteryNameCode.m */; };
 		4E305A2B18B3752100ACDEB5 /* NSString+JSONCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A2A18B3752100ACDEB5 /* NSString+JSONCategory.m */; };
 		4E305A2E18B3754600ACDEB5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A2D18B3754600ACDEB5 /* NSString+MD5.m */; };
 		4E305A3118B375A200ACDEB5 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E305A3018B375A200ACDEB5 /* NSString+Category.m */; };
-		4E44FF3518B232FF0066B9E9 /* AppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF3418B232FF0066B9E9 /* AppTabBarController.m */; };
-		4E44FF3B18B234740066B9E9 /* AppDelegateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF3A18B234740066B9E9 /* AppDelegateHelper.m */; };
 		4E44FF4118B236100066B9E9 /* UIColor+Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF3E18B236100066B9E9 /* UIColor+Colours.m */; };
 		4E44FF4218B236100066B9E9 /* UIColor+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF4018B236100066B9E9 /* UIColor+UIImage.m */; };
-		4E44FF4618B237C80066B9E9 /* AppTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF4518B237C80066B9E9 /* AppTabBarItem.m */; };
 		4E44FF7E18B24C750066B9E9 /* UIViewController+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44FF7D18B24C750066B9E9 /* UIViewController+Shake.m */; };
 		4E44FFA318B250F50066B9E9 /* NavBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FF8118B250F50066B9E9 /* NavBackButton.png */; };
 		4E44FFA418B250F50066B9E9 /* NavBackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FF8218B250F50066B9E9 /* NavBackButton@2x.png */; };
@@ -53,24 +66,11 @@
 		4E44FFC318B250F50066B9E9 /* tab_icon5_Press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */; };
 		4E680EFC18C8C95300D23325 /* View_iPad in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EF918C8C95300D23325 /* View_iPad */; };
 		4E680EFD18C8C95300D23325 /* View_iPhone in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EFB18C8C95300D23325 /* View_iPhone */; };
-		4E680F0618C8CAF000D23325 /* MoreInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F0418C8CAF000D23325 /* MoreInterfaceViewController.m */; };
-		4E680F0718C8CAF000D23325 /* MoreInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F0518C8CAF000D23325 /* MoreInterfaceViewController.xib */; };
-		4E680F0B18C8CE3E00D23325 /* NewsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F0918C8CE3E00D23325 /* NewsInfoViewController.m */; };
-		4E680F0C18C8CE3E00D23325 /* NewsInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F0A18C8CE3E00D23325 /* NewsInfoViewController.xib */; };
-		4E680F1018C8CE4900D23325 /* OpenPrizeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F0E18C8CE4900D23325 /* OpenPrizeInfoViewController.m */; };
-		4E680F1118C8CE4900D23325 /* OpenPrizeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F0F18C8CE4900D23325 /* OpenPrizeInfoViewController.xib */; };
-		4E680F1518C8CE5500D23325 /* UserInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F1318C8CE5500D23325 /* UserInterfaceViewController.m */; };
-		4E680F1618C8CE5500D23325 /* UserInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1418C8CE5500D23325 /* UserInterfaceViewController.xib */; };
-		4E680F1A18C8CE5E00D23325 /* GameHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E680F1818C8CE5E00D23325 /* GameHallViewController.m */; };
-		4E680F1B18C8CE5E00D23325 /* GameHallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1918C8CE5E00D23325 /* GameHallViewController.xib */; };
 		4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */; };
 		4EB771B918891FFD00EBF933 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 4EB771B818891FFD00EBF933 /* Model */; };
 		4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B7E187649AA0009991E /* UIView+Utils.m */; };
 		4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8518764D790009991E /* AFAppDotNetAPIClient.m */; };
-		4EBA8B8C187651B40009991E /* RegularVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8B187651B40009991E /* RegularVerification.m */; };
-		4EBA8B911876532D0009991E /* GaryPersonalLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B901876532D0009991E /* GaryPersonalLog.m */; };
 		4EBA8B991876633D0009991E /* UIDevice+SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B981876633D0009991E /* UIDevice+SystemInfo.m */; };
-		4EBB0ADD18B4409B0034209E /* JSONUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBB0ADC18B4409B0034209E /* JSONUtility.m */; };
 		4ED193D7187100FC00F643DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED193D6187100FC00F643DC /* Foundation.framework */; };
 		4ED193D9187100FC00F643DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED193D8187100FC00F643DC /* CoreGraphics.framework */; };
 		4ED193DB187100FC00F643DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED193DA187100FC00F643DC /* UIKit.framework */; };
@@ -100,9 +100,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0A0F5918DA9798004082C6 /* GYJSONUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYJSONUtility.h; sourceTree = "<group>"; };
+		4E0A0F5A18DA9798004082C6 /* GYJSONUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYJSONUtility.m; sourceTree = "<group>"; };
+		4E0A0F5C18DA9836004082C6 /* GYAppTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAppTabBarItem.h; sourceTree = "<group>"; };
+		4E0A0F5D18DA9836004082C6 /* GYAppTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAppTabBarItem.m; sourceTree = "<group>"; };
+		4E0A0F6518DA9902004082C6 /* GYAppTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAppTabBarController.h; sourceTree = "<group>"; };
+		4E0A0F6618DA9902004082C6 /* GYAppTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAppTabBarController.m; sourceTree = "<group>"; };
+		4E0A0F6818DA9A78004082C6 /* GYGameHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYGameHallViewController.h; sourceTree = "<group>"; };
+		4E0A0F6918DA9A78004082C6 /* GYGameHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYGameHallViewController.m; sourceTree = "<group>"; };
+		4E0A0F6A18DA9A78004082C6 /* GYGameHallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYGameHallViewController.xib; sourceTree = "<group>"; };
+		4E0A0F6D18DA9ACD004082C6 /* GYUserInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYUserInterfaceViewController.h; sourceTree = "<group>"; };
+		4E0A0F6E18DA9ACD004082C6 /* GYUserInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYUserInterfaceViewController.m; sourceTree = "<group>"; };
+		4E0A0F6F18DA9ACD004082C6 /* GYUserInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYUserInterfaceViewController.xib; sourceTree = "<group>"; };
+		4E0A0F7218DA9B1B004082C6 /* GYOpenPrizeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYOpenPrizeInfoViewController.h; sourceTree = "<group>"; };
+		4E0A0F7318DA9B1B004082C6 /* GYOpenPrizeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYOpenPrizeInfoViewController.m; sourceTree = "<group>"; };
+		4E0A0F7418DA9B1B004082C6 /* GYOpenPrizeInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYOpenPrizeInfoViewController.xib; sourceTree = "<group>"; };
+		4E0A0F7718DA9B59004082C6 /* GYNewsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNewsInfoViewController.h; sourceTree = "<group>"; };
+		4E0A0F7818DA9B59004082C6 /* GYNewsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNewsInfoViewController.m; sourceTree = "<group>"; };
+		4E0A0F7918DA9B59004082C6 /* GYNewsInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYNewsInfoViewController.xib; sourceTree = "<group>"; };
+		4E0A0F7C18DA9B97004082C6 /* GYMoreInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMoreInterfaceViewController.h; sourceTree = "<group>"; };
+		4E0A0F7D18DA9B97004082C6 /* GYMoreInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMoreInterfaceViewController.m; sourceTree = "<group>"; };
+		4E0A0F7E18DA9B97004082C6 /* GYMoreInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYMoreInterfaceViewController.xib; sourceTree = "<group>"; };
+		4E0A0F8118DA9C93004082C6 /* GYRegularVerification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYRegularVerification.h; sourceTree = "<group>"; };
+		4E0A0F8218DA9C93004082C6 /* GYRegularVerification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYRegularVerification.m; sourceTree = "<group>"; };
+		4E0A0F8418DA9CF0004082C6 /* GYAppDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAppDelegateHelper.h; sourceTree = "<group>"; };
+		4E0A0F8518DA9CF0004082C6 /* GYAppDelegateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAppDelegateHelper.m; sourceTree = "<group>"; };
+		4E0A0F8718DAA1B5004082C6 /* GYUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		4E0A0F8818DAA1B5004082C6 /* GYUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		4E0A0F8A18DAA2AB004082C6 /* GYGaryPersonalLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYGaryPersonalLog.h; sourceTree = "<group>"; };
+		4E0A0F8B18DAA2AB004082C6 /* GYGaryPersonalLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYGaryPersonalLog.m; sourceTree = "<group>"; };
 		4E0F8A85187686C9002C2DD6 /* PodsHeaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsHeaderManager.h; sourceTree = "<group>"; };
-		4E0F8A8718768E88002C2DD6 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
-		4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		4E305A2418B373BD00ACDEB5 /* LotteryNameCodeMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotteryNameCodeMacro.h; sourceTree = "<group>"; };
 		4E305A2618B3744000ACDEB5 /* NSString+LotteryNameCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LotteryNameCode.h"; sourceTree = "<group>"; };
 		4E305A2718B3744000ACDEB5 /* NSString+LotteryNameCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LotteryNameCode.m"; sourceTree = "<group>"; };
@@ -112,16 +139,10 @@
 		4E305A2D18B3754600ACDEB5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		4E305A2F18B375A100ACDEB5 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
 		4E305A3018B375A200ACDEB5 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
-		4E44FF3318B232FF0066B9E9 /* AppTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabBarController.h; sourceTree = "<group>"; };
-		4E44FF3418B232FF0066B9E9 /* AppTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTabBarController.m; sourceTree = "<group>"; };
-		4E44FF3918B234740066B9E9 /* AppDelegateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegateHelper.h; sourceTree = "<group>"; };
-		4E44FF3A18B234740066B9E9 /* AppDelegateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateHelper.m; sourceTree = "<group>"; };
 		4E44FF3D18B236100066B9E9 /* UIColor+Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colours.h"; sourceTree = "<group>"; };
 		4E44FF3E18B236100066B9E9 /* UIColor+Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colours.m"; sourceTree = "<group>"; };
 		4E44FF3F18B236100066B9E9 /* UIColor+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIImage.h"; sourceTree = "<group>"; };
 		4E44FF4018B236100066B9E9 /* UIColor+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIImage.m"; sourceTree = "<group>"; };
-		4E44FF4418B237C80066B9E9 /* AppTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabBarItem.h; sourceTree = "<group>"; };
-		4E44FF4518B237C80066B9E9 /* AppTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTabBarItem.m; sourceTree = "<group>"; };
 		4E44FF7818B2481F0066B9E9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		4E44FF7C18B24C750066B9E9 /* UIViewController+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Shake.h"; sourceTree = "<group>"; };
 		4E44FF7D18B24C750066B9E9 /* UIViewController+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Shake.m"; sourceTree = "<group>"; };
@@ -160,21 +181,6 @@
 		4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon5_Press@2x.png"; sourceTree = "<group>"; };
 		4E680EF918C8C95300D23325 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
 		4E680EFB18C8C95300D23325 /* View_iPhone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPhone; sourceTree = "<group>"; };
-		4E680F0318C8CAF000D23325 /* MoreInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInterfaceViewController.h; sourceTree = "<group>"; };
-		4E680F0418C8CAF000D23325 /* MoreInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInterfaceViewController.m; sourceTree = "<group>"; };
-		4E680F0518C8CAF000D23325 /* MoreInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreInterfaceViewController.xib; sourceTree = "<group>"; };
-		4E680F0818C8CE3E00D23325 /* NewsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfoViewController.h; sourceTree = "<group>"; };
-		4E680F0918C8CE3E00D23325 /* NewsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfoViewController.m; sourceTree = "<group>"; };
-		4E680F0A18C8CE3E00D23325 /* NewsInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsInfoViewController.xib; sourceTree = "<group>"; };
-		4E680F0D18C8CE4900D23325 /* OpenPrizeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPrizeInfoViewController.h; sourceTree = "<group>"; };
-		4E680F0E18C8CE4900D23325 /* OpenPrizeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPrizeInfoViewController.m; sourceTree = "<group>"; };
-		4E680F0F18C8CE4900D23325 /* OpenPrizeInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenPrizeInfoViewController.xib; sourceTree = "<group>"; };
-		4E680F1218C8CE5500D23325 /* UserInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInterfaceViewController.h; sourceTree = "<group>"; };
-		4E680F1318C8CE5500D23325 /* UserInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInterfaceViewController.m; sourceTree = "<group>"; };
-		4E680F1418C8CE5500D23325 /* UserInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInterfaceViewController.xib; sourceTree = "<group>"; };
-		4E680F1718C8CE5E00D23325 /* GameHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHallViewController.h; sourceTree = "<group>"; };
-		4E680F1818C8CE5E00D23325 /* GameHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHallViewController.m; sourceTree = "<group>"; };
-		4E680F1918C8CE5E00D23325 /* GameHallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameHallViewController.xib; sourceTree = "<group>"; };
 		4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreInterfaceTableItem.plist; sourceTree = "<group>"; };
 		4EB771B818891FFD00EBF933 /* Model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Model; sourceTree = "<group>"; };
 		4EBA8B7D187649AA0009991E /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
@@ -183,15 +189,9 @@
 		4EBA8B8418764D790009991E /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
 		4EBA8B8518764D790009991E /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
 		4EBA8B8718764DE10009991E /* HelperManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperManager.h; sourceTree = "<group>"; };
-		4EBA8B8A187651B40009991E /* RegularVerification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularVerification.h; sourceTree = "<group>"; };
-		4EBA8B8B187651B40009991E /* RegularVerification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularVerification.m; sourceTree = "<group>"; };
 		4EBA8B8D187652050009991E /* ToolsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsManager.h; sourceTree = "<group>"; };
-		4EBA8B8F1876532D0009991E /* GaryPersonalLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaryPersonalLog.h; sourceTree = "<group>"; };
-		4EBA8B901876532D0009991E /* GaryPersonalLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaryPersonalLog.m; sourceTree = "<group>"; };
 		4EBA8B971876633D0009991E /* UIDevice+SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SystemInfo.h"; sourceTree = "<group>"; };
 		4EBA8B981876633D0009991E /* UIDevice+SystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SystemInfo.m"; sourceTree = "<group>"; };
-		4EBB0ADB18B4409B0034209E /* JSONUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONUtility.h; sourceTree = "<group>"; };
-		4EBB0ADC18B4409B0034209E /* JSONUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONUtility.m; sourceTree = "<group>"; };
 		4ED193D3187100FC00F643DC /* Jccp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jccp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED193D6187100FC00F643DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4ED193D8187100FC00F643DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -265,8 +265,8 @@
 		4E0F8A8618768E74002C2DD6 /* ExceptionHelper */ = {
 			isa = PBXGroup;
 			children = (
-				4E0F8A8718768E88002C2DD6 /* UncaughtExceptionHandler.h */,
-				4E0F8A8818768E88002C2DD6 /* UncaughtExceptionHandler.m */,
+				4E0A0F8718DAA1B5004082C6 /* GYUncaughtExceptionHandler.h */,
+				4E0A0F8818DAA1B5004082C6 /* GYUncaughtExceptionHandler.m */,
 			);
 			path = ExceptionHelper;
 			sourceTree = "<group>";
@@ -303,8 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				4E44FF4318B237B20066B9E9 /* UITabBarItem */,
-				4E44FF3318B232FF0066B9E9 /* AppTabBarController.h */,
-				4E44FF3418B232FF0066B9E9 /* AppTabBarController.m */,
+				4E0A0F6518DA9902004082C6 /* GYAppTabBarController.h */,
+				4E0A0F6618DA9902004082C6 /* GYAppTabBarController.m */,
 			);
 			path = UITabBarController;
 			sourceTree = "<group>";
@@ -312,8 +312,8 @@
 		4E44FF3818B234520066B9E9 /* AppHelper */ = {
 			isa = PBXGroup;
 			children = (
-				4E44FF3918B234740066B9E9 /* AppDelegateHelper.h */,
-				4E44FF3A18B234740066B9E9 /* AppDelegateHelper.m */,
+				4E0A0F8418DA9CF0004082C6 /* GYAppDelegateHelper.h */,
+				4E0A0F8518DA9CF0004082C6 /* GYAppDelegateHelper.m */,
 			);
 			path = AppHelper;
 			sourceTree = "<group>";
@@ -332,8 +332,8 @@
 		4E44FF4318B237B20066B9E9 /* UITabBarItem */ = {
 			isa = PBXGroup;
 			children = (
-				4E44FF4418B237C80066B9E9 /* AppTabBarItem.h */,
-				4E44FF4518B237C80066B9E9 /* AppTabBarItem.m */,
+				4E0A0F5C18DA9836004082C6 /* GYAppTabBarItem.h */,
+				4E0A0F5D18DA9836004082C6 /* GYAppTabBarItem.m */,
 			);
 			path = UITabBarItem;
 			sourceTree = "<group>";
@@ -431,9 +431,9 @@
 		4E680EFE18C8CA4A00D23325 /* GameHall */ = {
 			isa = PBXGroup;
 			children = (
-				4E680F1718C8CE5E00D23325 /* GameHallViewController.h */,
-				4E680F1818C8CE5E00D23325 /* GameHallViewController.m */,
-				4E680F1918C8CE5E00D23325 /* GameHallViewController.xib */,
+				4E0A0F6818DA9A78004082C6 /* GYGameHallViewController.h */,
+				4E0A0F6918DA9A78004082C6 /* GYGameHallViewController.m */,
+				4E0A0F6A18DA9A78004082C6 /* GYGameHallViewController.xib */,
 			);
 			path = GameHall;
 			sourceTree = "<group>";
@@ -441,10 +441,10 @@
 		4E680EFF18C8CA4A00D23325 /* MoreInterface */ = {
 			isa = PBXGroup;
 			children = (
-				4E680F0318C8CAF000D23325 /* MoreInterfaceViewController.h */,
-				4E680F0418C8CAF000D23325 /* MoreInterfaceViewController.m */,
-				4E680F0518C8CAF000D23325 /* MoreInterfaceViewController.xib */,
 				4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */,
+				4E0A0F7C18DA9B97004082C6 /* GYMoreInterfaceViewController.h */,
+				4E0A0F7D18DA9B97004082C6 /* GYMoreInterfaceViewController.m */,
+				4E0A0F7E18DA9B97004082C6 /* GYMoreInterfaceViewController.xib */,
 			);
 			path = MoreInterface;
 			sourceTree = "<group>";
@@ -452,9 +452,9 @@
 		4E680F0018C8CA4A00D23325 /* NewsInfo */ = {
 			isa = PBXGroup;
 			children = (
-				4E680F0818C8CE3E00D23325 /* NewsInfoViewController.h */,
-				4E680F0918C8CE3E00D23325 /* NewsInfoViewController.m */,
-				4E680F0A18C8CE3E00D23325 /* NewsInfoViewController.xib */,
+				4E0A0F7718DA9B59004082C6 /* GYNewsInfoViewController.h */,
+				4E0A0F7818DA9B59004082C6 /* GYNewsInfoViewController.m */,
+				4E0A0F7918DA9B59004082C6 /* GYNewsInfoViewController.xib */,
 			);
 			path = NewsInfo;
 			sourceTree = "<group>";
@@ -462,9 +462,9 @@
 		4E680F0118C8CA4A00D23325 /* OpenPrizeInfo */ = {
 			isa = PBXGroup;
 			children = (
-				4E680F0D18C8CE4900D23325 /* OpenPrizeInfoViewController.h */,
-				4E680F0E18C8CE4900D23325 /* OpenPrizeInfoViewController.m */,
-				4E680F0F18C8CE4900D23325 /* OpenPrizeInfoViewController.xib */,
+				4E0A0F7218DA9B1B004082C6 /* GYOpenPrizeInfoViewController.h */,
+				4E0A0F7318DA9B1B004082C6 /* GYOpenPrizeInfoViewController.m */,
+				4E0A0F7418DA9B1B004082C6 /* GYOpenPrizeInfoViewController.xib */,
 			);
 			path = OpenPrizeInfo;
 			sourceTree = "<group>";
@@ -472,9 +472,9 @@
 		4E680F0218C8CA4A00D23325 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				4E680F1218C8CE5500D23325 /* UserInterfaceViewController.h */,
-				4E680F1318C8CE5500D23325 /* UserInterfaceViewController.m */,
-				4E680F1418C8CE5500D23325 /* UserInterfaceViewController.xib */,
+				4E0A0F6D18DA9ACD004082C6 /* GYUserInterfaceViewController.h */,
+				4E0A0F6E18DA9ACD004082C6 /* GYUserInterfaceViewController.m */,
+				4E0A0F6F18DA9ACD004082C6 /* GYUserInterfaceViewController.xib */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -551,8 +551,8 @@
 		4EBA8B89187651990009991E /* RegularVerify */ = {
 			isa = PBXGroup;
 			children = (
-				4EBA8B8A187651B40009991E /* RegularVerification.h */,
-				4EBA8B8B187651B40009991E /* RegularVerification.m */,
+				4E0A0F8118DA9C93004082C6 /* GYRegularVerification.h */,
+				4E0A0F8218DA9C93004082C6 /* GYRegularVerification.m */,
 			);
 			path = RegularVerify;
 			sourceTree = "<group>";
@@ -560,8 +560,8 @@
 		4EBA8B8E187653190009991E /* GaryPersonalHelper */ = {
 			isa = PBXGroup;
 			children = (
-				4EBA8B8F1876532D0009991E /* GaryPersonalLog.h */,
-				4EBA8B901876532D0009991E /* GaryPersonalLog.m */,
+				4E0A0F8A18DAA2AB004082C6 /* GYGaryPersonalLog.h */,
+				4E0A0F8B18DAA2AB004082C6 /* GYGaryPersonalLog.m */,
 			);
 			path = GaryPersonalHelper;
 			sourceTree = "<group>";
@@ -588,8 +588,8 @@
 		4EBB0ADA18B4407F0034209E /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				4EBB0ADB18B4409B0034209E /* JSONUtility.h */,
-				4EBB0ADC18B4409B0034209E /* JSONUtility.m */,
+				4E0A0F5918DA9798004082C6 /* GYJSONUtility.h */,
+				4E0A0F5A18DA9798004082C6 /* GYJSONUtility.m */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -791,6 +791,7 @@
 		4ED193CB187100FC00F643DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GY;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "蒲晓涛";
 				TargetAttributes = {
@@ -829,14 +830,17 @@
 				4E44FFC318B250F50066B9E9 /* tab_icon5_Press@2x.png in Resources */,
 				4E44FFB018B250F50066B9E9 /* tab_icon1.png in Resources */,
 				4E44FFAF18B250F50066B9E9 /* NavButtonRefresh@2x.png in Resources */,
+				4E0A0F7B18DA9B59004082C6 /* GYNewsInfoViewController.xib in Resources */,
 				4E44FFA818B250F50066B9E9 /* NavBar64@2x.png in Resources */,
 				4E44FFAB18B250F50066B9E9 /* NavBarLogo@2x.png in Resources */,
 				4E44FFAC18B250F50066B9E9 /* NavButton@2x.png in Resources */,
 				4E44FFB618B250F50066B9E9 /* tab_icon2_Press.png in Resources */,
 				4E44FFA318B250F50066B9E9 /* NavBackButton.png in Resources */,
 				4E44FFAA18B250F50066B9E9 /* NavBarLogo.png in Resources */,
+				4E0A0F7618DA9B1B004082C6 /* GYOpenPrizeInfoViewController.xib in Resources */,
 				4E44FFBA18B250F50066B9E9 /* tab_icon3_Press.png in Resources */,
 				4EF2109418769C9D00D8634F /* Localizable.strings in Resources */,
+				4E0A0F8018DA9B97004082C6 /* GYMoreInterfaceViewController.xib in Resources */,
 				4E44FFC018B250F50066B9E9 /* tab_icon5.png in Resources */,
 				4E44FFB418B250F50066B9E9 /* tab_icon2.png in Resources */,
 				4ED193F2187100FD00F643DC /* Images.xcassets in Resources */,
@@ -844,26 +848,23 @@
 				4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */,
 				4E44FFBC18B250F50066B9E9 /* tab_icon4.png in Resources */,
 				4E680EFD18C8C95300D23325 /* View_iPhone in Resources */,
-				4E680F1118C8CE4900D23325 /* OpenPrizeInfoViewController.xib in Resources */,
 				4EF2109018769C6C00D8634F /* InfoPlist.strings in Resources */,
-				4E680F1618C8CE5500D23325 /* UserInterfaceViewController.xib in Resources */,
 				4E680EFC18C8C95300D23325 /* View_iPad in Resources */,
 				4E44FFA518B250F50066B9E9 /* NavBackButtonPressed@2x.png in Resources */,
-				4E680F0C18C8CE3E00D23325 /* NewsInfoViewController.xib in Resources */,
 				4E44FFA618B250F50066B9E9 /* NavBar.png in Resources */,
 				4E44FFB818B250F50066B9E9 /* tab_icon3.png in Resources */,
-				4E680F0718C8CAF000D23325 /* MoreInterfaceViewController.xib in Resources */,
 				4EF2109A1876A00B00D8634F /* read in Resources */,
 				4E44FFC118B250F50066B9E9 /* tab_icon5@2x.png in Resources */,
 				4E44FFB118B250F50066B9E9 /* tab_icon1@2x.png in Resources */,
 				4E44FFBF18B250F50066B9E9 /* tab_icon4_Press@2x.png in Resources */,
 				4E44FFBB18B250F50066B9E9 /* tab_icon3_Press@2x.png in Resources */,
 				4E44FFB718B250F50066B9E9 /* tab_icon2_Press@2x.png in Resources */,
+				4E0A0F7118DA9ACD004082C6 /* GYUserInterfaceViewController.xib in Resources */,
 				4E44FFA918B250F50066B9E9 /* NavBar@2x.png in Resources */,
 				4E44FFC218B250F50066B9E9 /* tab_icon5_Press.png in Resources */,
 				4E44FFAD18B250F50066B9E9 /* NavButtonPressed@2x.png in Resources */,
 				4E44FFA718B250F50066B9E9 /* NavBar64.png in Resources */,
-				4E680F1B18C8CE5E00D23325 /* GameHallViewController.xib in Resources */,
+				4E0A0F6C18DA9A78004082C6 /* GYGameHallViewController.xib in Resources */,
 				4E44FFBD18B250F50066B9E9 /* tab_icon4@2x.png in Resources */,
 				4E44FFA418B250F50066B9E9 /* NavBackButton@2x.png in Resources */,
 				4E44FFB218B250F50066B9E9 /* tab_icon1_Press.png in Resources */,
@@ -921,31 +922,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E680F1018C8CE4900D23325 /* OpenPrizeInfoViewController.m in Sources */,
 				4E44FF4218B236100066B9E9 /* UIColor+UIImage.m in Sources */,
-				4E680F0B18C8CE3E00D23325 /* NewsInfoViewController.m in Sources */,
-				4EBB0ADD18B4409B0034209E /* JSONUtility.m in Sources */,
 				4ED193E7187100FD00F643DC /* AppDelegate.m in Sources */,
 				4E305A2B18B3752100ACDEB5 /* NSString+JSONCategory.m in Sources */,
-				4E0F8A8918768E88002C2DD6 /* UncaughtExceptionHandler.m in Sources */,
+				4E0A0F7018DA9ACD004082C6 /* GYUserInterfaceViewController.m in Sources */,
 				4EBA8B991876633D0009991E /* UIDevice+SystemInfo.m in Sources */,
+				4E0A0F8618DA9CF0004082C6 /* GYAppDelegateHelper.m in Sources */,
 				4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */,
-				4E680F0618C8CAF000D23325 /* MoreInterfaceViewController.m in Sources */,
-				4E44FF3B18B234740066B9E9 /* AppDelegateHelper.m in Sources */,
 				4E305A2818B3744000ACDEB5 /* NSString+LotteryNameCode.m in Sources */,
 				4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */,
 				4E44FF4118B236100066B9E9 /* UIColor+Colours.m in Sources */,
+				4E0A0F6B18DA9A78004082C6 /* GYGameHallViewController.m in Sources */,
 				4E305A3118B375A200ACDEB5 /* NSString+Category.m in Sources */,
-				4EBA8B911876532D0009991E /* GaryPersonalLog.m in Sources */,
+				4E0A0F6718DA9902004082C6 /* GYAppTabBarController.m in Sources */,
 				4E305A2E18B3754600ACDEB5 /* NSString+MD5.m in Sources */,
-				4E44FF4618B237C80066B9E9 /* AppTabBarItem.m in Sources */,
-				4E44FF3518B232FF0066B9E9 /* AppTabBarController.m in Sources */,
+				4E0A0F8C18DAA2AB004082C6 /* GYGaryPersonalLog.m in Sources */,
 				4ED193E3187100FD00F643DC /* main.m in Sources */,
+				4E0A0F5B18DA9798004082C6 /* GYJSONUtility.m in Sources */,
 				4ED43C9218D4415E003D56F1 /* UIDevice+UDID.m in Sources */,
+				4E0A0F8918DAA1B5004082C6 /* GYUncaughtExceptionHandler.m in Sources */,
+				4E0A0F7A18DA9B59004082C6 /* GYNewsInfoViewController.m in Sources */,
+				4E0A0F7F18DA9B97004082C6 /* GYMoreInterfaceViewController.m in Sources */,
+				4E0A0F8318DA9C93004082C6 /* GYRegularVerification.m in Sources */,
 				4E44FF7E18B24C750066B9E9 /* UIViewController+Shake.m in Sources */,
-				4EBA8B8C187651B40009991E /* RegularVerification.m in Sources */,
-				4E680F1A18C8CE5E00D23325 /* GameHallViewController.m in Sources */,
-				4E680F1518C8CE5500D23325 /* UserInterfaceViewController.m in Sources */,
+				4E0A0F7518DA9B1B004082C6 /* GYOpenPrizeInfoViewController.m in Sources */,
+				4E0A0F5E18DA9836004082C6 /* GYAppTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,13 @@
 
 
 
-@class AppTabBarController;
+@class GYAppTabBarController;
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) AppTabBarController *appTabBarController;
+@property (strong, nonatomic) GYAppTabBarController *appTabBarController;
 
 @end

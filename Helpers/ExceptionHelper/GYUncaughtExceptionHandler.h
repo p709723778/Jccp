@@ -1,14 +1,14 @@
 //
-//  UncaughtExceptionHandler.h
+//  GYUncaughtExceptionHandler.h
 //  Jccp
 //
-//  Created by Gary on 14-1-3.
+//  Created by Gary on 14-3-20.
 //  Copyright (c) 2014年 蒲晓涛. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface UncaughtExceptionHandler : NSObject
+@interface GYUncaughtExceptionHandler : NSObject
 {
     BOOL dismissed;
 }
