@@ -26,5 +26,8 @@
 
 //NSString
 #import "NSString+LotteryNameCode.h"
+#import "NSString+JSONCategory.h"
+#import "NSString+MD5.h"
+#import "NSString+Category.h"
 
 #endif
