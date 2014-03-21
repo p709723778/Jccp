@@ -36,7 +36,7 @@
     dataSourceArray = GY_FileArray(@"MoreInterfaceTableItem", @"plist");
     NSLog(@"%@", dataSourceArray); // 直接打印数据。
     
-    aTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, GY_MainWidth, GY_MainHeight) style:UITableViewStyleGrouped];
+    aTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, GY_MainWidth, GY_MainHeight - 44) style:UITableViewStyleGrouped];
     aTableView.delegate = self;
     aTableView.dataSource = self;
     [self.view addSubview:aTableView];
