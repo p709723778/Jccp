@@ -71,6 +71,7 @@
 		4E680EFC18C8C95300D23325 /* View_iPad in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EF918C8C95300D23325 /* View_iPad */; };
 		4E680EFD18C8C95300D23325 /* View_iPhone in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EFB18C8C95300D23325 /* View_iPhone */; };
 		4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */; };
+		4E89AE6018DCAC0400C4DD7B /* APIRespondCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */; };
 		4EB771B918891FFD00EBF933 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 4EB771B818891FFD00EBF933 /* Model */; };
 		4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B7E187649AA0009991E /* UIView+Utils.m */; };
 		4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8518764D790009991E /* AFAppDotNetAPIClient.m */; };
@@ -191,6 +192,7 @@
 		4E680EF918C8C95300D23325 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
 		4E680EFB18C8C95300D23325 /* View_iPhone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPhone; sourceTree = "<group>"; };
 		4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreInterfaceTableItem.plist; sourceTree = "<group>"; };
+		4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIRespondCode.plist; sourceTree = "<group>"; };
 		4EB771B818891FFD00EBF933 /* Model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Model; sourceTree = "<group>"; };
 		4EBA8B7D187649AA0009991E /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		4EBA8B7E187649AA0009991E /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
@@ -500,6 +502,14 @@
 			path = UserInterface;
 			sourceTree = "<group>";
 		};
+		4E89AE5E18DCAC0400C4DD7B /* RespondCode */ = {
+			isa = PBXGroup;
+			children = (
+				4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */,
+			);
+			path = RespondCode;
+			sourceTree = "<group>";
+		};
 		4EBA8B7A187649AA0009991E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +612,7 @@
 		4EBB0AD918B440670034209E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				4E89AE5E18DCAC0400C4DD7B /* RespondCode */,
 				4EBB0ADA18B4407F0034209E /* JSON */,
 			);
 			path = Utility;
@@ -887,6 +898,7 @@
 				4E44FFB818B250F50066B9E9 /* tab_icon3.png in Resources */,
 				4EF2109A1876A00B00D8634F /* read in Resources */,
 				4E44FFC118B250F50066B9E9 /* tab_icon5@2x.png in Resources */,
+				4E89AE6018DCAC0400C4DD7B /* APIRespondCode.plist in Resources */,
 				4E44FFB118B250F50066B9E9 /* tab_icon1@2x.png in Resources */,
 				4E44FFBF18B250F50066B9E9 /* tab_icon4_Press@2x.png in Resources */,
 				4E44FFBB18B250F50066B9E9 /* tab_icon3_Press@2x.png in Resources */,
