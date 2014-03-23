@@ -10,7 +10,22 @@
 
 @interface NSString (MD5)
 
-// MD5加密
-- (NSString *)md5Encrypt;
+/**
+ *  把字符串加密成32位小写md5字符串
+ *
+ *  @param inPutText 需要被加密的字符串
+ *
+ *  @return 加密后的32位小写md5字符串
+ */
+- (NSString *)md532BitLower;
+
+/**
+ *  把字符串加密成32位大写md5字符串
+ *
+ *  @param inPutText 需要被加密的字符串
+ *
+ *  @return 加密后的32位大写md5字符串
+ */
+- (NSString*)md532BitUpper;
 
 @end
