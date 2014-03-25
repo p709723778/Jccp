@@ -18,7 +18,6 @@
 #import "UIDevice+UDID.h"
 
 //UIColor
-#import "UIColor+Colours.h"
 #import "UIColor+UIImage.h"
 
 //UIViewController

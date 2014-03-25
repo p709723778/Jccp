@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Colours.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A1CEF28C48F4B83A282EF98</key>
+		<key>06E8049AD52F4C14A5A91441</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2315CB9C43EC4AEC99F06962</key>
+		<key>0A2DF02E7CE84E99999BA3CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4252C154777D4EA3AAAC8EEE</key>
+		<key>11BC10FD9EFB4E1EB1C76936</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>881B16A987A1429D94EEF5D4</key>
+		<key>2E99EF58BB4A411080978C8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A940519250874B25AC2102C5</key>
+		<key>DAFE92C8FF3B4F819033C5A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E34AB7D5BDA04D54BB035BE0</key>
+		<key>E75AC9EA02BA44D1A9B1D2F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F77A7C6CC5484D969CC9825B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

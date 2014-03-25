@@ -23,6 +23,7 @@
 //OpenUDID 在UIDevice + SystemInfo 里实现获取方法了
 #import "Reachability.h"
 
-
+//UIColor
+#import "Colours.h"
 
 #endif
