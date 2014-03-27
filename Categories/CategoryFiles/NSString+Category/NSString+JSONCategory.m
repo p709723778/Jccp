@@ -10,7 +10,7 @@
 
 @implementation NSString (JSONCategory)
 
-- (id)JSONValue;
+- (id)JSONValue
 {
     NSData                  *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     __autoreleasing NSError *error = nil;
