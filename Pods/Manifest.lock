@@ -25,6 +25,18 @@ PODS:
   - FMDB/common (2.2)
   - FMDB/standard (2.2):
     - FMDB/common
+  - MMDrawerController (0.5.3):
+    - MMDrawerController/Core
+    - MMDrawerController/MMDrawerBarButtonItem
+    - MMDrawerController/MMDrawerVisualStates
+    - MMDrawerController/Subclass
+  - MMDrawerController/Core (0.5.3)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.3):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.3):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.3):
+    - MMDrawerController/Core
   - Reachability (3.1.1)
   - ReactiveCocoa (2.2.4):
     - ReactiveCocoa/Core
@@ -38,6 +50,7 @@ DEPENDENCIES:
   - CBIntrospect (~> 0.4.2)
   - Colours (~> 5.1.1)
   - FMDB (~> 2.2)
+  - MMDrawerController (~> 0.5.3)
   - Reachability (~> 3.1.1)
   - ReactiveCocoa (~> 2.2.4)
 
@@ -46,6 +59,7 @@ SPEC CHECKSUMS:
   CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
   Colours: 5b38b1687cccbbcc0587636db80d72283da194f4
   FMDB: 97472cfacf0d9e445e915704fb43b4b142799c36
+  MMDrawerController: 4445e1927e8947b7e2382136c9b7109840efbfb9
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   ReactiveCocoa: 953a45dda30674fe704d1d9c77cc874141742f47
 
