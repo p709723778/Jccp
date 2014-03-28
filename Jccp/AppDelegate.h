@@ -9,14 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-
-@class GYAppTabBarController;
-
-
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) GYAppTabBarController *appTabBarController;
 
 @end

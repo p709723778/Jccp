@@ -14,6 +14,14 @@
 
 @implementation GYUserInterfaceViewController
 
+-(id)init{
+    self = [super init];
+    if(self){
+        [self setRestorationIdentifier:@"MMExampleLeftSideDrawerController"];
+    }
+    return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

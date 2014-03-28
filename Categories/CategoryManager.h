@@ -9,6 +9,10 @@
 #ifndef Jccp_CategoryManager_h
 #define Jccp_CategoryManager_h
 
+//AppDelegate
+#import "AppDelegate+MMDrawer.h"
+#import "AppDelegate+Push.h"
+
 
 //UIView
 #import "UIView+Utils.h"

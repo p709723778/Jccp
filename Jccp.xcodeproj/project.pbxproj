@@ -72,6 +72,7 @@
 		4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */; };
 		4E84118518E409B100A7C36D /* NSObject+GYBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E84118418E409B100A7C36D /* NSObject+GYBlockTimer.m */; };
 		4E89AE6018DCAC0400C4DD7B /* APIRespondCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */; };
+		4EAC94A918E56BEB00E15684 /* AppDelegate+MMDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC94A818E56BEB00E15684 /* AppDelegate+MMDrawer.m */; };
 		4EB771B918891FFD00EBF933 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 4EB771B818891FFD00EBF933 /* Model */; };
 		4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B7E187649AA0009991E /* UIView+Utils.m */; };
 		4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8518764D790009991E /* AFAppDotNetAPIClient.m */; };
@@ -195,6 +196,8 @@
 		4E84118318E409B100A7C36D /* NSObject+GYBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GYBlockTimer.h"; sourceTree = "<group>"; };
 		4E84118418E409B100A7C36D /* NSObject+GYBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GYBlockTimer.m"; sourceTree = "<group>"; };
 		4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIRespondCode.plist; sourceTree = "<group>"; };
+		4EAC94A718E56BEB00E15684 /* AppDelegate+MMDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+MMDrawer.h"; sourceTree = "<group>"; };
+		4EAC94A818E56BEB00E15684 /* AppDelegate+MMDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+MMDrawer.m"; sourceTree = "<group>"; };
 		4EB771B818891FFD00EBF933 /* Model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Model; sourceTree = "<group>"; };
 		4EBA8B7D187649AA0009991E /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		4EBA8B7E187649AA0009991E /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
@@ -277,6 +280,8 @@
 			children = (
 				4E0A0F9F18DAD586004082C6 /* AppDelegate+Push.h */,
 				4E0A0FA018DAD586004082C6 /* AppDelegate+Push.m */,
+				4EAC94A718E56BEB00E15684 /* AppDelegate+MMDrawer.h */,
+				4EAC94A818E56BEB00E15684 /* AppDelegate+MMDrawer.m */,
 			);
 			path = "AppDelegate+Category";
 			sourceTree = "<group>";
@@ -984,6 +989,7 @@
 				4E44FF4218B236100066B9E9 /* UIColor+UIImage.m in Sources */,
 				4E84118518E409B100A7C36D /* NSObject+GYBlockTimer.m in Sources */,
 				4ED193E7187100FD00F643DC /* AppDelegate.m in Sources */,
+				4EAC94A918E56BEB00E15684 /* AppDelegate+MMDrawer.m in Sources */,
 				4E0A0FA118DAD586004082C6 /* AppDelegate+Push.m in Sources */,
 				4E305A2B18B3752100ACDEB5 /* NSString+JSONCategory.m in Sources */,
 				4E0A0F7018DA9ACD004082C6 /* GYUserInterfaceViewController.m in Sources */,

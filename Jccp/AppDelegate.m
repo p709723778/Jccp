@@ -13,16 +13,25 @@
 #import "CBIntrospect.h"
 #import "GYGaryPersonalLog.h"
 
+#import "MMDrawerController.h"
+
 @implementation AppDelegate
 
 - (void)dealloc
 {
     self.window = nil;
-    self.appTabBarController = nil;
 }
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
 {}
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [GYAppDelegateHelper loadMMDrawerController];
+
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -43,16 +52,6 @@
     // 设置导航栏风格
     [GYAppDelegateHelper setNavigationBarStyle];
 
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    //    //根据iPhone / iPad 进行界面初始化
-    //    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-    //        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    //    } else {
-    //        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    //    }
-    self.appTabBarController = [GYAppDelegateHelper loadTabBarController];
-    self.window.rootViewController = _appTabBarController;
     [self.window makeKeyAndVisible];
 
     // UI调试工具加载  在模拟器模式下使用

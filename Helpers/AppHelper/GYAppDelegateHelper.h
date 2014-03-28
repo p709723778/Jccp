@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class GYAppTabBarController;
+@class MMDrawerController;
 
 @interface GYAppDelegateHelper : NSObject
 
@@ -26,7 +27,15 @@ GY_SINGLETON_FOR_HEADER(GYAppDelegateHelper);
 + (void)appLaunchingWithAnimation:(UIWindow *)mainMindow;
 
 /**
- *	@brief	TabBarController加载
+ *  MMDrawerController初始化拼装方法
+ *
+ *  @return 组好的MMDrawerController
+ *  当前框架使用此组合
+ */
++ (MMDrawerController *)loadMMDrawerController;
+
+/**
+ *	@brief	TabBarController初始化拼装方法
  *
  *	@return	TabBarController
  */
