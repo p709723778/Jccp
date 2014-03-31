@@ -125,19 +125,20 @@ GY_SINGLETON_FOR_CLASS(GYAppDelegateHelper);
         leftDrawerViewController    :leftSideDrawerViewController
         rightDrawerViewController   :rightSideDrawerViewController];
     [mmDrawerController setShowsShadow:NO];
+    [mmDrawerController setShouldStretchDrawer:YES];
     [mmDrawerController setRestorationIdentifier:@"MMDrawer"];
-    //    [mmDrawerController setMaximumRightDrawerWidth:280.0];
+    [mmDrawerController setMaximumRightDrawerWidth:280.0];
     [mmDrawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [mmDrawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 
-    //    [mmDrawerController
-    //    setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
-    //        MMDrawerControllerDrawerVisualStateBlock block;
-    //
-    //        if (block) {
-    //            block(drawerController, drawerSide, percentVisible);
-    //        }
-    //    }];
+//    [mmDrawerController
+//    setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+//        MMDrawerControllerDrawerVisualStateBlock block;
+//
+//        if (block) {
+//            block(drawerController, drawerSide, percentVisible);
+//        }
+//    }];
 
     return mmDrawerController;
 }
