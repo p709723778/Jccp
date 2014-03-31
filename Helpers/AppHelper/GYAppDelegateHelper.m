@@ -117,7 +117,7 @@ GY_SINGLETON_FOR_CLASS(GYAppDelegateHelper);
 
     [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
 
-    [rightSideDrawerViewController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
+    [rightSideDrawerViewController setRestorationIdentifier:@"MMExampleRightNavigationControllerRestorationKey"];
 
     [leftSideDrawerViewController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
     MMDrawerController *mmDrawerController = [[MMDrawerController alloc]
@@ -126,18 +126,18 @@ GY_SINGLETON_FOR_CLASS(GYAppDelegateHelper);
         rightDrawerViewController   :rightSideDrawerViewController];
     [mmDrawerController setShowsShadow:NO];
     [mmDrawerController setRestorationIdentifier:@"MMDrawer"];
-    [mmDrawerController setMaximumRightDrawerWidth:280.0];
+    //    [mmDrawerController setMaximumRightDrawerWidth:280.0];
     [mmDrawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [mmDrawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 
-//    [mmDrawerController
-//    setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
-//        MMDrawerControllerDrawerVisualStateBlock block;
-//
-//        if (block) {
-//            block(drawerController, drawerSide, percentVisible);
-//        }
-//    }];
+    //    [mmDrawerController
+    //    setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+    //        MMDrawerControllerDrawerVisualStateBlock block;
+    //
+    //        if (block) {
+    //            block(drawerController, drawerSide, percentVisible);
+    //        }
+    //    }];
 
     return mmDrawerController;
 }
