@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0A0F5B18DA9798004082C6 /* GYJSONUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F5A18DA9798004082C6 /* GYJSONUtility.m */; };
 		4E0A0F5E18DA9836004082C6 /* GYAppTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F5D18DA9836004082C6 /* GYAppTabBarItem.m */; };
 		4E0A0F6718DA9902004082C6 /* GYAppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F6618DA9902004082C6 /* GYAppTabBarController.m */; };
 		4E0A0F6B18DA9A78004082C6 /* GYGameHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A0F6918DA9A78004082C6 /* GYGameHallViewController.m */; };
@@ -70,6 +69,9 @@
 		4E680EFC18C8C95300D23325 /* View_iPad in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EF918C8C95300D23325 /* View_iPad */; };
 		4E680EFD18C8C95300D23325 /* View_iPhone in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EFB18C8C95300D23325 /* View_iPhone */; };
 		4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */; };
+		4E73D88C18EAC3DB005D5663 /* GYJSONUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D88818EAC3DB005D5663 /* GYJSONUtility.m */; };
+		4E73D89018EAC554005D5663 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D88F18EAC554005D5663 /* XMLDictionary.m */; };
+		4E73D89318EAC57A005D5663 /* GYResolveDataUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D89218EAC57A005D5663 /* GYResolveDataUtility.m */; };
 		4E84118518E409B100A7C36D /* NSObject+GYBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E84118418E409B100A7C36D /* NSObject+GYBlockTimer.m */; };
 		4E89AE6018DCAC0400C4DD7B /* APIRespondCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */; };
 		4EAC94A918E56BEB00E15684 /* AppDelegate+MMDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC94A818E56BEB00E15684 /* AppDelegate+MMDrawer.m */; };
@@ -107,8 +109,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E0A0F5918DA9798004082C6 /* GYJSONUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYJSONUtility.h; sourceTree = "<group>"; };
-		4E0A0F5A18DA9798004082C6 /* GYJSONUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYJSONUtility.m; sourceTree = "<group>"; };
 		4E0A0F5C18DA9836004082C6 /* GYAppTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAppTabBarItem.h; sourceTree = "<group>"; };
 		4E0A0F5D18DA9836004082C6 /* GYAppTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAppTabBarItem.m; sourceTree = "<group>"; };
 		4E0A0F6518DA9902004082C6 /* GYAppTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAppTabBarController.h; sourceTree = "<group>"; };
@@ -193,6 +193,12 @@
 		4E680EF918C8C95300D23325 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
 		4E680EFB18C8C95300D23325 /* View_iPhone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPhone; sourceTree = "<group>"; };
 		4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreInterfaceTableItem.plist; sourceTree = "<group>"; };
+		4E73D88718EAC3DB005D5663 /* GYJSONUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYJSONUtility.h; sourceTree = "<group>"; };
+		4E73D88818EAC3DB005D5663 /* GYJSONUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYJSONUtility.m; sourceTree = "<group>"; };
+		4E73D88E18EAC554005D5663 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		4E73D88F18EAC554005D5663 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		4E73D89118EAC57A005D5663 /* GYResolveDataUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYResolveDataUtility.h; sourceTree = "<group>"; };
+		4E73D89218EAC57A005D5663 /* GYResolveDataUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYResolveDataUtility.m; sourceTree = "<group>"; };
 		4E84118318E409B100A7C36D /* NSObject+GYBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GYBlockTimer.h"; sourceTree = "<group>"; };
 		4E84118418E409B100A7C36D /* NSObject+GYBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GYBlockTimer.m"; sourceTree = "<group>"; };
 		4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIRespondCode.plist; sourceTree = "<group>"; };
@@ -509,6 +515,35 @@
 			path = UserInterface;
 			sourceTree = "<group>";
 		};
+		4E73D88518EAC3DB005D5663 /* ResolveData */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D88618EAC3DB005D5663 /* JSON */,
+				4E73D88918EAC3DB005D5663 /* XML */,
+				4E73D89118EAC57A005D5663 /* GYResolveDataUtility.h */,
+				4E73D89218EAC57A005D5663 /* GYResolveDataUtility.m */,
+			);
+			path = ResolveData;
+			sourceTree = "<group>";
+		};
+		4E73D88618EAC3DB005D5663 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D88718EAC3DB005D5663 /* GYJSONUtility.h */,
+				4E73D88818EAC3DB005D5663 /* GYJSONUtility.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		4E73D88918EAC3DB005D5663 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				4E73D88E18EAC554005D5663 /* XMLDictionary.h */,
+				4E73D88F18EAC554005D5663 /* XMLDictionary.m */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
 		4E84118218E4098A00A7C36D /* NSObject+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,20 +666,11 @@
 		4EBB0AD918B440670034209E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				4E73D88518EAC3DB005D5663 /* ResolveData */,
 				4E89AE5E18DCAC0400C4DD7B /* RespondCode */,
-				4EBB0ADA18B4407F0034209E /* JSON */,
 				4E28637918DD68510027F261 /* UtilityManager.h */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		4EBB0ADA18B4407F0034209E /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				4E0A0F5918DA9798004082C6 /* GYJSONUtility.h */,
-				4E0A0F5A18DA9798004082C6 /* GYJSONUtility.m */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 		4ED193CA187100FC00F643DC = {
@@ -993,11 +1019,13 @@
 				4E0A0FA118DAD586004082C6 /* AppDelegate+Push.m in Sources */,
 				4E305A2B18B3752100ACDEB5 /* NSString+JSONCategory.m in Sources */,
 				4E0A0F7018DA9ACD004082C6 /* GYUserInterfaceViewController.m in Sources */,
+				4E73D89018EAC554005D5663 /* XMLDictionary.m in Sources */,
 				4EBA8B991876633D0009991E /* UIDevice+SystemInfo.m in Sources */,
 				4E0A0F8618DA9CF0004082C6 /* GYAppDelegateHelper.m in Sources */,
 				4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */,
 				4E305A2818B3744000ACDEB5 /* NSString+LotteryNameCode.m in Sources */,
 				4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */,
+				4E73D88C18EAC3DB005D5663 /* GYJSONUtility.m in Sources */,
 				4EFF266F18DD5F730058C193 /* GYRespondCodeUtility.m in Sources */,
 				4E0A0F6B18DA9A78004082C6 /* GYGameHallViewController.m in Sources */,
 				4E305A3118B375A200ACDEB5 /* NSString+Category.m in Sources */,
@@ -1005,7 +1033,6 @@
 				4E305A2E18B3754600ACDEB5 /* NSString+MD5.m in Sources */,
 				4E0A0F8C18DAA2AB004082C6 /* GYGaryPersonalLog.m in Sources */,
 				4ED193E3187100FD00F643DC /* main.m in Sources */,
-				4E0A0F5B18DA9798004082C6 /* GYJSONUtility.m in Sources */,
 				4ED43C9218D4415E003D56F1 /* UIDevice+UDID.m in Sources */,
 				4E0A0F8918DAA1B5004082C6 /* GYUncaughtExceptionHandler.m in Sources */,
 				4E0A0F7A18DA9B59004082C6 /* GYNewsInfoViewController.m in Sources */,
@@ -1014,6 +1041,7 @@
 				4E44FF7E18B24C750066B9E9 /* UIViewController+Shake.m in Sources */,
 				4E0A0F7518DA9B1B004082C6 /* GYOpenPrizeInfoViewController.m in Sources */,
 				4E0A0F5E18DA9836004082C6 /* GYAppTabBarItem.m in Sources */,
+				4E73D89318EAC57A005D5663 /* GYResolveDataUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

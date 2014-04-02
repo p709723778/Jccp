@@ -15,6 +15,9 @@
 
 #import "MMDrawerController.h"
 
+#import "AFNetworkActivityIndicatorManager.h"
+#import "GYResolveDataUtility.h"
+
 @implementation AppDelegate
 
 - (void)dealloc
@@ -37,11 +40,38 @@
 {
     // Override point for customization after application launch.
 
+//    [AFAppDotNetAPIClient sharedClient].responseSerializer = [AFHTTPResponseSerializer serializer];
+//    [AFAppDotNetAPIClient sharedClient].responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];//设置相应内容类型
+    [[AFAppDotNetAPIClient sharedClient] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=JSON" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"ok");
+        [GYResolveDataUtility dictionaryWitData:responseObject];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"失败");
+    }];
+    
+//    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];//设置相应内容类型
+//    [manager GET:@"http://www.jucaicp.com/?c=api_betting&a=loadMoreBettingIssue&callType=XML" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        NSLog(@"JSON: %@", operation.responseString);
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        NSLog(@"Error: %@", error);
+//    }];
+    
     // 本人版权日志输出
     [GYGaryPersonalLog outPutPersonalLog];
     // must be set before any nib is called
     [CBIntrospect setIntrospectorKeyName:@"introspectorName"];
 
+    //设置缓存
+    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:URLCache];
+    
+    //设置状态栏里的旋转菊花是否显示
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    
     if ([GYAppDelegateHelper sharedGYAppDelegateHelper].isFirst) {
         GYAppDelegateHelper *appDelegateHelper = [GYAppDelegateHelper sharedGYAppDelegateHelper];
         NSLog(@"%@", (appDelegateHelper.isFirst) ? @"是" : @"否");
