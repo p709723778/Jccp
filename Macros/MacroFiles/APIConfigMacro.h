@@ -24,7 +24,7 @@
 
 //根据服务器地址编号 进行ServerAddress赋值(ServerAddress是服务器地址)
 #if (API_ServerAddressNumber == 1) //正式服务器
-#define API_ServerAddress  @"http://www.yuecp.com"
+#define API_ServerAddress  @"http://www.jucaicp.com/"
 
 #elif (API_ServerAddressNumber == 2)//测试服务器
 #define API_ServerAddress  @"http://192.168.1.93"
@@ -55,7 +55,7 @@
 #pragma mark -服务器返回数据格式类型设置
 
 //向服务器请求返回格式编号
-#define API_SERVER_RETURN_FORMAT_NUMBER 2
+#define API_SERVER_RETURN_FORMAT_NUMBER 1
 
 #if (API_SERVER_RETURN_FORMAT_NUMBER == 1) //返回XML格式的数据
 #define API_SERVER_RETURN_FORMAT @"XML"

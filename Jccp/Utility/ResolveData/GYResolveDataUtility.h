@@ -17,6 +17,6 @@
  *
  *  @return NSDictionary字典类型
  */
-+ (NSDictionary *)dictionaryWitData:(id)JSONData;
++ (NSDictionary *)dictionaryWithData:(id)JSONData;
 
 @end

@@ -39,16 +39,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-
-//    [AFAppDotNetAPIClient sharedClient].responseSerializer = [AFHTTPResponseSerializer serializer];
-//    [AFAppDotNetAPIClient sharedClient].responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];//设置相应内容类型
-    [[AFAppDotNetAPIClient sharedClient] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=JSON" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"ok");
-        [GYResolveDataUtility dictionaryWitData:responseObject];
+    NSDictionary *dic = @{ @"pid" : @5,@"page" : @1,@"limit" : @1  };
+    
+    [[AFAppDotNetAPIClient sharedClient] POST:@"?c=api_zx&a=getZxList&callType=JSON" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"ok:%@",[GYResolveDataUtility dictionaryWithData:responseObject]);
+        [GYResolveDataUtility dictionaryWithData:responseObject];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"失败");
     }];
     
+    [[AFAppDotNetAPIClient sharedClient] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=XML" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"ok:%@",[GYResolveDataUtility dictionaryWithData:responseObject]);
+        [GYResolveDataUtility dictionaryWithData:responseObject];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"失败");
+    }];
 //    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
 //    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
 //    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
@@ -64,10 +69,6 @@
     [GYGaryPersonalLog outPutPersonalLog];
     // must be set before any nib is called
     [CBIntrospect setIntrospectorKeyName:@"introspectorName"];
-
-    //设置缓存
-    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
-    [NSURLCache setSharedURLCache:URLCache];
     
     //设置状态栏里的旋转菊花是否显示
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];

@@ -18,6 +18,6 @@
 
 #pragma mark -用户登陆
 
-#define API_Request_UserLogin [NSString stringWithFormat:@"/?c=api_user&a=login&callType=%@&Y-KEY=%@",API_SERVER_RETURN_FORMAT, API_Operate_KEY]
+#define API_Request_UserLogin [NSString stringWithFormat:@"?c=api_user&a=login&callType=%@&Y-KEY=%@",API_SERVER_RETURN_FORMAT, API_Operate_KEY]
 
 #endif

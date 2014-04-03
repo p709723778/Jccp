@@ -22,7 +22,7 @@
 
 #import "AFAppDotNetAPIClient.h"
 
-static NSString * const AFAppDotNetAPIBaseURLString = @"http://www.jucaicp.com/";
+static NSString * const AFAppDotNetAPIBaseURLString = API_ServerAddress;
 
 @implementation AFAppDotNetAPIClient
 
@@ -30,8 +30,22 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"http://www.jucaicp.com/"
     static AFAppDotNetAPIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[AFAppDotNetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
+        
+        NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+        [config setHTTPAdditionalHeaders:@{ @"User-Agent" : @"Jccp IOS 1.0.0"}];
+        [config setHTTPAdditionalHeaders:@{ @"Client-Source" : @"IOS"}];
+        
+        //设置我们的缓存大小 其中内存缓存大小设置10M  磁盘缓存5M
+        NSURLCache *cache = [[NSURLCache alloc] initWithMemoryCapacity:10 * 1024 * 1024
+                                                          diskCapacity:50 * 1024 * 1024
+                                                              diskPath:nil];
+        [config setURLCache:cache];
+        
+        _sharedClient = [[AFAppDotNetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString] sessionConfiguration:config];
+        
         [_sharedClient setSecurityPolicy:[AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey]];
+        _sharedClient.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];//设置相应内容
+        _sharedClient.responseSerializer = [AFHTTPResponseSerializer serializer];
     });
     
     return _sharedClient;
