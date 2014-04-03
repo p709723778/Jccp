@@ -20,6 +20,7 @@ PODS:
     - AFNetworking/NSURLSession
   - CBIntrospect (0.4.2)
   - Colours (5.1.1)
+  - DCKeyValueObjectMapping (1.4)
   - FMDB (2.2):
     - FMDB/standard
   - FMDB/common (2.2)
@@ -46,9 +47,10 @@ PODS:
   - ReactiveCocoa/no-arc (2.2.4)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.2.0)
+  - AFNetworking (~> 2.2.1)
   - CBIntrospect (~> 0.4.2)
   - Colours (~> 5.1.1)
+  - DCKeyValueObjectMapping (~> 1.4)
   - FMDB (~> 2.2)
   - MMDrawerController (~> 0.5.3)
   - Reachability (~> 3.1.1)
@@ -58,6 +60,7 @@ SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
   CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
   Colours: 5b38b1687cccbbcc0587636db80d72283da194f4
+  DCKeyValueObjectMapping: 39adaf0a54ff6368a22d9221db60f0696d81ad7b
   FMDB: 97472cfacf0d9e445e915704fb43b4b142799c36
   MMDrawerController: 4445e1927e8947b7e2382136c9b7109840efbfb9
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735

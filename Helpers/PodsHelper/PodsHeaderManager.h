@@ -26,4 +26,7 @@
 //UIColor
 #import "Colours.h"
 
+//DCKeyValueObjectMapping实体类映射
+#import "DCKeyValueObjectMapping.h"
+
 #endif

@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_Colours 1
 #define COCOAPODS_VERSION_PATCH_Colours 1
 
+// DCKeyValueObjectMapping
+#define COCOAPODS_POD_AVAILABLE_DCKeyValueObjectMapping
+#define COCOAPODS_VERSION_MAJOR_DCKeyValueObjectMapping 1
+#define COCOAPODS_VERSION_MINOR_DCKeyValueObjectMapping 4
+#define COCOAPODS_VERSION_PATCH_DCKeyValueObjectMapping 0
+
 // FMDB
 #define COCOAPODS_POD_AVAILABLE_FMDB
 #define COCOAPODS_VERSION_MAJOR_FMDB 2
