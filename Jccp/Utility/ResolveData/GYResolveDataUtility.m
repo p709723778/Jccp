@@ -18,18 +18,32 @@
     NSDictionary *attributes = nil;
 
     if ([API_SERVER_RETURN_FORMAT isEqualToString:@"JSON"]) {
-        attributes = [GYJSONUtility objectFromJSONData:JSONData];
+        @try {
+            attributes = [GYJSONUtility objectFromJSONData:JSONData];
+        }
+        @catch(NSException *exception) {
+            NSLog(@"JSON转换NSDictionary数据格式有误!");
+        }
+
+        @finally {}
     } else if ([API_SERVER_RETURN_FORMAT isEqualToString:@"XML"]) {
-        XMLDictionaryParser *xmlDictionaryParser = [XMLDictionaryParser sharedInstance];
-        xmlDictionaryParser.trimWhiteSpace = NO;
-        xmlDictionaryParser.nodeNameMode = XMLDictionaryNodeNameModeNever;
-        attributes = [NSDictionary dictionaryWithXMLString:[[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding]];
+        @try {
+            XMLDictionaryParser *xmlDictionaryParser = [XMLDictionaryParser sharedInstance];
+            xmlDictionaryParser.trimWhiteSpace = NO;
+            xmlDictionaryParser.nodeNameMode = XMLDictionaryNodeNameModeNever;
+            attributes = [NSDictionary dictionaryWithXMLString:[[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding]];
+        }
+        @catch(NSException *exception) {
+            NSLog(@"XML转换NSDictionary数据格式有误!");
+        }
+
+        @finally {}
 
         if (attributes == nil) {
             NSLog(@"XML转换NSDictionary数据格式有误!");
         }
     } else {
-        NSLog(@"解析数据格式有误");
+        NSLog(@"服务器设置解析数据格式有误");
     }
 
     return attributes;
