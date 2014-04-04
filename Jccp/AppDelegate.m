@@ -41,16 +41,26 @@
     // Override point for customization after application launch.
     NSDictionary *dic = @{ @"pid" : @5,@"page" : @1,@"limit" : @1  };
     
-    [[AFAppDotNetAPIClient sharedClient] POST:@"?c=api_zx&a=getZxList&callType=JSON" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"ok:%@",[GYResolveDataUtility dictionaryWithData:responseObject]);
-        [GYResolveDataUtility dictionaryWithData:responseObject];
+    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] POST:@"?c=api_zx&a=getZxList&callType=JSON" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)task.response;
+        if (httpResponse.statusCode == 200) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(responseObject[@"results"], nil);
+            });
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(nil, nil);
+            });
+            NSLog(@"Received: %@", responseObject);
+            NSLog(@"Received HTTP %d", httpResponse.statusCode);
+        }
+        NSLog(@"ok:%@",responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"失败");
     }];
     
-    [[AFAppDotNetAPIClient sharedClient] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=XML" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-//        NSLog(@"ok:%@",[GYResolveDataUtility dictionaryWithData:responseObject]);
-//        [GYResolveDataUtility dictionaryWithData:responseObject];
+    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=XML" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"ok:%@",responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"失败");
     }];

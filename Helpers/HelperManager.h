@@ -10,5 +10,5 @@
 #define Jccp_HelperManager_h
 
 #import "AFAppDotNetAPIClient.h"
-
+#import "GYHTTPNetWorkManager.h"
 #endif
