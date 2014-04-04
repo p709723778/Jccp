@@ -43,9 +43,14 @@ static NSString * const AFAppDotNetAPIBaseURLString = API_ServerAddress;
         
         _sharedClient = [[AFAppDotNetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString] sessionConfiguration:config];
         
+        //设置服务器序列化格式
+        _sharedClient.responseSerializer = [AFJSONResponseSerializer serializer];
+        //安全策略 SSL公匙
         [_sharedClient setSecurityPolicy:[AFSecurityPolicy policyWithPinningMode:AFSSLPinningModePublicKey]];
-        _sharedClient.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];//设置相应内容
-        _sharedClient.responseSerializer = [AFHTTPResponseSerializer serializer];
+        //设置Content-Type
+        _sharedClient.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+        
+        
     });
     
     return _sharedClient;

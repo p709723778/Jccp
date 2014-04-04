@@ -49,8 +49,8 @@
     }];
     
     [[AFAppDotNetAPIClient sharedClient] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=XML" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"ok:%@",[GYResolveDataUtility dictionaryWithData:responseObject]);
-        [GYResolveDataUtility dictionaryWithData:responseObject];
+//        NSLog(@"ok:%@",[GYResolveDataUtility dictionaryWithData:responseObject]);
+//        [GYResolveDataUtility dictionaryWithData:responseObject];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"失败");
     }];
