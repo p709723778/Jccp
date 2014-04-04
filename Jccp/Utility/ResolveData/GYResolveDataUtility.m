@@ -22,7 +22,7 @@
             attributes = [GYJSONUtility objectFromJSONData:JSONData];
         }
         @catch(NSException *exception) {
-            NSLog(@"JSON转换NSDictionary数据格式有误!");
+            NSLog(@"%s [Line %d] JSON转换NSDictionary数据格式有误!-->\n%@",__PRETTY_FUNCTION__, __LINE__,exception);
         }
 
         @finally {}
@@ -34,7 +34,7 @@
             attributes = [NSDictionary dictionaryWithXMLString:[[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding]];
         }
         @catch(NSException *exception) {
-            NSLog(@"XML转换NSDictionary数据格式有误!");
+            NSLog(@"%s [Line %d] XML转换NSDictionary数据格式有误!-->\n%@",__PRETTY_FUNCTION__, __LINE__,exception);
         }
 
         @finally {}
