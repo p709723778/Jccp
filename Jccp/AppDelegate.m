@@ -16,7 +16,6 @@
 #import "MMDrawerController.h"
 
 #import "AFNetworkActivityIndicatorManager.h"
-#import "GYResolveDataUtility.h"
 
 @implementation AppDelegate
 
@@ -41,39 +40,19 @@
     // Override point for customization after application launch.
     NSDictionary *dic = @{ @"pid" : @5,@"page" : @1,@"limit" : @1  };
     
-    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] POST:@"?c=api_zx&a=getZxList&callType=JSON" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)task.response;
-        if (httpResponse.statusCode == 200) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                completion(responseObject[@"results"], nil);
-            });
-        } else {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                completion(nil, nil);
-            });
-            NSLog(@"Received: %@", responseObject);
-            NSLog(@"Received HTTP %d", httpResponse.statusCode);
-        }
-        NSLog(@"ok:%@",responseObject);
+    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] POST:@"?c=api_zx&a=getZxList&callType=XML" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSDictionary *dic = [GYResolveDataUtility dictionaryWithData:responseObject];
+        NSLog(@"ok:%@",dic);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"失败");
     }];
     
     [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=XML" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"ok:%@",responseObject);
+        NSDictionary *dic = [GYResolveDataUtility dictionaryWithData:responseObject];
+        NSLog(@"ok:%@",dic);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"失败");
     }];
-//    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
-//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];//设置相应内容类型
-//    [manager GET:@"http://www.jucaicp.com/?c=api_betting&a=loadMoreBettingIssue&callType=XML" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        NSLog(@"JSON: %@", operation.responseString);
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        NSLog(@"Error: %@", error);
-//    }];
     
     // 本人版权日志输出
     [GYGaryPersonalLog outPutPersonalLog];

@@ -55,7 +55,7 @@
 #pragma mark -服务器返回数据格式类型设置
 
 //向服务器请求返回格式编号
-#define API_SERVER_RETURN_FORMAT_NUMBER 2
+#define API_SERVER_RETURN_FORMAT_NUMBER 1
 
 #if (API_SERVER_RETURN_FORMAT_NUMBER == 1) //返回XML格式的数据
 #define API_SERVER_RETURN_FORMAT @"XML"

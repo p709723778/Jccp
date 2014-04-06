@@ -12,7 +12,7 @@
 //服务器响应码辅助类
 #import "GYRespondCodeUtility.h"
 
-//JSON数据格式辅助类
-#import "GYJSONUtility.h"
+//数据格式辅助类
+#import "GYResolveDataUtility.h"
 
 #endif

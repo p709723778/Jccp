@@ -31,6 +31,7 @@
             XMLDictionaryParser *xmlDictionaryParser = [XMLDictionaryParser sharedInstance];
             xmlDictionaryParser.trimWhiteSpace = NO;
             xmlDictionaryParser.nodeNameMode = XMLDictionaryNodeNameModeNever;
+            xmlDictionaryParser.attributesMode = XMLDictionaryAttributesModeUnprefixed;
             attributes = [NSDictionary dictionaryWithXMLString:[[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding]];
         }
         @catch(NSException *exception) {
