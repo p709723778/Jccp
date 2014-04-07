@@ -19,4 +19,13 @@
  */
 + (NSDictionary *)dictionaryWithData:(id)JSONData;
 
+/**
+ *  把服务器返回的NSString数据进行处理
+ *
+ *  @param JSONString NSString格式数据
+ *
+ *  @return NSDictionary字典类型
+ */
++ (NSDictionary *)dictionaryWithString:(id)JSONString;
+
 @end
