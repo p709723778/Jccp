@@ -32,7 +32,7 @@
             xmlDictionaryParser.trimWhiteSpace = NO;
             xmlDictionaryParser.nodeNameMode = XMLDictionaryNodeNameModeNever;
             xmlDictionaryParser.attributesMode = XMLDictionaryAttributesModeUnprefixed;
-            attributes = [NSDictionary dictionaryWithXMLString:[[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding]];
+            attributes = [NSDictionary dictionaryWithXMLData:JSONData];
         }
         @catch(NSException *exception) {
             NSLog(@"%s [Line %d] XML转换NSDictionary数据格式有误!-->\n%@",__PRETTY_FUNCTION__, __LINE__,exception);
