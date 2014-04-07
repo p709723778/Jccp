@@ -4,9 +4,9 @@
 platform :ios, '6.0'
 pod 'CBIntrospect', '~> 0.4.2' , :inhibit_warnings => true  #这里有警告,要处理 这里只是做演示,没有处理
 pod 'AFNetworking', '~> 2.2.1'
-pod 'ReactiveCocoa', '~> 2.2.4'
+pod 'ReactiveCocoa', '~> 2.3'
 pod 'Reachability', '~> 3.1.1'
 pod 'FMDB', '~> 2.2'
-pod 'Colours', '~> 5.1.1'
+pod 'Colours', '~> 5.2.1'
 pod 'MMDrawerController', '~> 0.5.3'
 pod 'DCKeyValueObjectMapping', '~> 1.4'

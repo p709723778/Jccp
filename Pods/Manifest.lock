@@ -19,7 +19,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CBIntrospect (0.4.2)
-  - Colours (5.1.1)
+  - Colours (5.2.1)
   - DCKeyValueObjectMapping (1.4)
   - FMDB (2.2):
     - FMDB/standard
@@ -39,31 +39,31 @@ PODS:
   - MMDrawerController/Subclass (0.5.3):
     - MMDrawerController/Core
   - Reachability (3.1.1)
-  - ReactiveCocoa (2.2.4):
+  - ReactiveCocoa (2.3):
     - ReactiveCocoa/Core
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/Core (2.2.4):
+  - ReactiveCocoa/Core (2.3):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.2.4)
+  - ReactiveCocoa/no-arc (2.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.1)
   - CBIntrospect (~> 0.4.2)
-  - Colours (~> 5.1.1)
+  - Colours (~> 5.2.1)
   - DCKeyValueObjectMapping (~> 1.4)
   - FMDB (~> 2.2)
   - MMDrawerController (~> 0.5.3)
   - Reachability (~> 3.1.1)
-  - ReactiveCocoa (~> 2.2.4)
+  - ReactiveCocoa (~> 2.3)
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
   CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
-  Colours: 5b38b1687cccbbcc0587636db80d72283da194f4
+  Colours: f26e8eef024a94feaa700155e1e80a5bc41fdd3b
   DCKeyValueObjectMapping: 39adaf0a54ff6368a22d9221db60f0696d81ad7b
   FMDB: 97472cfacf0d9e445e915704fb43b4b142799c36
   MMDrawerController: 4445e1927e8947b7e2382136c9b7109840efbfb9
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  ReactiveCocoa: 953a45dda30674fe704d1d9c77cc874141742f47
+  ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269
 
 COCOAPODS: 0.29.0
