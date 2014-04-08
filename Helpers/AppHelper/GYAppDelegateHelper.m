@@ -11,6 +11,7 @@
 #import "GYAppTabBarController.h"
 #import "GYAppTabBarItem.h"
 
+#import "GYCenterViewController.h"
 #import "GYGameHallViewController.h"
 #import "GYUserInterfaceViewController.h"
 #import "GYOpenPrizeInfoViewController.h"
@@ -109,7 +110,7 @@ GY_SINGLETON_FOR_CLASS(GYAppDelegateHelper);
 {
     UIViewController *leftSideDrawerViewController = [[GYUserInterfaceViewController alloc] init];
 
-    UIViewController *centerViewController = [[GYGameHallViewController alloc] init];
+    UIViewController *centerViewController = [[GYCenterViewController alloc] init];
 
     UIViewController *rightSideDrawerViewController = [[GYOpenPrizeInfoViewController alloc] init];
 
