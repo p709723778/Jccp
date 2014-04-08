@@ -21,4 +21,12 @@ GY_SINGLETON_FOR_HEADER(GYHTTPNetWorkManager);
                     parameters:(NSDictionary *)parameters
                        success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+/**
+ *  获取网络状态
+ *
+ *  @return 状态
+ */
++ (NetworkStatus)networkStatus;
+
 @end

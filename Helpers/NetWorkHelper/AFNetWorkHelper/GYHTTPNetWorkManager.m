@@ -27,4 +27,13 @@ GY_SINGLETON_FOR_CLASS(GYHTTPNetWorkManager);
 {
     return [[AFAppDotNetAPIClient sharedClient] GET:URLString parameters:parameters success:success failure:failure];
 }
+
++ (NetworkStatus)networkStatus
+{
+    Reachability *reachability = [Reachability reachabilityWithHostname:API_ServerAddress];
+    // NotReachable     - 没有网络连接
+    // ReachableViaWWAN - 移动网络(2G、3G)
+    // ReachableViaWiFi - WIFI网络
+    return [reachability currentReachabilityStatus];
+}
 @end
