@@ -79,7 +79,7 @@
     [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
     
     //NavLogo 定义
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NavBarLogo"]];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CenterViewNavBarLogo"]];
 }
 
 
