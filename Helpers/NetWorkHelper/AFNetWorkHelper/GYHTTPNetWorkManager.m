@@ -12,20 +12,20 @@
 
 GY_SINGLETON_FOR_CLASS(GYHTTPNetWorkManager);
 
+- (NSURLSessionDataTask *)GET:(NSString *)URLString
+                   parameters:(NSDictionary *)parameters
+                      success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                      failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
+{
+    return [[AFAppDotNetAPIClient sharedClient] GET:URLString parameters:parameters success:success failure:failure];
+}
+
 - (NSURLSessionDataTask *)POST:(NSString *)URLString
                     parameters:(NSDictionary *)parameters
                        success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
     return [[AFAppDotNetAPIClient sharedClient] POST:URLString parameters:parameters success:success failure:failure];
-}
-
-- (NSURLSessionDataTask *)GET:(NSString *)URLString
-                    parameters:(NSDictionary *)parameters
-                       success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
-                      failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
-{
-    return [[AFAppDotNetAPIClient sharedClient] GET:URLString parameters:parameters success:success failure:failure];
 }
 
 + (NetworkStatus)networkStatus

@@ -25,6 +25,7 @@
 
 @interface AFAppDotNetAPIClient : AFHTTPSessionManager
 
+//获取单例方法
 + (instancetype)sharedClient;
 
 @end
