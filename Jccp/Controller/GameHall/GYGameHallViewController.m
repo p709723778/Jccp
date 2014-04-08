@@ -60,23 +60,37 @@
 
 -(void)setupLeftMenuButton{
     
-    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
+//    UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
+//    
+//    [leftButton setBackgroundImage:[UIImage imageNamed:@"tab_icon1"] forState:UIControlStateNormal];
+//    [leftButton setBackgroundImage:[UIImage imageNamed:@"tab_icon2"] forState:UIControlStateHighlighted];
+//    [leftButton addTarget:self action:@selector(leftDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+//    [self.navigationItem setLeftBarButtonItem:leftButtonItem animated:YES];
     
-    [leftButton setBackgroundImage:[UIImage imageNamed:@"tab_icon1"] forState:UIControlStateNormal];
-    [leftButton setBackgroundImage:[UIImage imageNamed:@"tab_icon2"] forState:UIControlStateHighlighted];
-    [leftButton addTarget:self action:@selector(leftDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
-    [self.navigationItem setLeftBarButtonItem:leftButtonItem animated:YES];
+    MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];
+//    leftDrawerButton.image = nil;
+    [leftDrawerButton setBackgroundImage:[UIImage imageNamed:@"tab_icon1"] forState:UIControlStateNormal barMetrics:(UIBarMetricsDefault)];
+    [leftDrawerButton setBackgroundImage:[UIImage imageNamed:@"tab_icon2"] forState:UIControlStateHighlighted barMetrics:(UIBarMetricsDefault)];
+    
+    [self.navigationItem setLeftBarButtonItem:leftDrawerButton animated:YES];
+    
 }
 
 -(void)setupRightMenuButton{
-    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
+//    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
+//    
+//    [rightButton setBackgroundImage:[UIImage imageNamed:@"tab_icon3"] forState:UIControlStateNormal];
+//    [rightButton setBackgroundImage:[UIImage imageNamed:@"tab_icon4"] forState:UIControlStateHighlighted];
+//    [rightButton addTarget:self action:@selector(rightDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+//    [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
     
-    [rightButton setBackgroundImage:[UIImage imageNamed:@"tab_icon3"] forState:UIControlStateNormal];
-    [rightButton setBackgroundImage:[UIImage imageNamed:@"tab_icon4"] forState:UIControlStateHighlighted];
-    [rightButton addTarget:self action:@selector(rightDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-    [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
+    MMDrawerBarButtonItem * rightDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(rightDrawerButtonPress:)];
+    [rightDrawerButton setImage:nil];
+    [rightDrawerButton setBackgroundImage:[UIImage imageNamed:@"tab_icon3"] forState:UIControlStateNormal barMetrics:(UIBarMetricsDefault)];
+    [rightDrawerButton setBackgroundImage:[UIImage imageNamed:@"tab_icon4"] forState:UIControlStateHighlighted  barMetrics:(UIBarMetricsDefault)];
+    [self.navigationItem setRightBarButtonItem:rightDrawerButton animated:YES];
 }
 
 #pragma mark - Button Handlers

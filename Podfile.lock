@@ -61,7 +61,7 @@ SPEC CHECKSUMS:
   CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
   Colours: f26e8eef024a94feaa700155e1e80a5bc41fdd3b
   DCKeyValueObjectMapping: 39adaf0a54ff6368a22d9221db60f0696d81ad7b
-  FMDB: 97472cfacf0d9e445e915704fb43b4b142799c36
+  FMDB: e0dd09464b4e1a1cd7fa51ea835ae821b5656865
   MMDrawerController: 4445e1927e8947b7e2382136c9b7109840efbfb9
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269

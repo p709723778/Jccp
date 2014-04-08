@@ -24,7 +24,7 @@
 
 //根据服务器地址编号 进行ServerAddress赋值(ServerAddress是服务器地址)
 #if (API_ServerAddressNumber == 1) //正式服务器
-#define API_ServerAddress  @"http://www.jucaicp.com/"
+#define API_ServerAddress  @"http://www-jucaicp-com-4evu8r2xe8a3.runscope.net/"
 
 #elif (API_ServerAddressNumber == 2)//测试服务器
 #define API_ServerAddress  @"http://192.168.1.93"

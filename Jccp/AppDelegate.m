@@ -10,7 +10,6 @@
 #import "GYUncaughtExceptionHandler.h"
 #import "GYAppDelegateHelper.h"
 #import "GYAppTabBarController.h"
-#import "CBIntrospect.h"
 #import "GYGaryPersonalLog.h"
 
 #import "MMDrawerController.h"
