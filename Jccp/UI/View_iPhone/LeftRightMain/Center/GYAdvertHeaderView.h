@@ -10,7 +10,7 @@
 
 @class SMPageControl;
 
-@interface GYAdvertHeaderView : UIView<UIScrollViewDelegate>
+@interface GYAdvertHeaderView : UIView <UIScrollViewDelegate>
 {
     int     TimeNum;
     BOOL    Tend;
@@ -18,10 +18,10 @@
     NSTimer *_timer;
 }
 
-@property (retain, nonatomic)  UIScrollView     *sv;
-@property (retain, nonatomic)  SMPageControl    *PageControl;
-
-//设置广告栏图片
+@property (nonatomic, strong) UIScrollView  *sv;
+@property (nonatomic, strong) SMPageControl *PageControl;
+@property (nonatomic, strong) void          (^clickImageHandler)(NSUInteger newIndex,NSUInteger clickIndex);
+// 设置广告栏图片
 - (void)configAdvert:(NSArray *)imgArray;
 
 @end

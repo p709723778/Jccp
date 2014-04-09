@@ -20,6 +20,10 @@
         // Initialization code
         [self configUserInterface];
         _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(handleTimer:) userInfo:nil repeats:YES];
+        self.userInteractionEnabled = YES;
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(Action:)];
+        singleTap.numberOfTapsRequired = 1;
+        [self addGestureRecognizer:singleTap];
     }
 
     return self;
@@ -66,31 +70,36 @@
 {
     [_sv setContentSize:CGSizeMake(GY_MainWidth *[arr count], self.frame.size.height)];
 
+    imageArray = arr;
     _PageControl.numberOfPages = [arr count];
 
     for (int i = 0; i < [arr count]; i++) {
         NSString *url = [arr objectAtIndex:i];
 
-        UIButton *img = [[UIButton alloc]initWithFrame:CGRectMake(GY_MainWidth * i, 0, GY_MainWidth, self.frame.size.height)];
+        UIImageView *img = [[UIImageView alloc]initWithFrame:CGRectMake(GY_MainWidth * i, 0, GY_MainWidth, self.frame.size.height)];
 
-        // [img addTarget:self action:@selector(Action) forControlEvents:UIControlEventTouchUpInside];
-
+//        [img addTarget:self action:@selector(Action:) forControlEvents:UIControlEventTouchUpInside];
+        [img setImage:[UIImage imageNamed:@"NavBar"]];
         [_sv addSubview:img];
 
         // [img setImage:[UIImage imageNamed:@"jiazai_test@2x.png"] forState:UIControlStateNormal];
 
-        UIImageFromURL([NSURL URLWithString:url], ^(UIImage *image)
-
-            {
-                [img setBackgroundImage:image forState:UIControlStateNormal];
-            }, ^(void) {});
+//        UIImageFromURL([NSURL URLWithString:url], ^(UIImage *image)
+//
+//            {
+//                [img setBackgroundImage:image forState:UIControlStateNormal];
+//            }, ^(void) {});
     }
 }
 
 - (void)Action:(id)sender
 {
-    //    UIButton *btn = (UIButton *)sender;
-    //    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/?c=api_main&callType=JSON&a=getBanner", ServerAddress]];
+    if (((UITapGestureRecognizer *)sender).numberOfTapsRequired == 1) {
+        //单指单击
+         NSLog(@"单指单击");
+        _clickImageHandler(_PageControl.currentPage,1);
+       }
+    
 }
 
 void UIImageFromURL(NSURL *URL, void (^imageBlock)(UIImage *image), void (^errorBlock)(void))
@@ -149,7 +158,19 @@ void UIImageFromURL(NSURL *URL, void (^imageBlock)(UIImage *image), void (^error
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     _PageControl.currentPage = scrollView.contentOffset.x / GY_MainWidth;
+//    NSLog(@"%li",_PageControl.currentPage);
 }
 
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    //开始拖动scrollview的时候 停止计时器控制的跳转
+    [_timer setFireDate:[NSDate distantFuture]];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    //结束拖动scrollview的时候 启动计时器控制的跳转
+    [_timer setFireDate:[NSDate distantPast]];
+}
 
 @end
