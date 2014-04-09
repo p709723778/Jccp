@@ -29,4 +29,7 @@
 //DCKeyValueObjectMapping实体类映射
 #import "DCKeyValueObjectMapping.h"
 
+//图片缓存
+#import "UIImageView+WebCache.h"
+
 #endif
