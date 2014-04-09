@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF41C6A778584E24970A5728"
-               BuildableName = "libPods-Colours.a"
-               BlueprintName = "Pods-Colours"
+               BlueprintIdentifier = "67CCA191F5D348909B4E167E"
+               BuildableName = "libPods-SMPageControl.a"
+               BlueprintName = "Pods-SMPageControl"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

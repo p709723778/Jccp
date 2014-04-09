@@ -48,6 +48,7 @@ PODS:
   - SDWebImage (3.6):
     - SDWebImage/Core
   - SDWebImage/Core (3.6)
+  - SMPageControl (1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.1)
@@ -59,6 +60,7 @@ DEPENDENCIES:
   - Reachability (~> 3.1.1)
   - ReactiveCocoa (~> 2.3)
   - SDWebImage (~> 3.6)
+  - SMPageControl (~> 1.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
@@ -70,5 +72,6 @@ SPEC CHECKSUMS:
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269
   SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
+  SMPageControl: 0c5c5d7e142c1ce6ef5b0d7182d6ad3b2af8f2e3
 
 COCOAPODS: 0.29.0

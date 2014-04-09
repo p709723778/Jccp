@@ -10,6 +10,7 @@
 
 #import "UIViewController+MMDrawerController.h"
 #import "MMDrawerBarButtonItem.h"
+#import "GYAdvertHeaderView.h"
 
 @interface GYCenterViewController ()
 
@@ -40,9 +41,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-    
+    [self viewLayout];
     [self addGesture];
     [self setNavigationController];
+    
+    
+}
+
+
+//布局UI
+- (void)viewLayout
+{
+    //此属性是设置ScrollViewInsets不自动自动适配
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    NSArray *arrayImages = @[@"http://e.hiphotos.baidu.com/image/w%3D2048/sign=ba2d41c7cc1b9d168ac79d61c7e6b58f/a71ea8d3fd1f41345be1d666271f95cad0c85ed0.jpg",@"http://b.hiphotos.baidu.com/image/w%3D2048/sign=205668f19e82d158bb825eb1b43218d8/c2fdfc039245d68825605cbba6c27d1ed21b244b.jpg",@"http://a.hiphotos.baidu.com/image/w%3D2048/sign=910aed6f544e9258a63481eea8bad058/4610b912c8fcc3ce5bd4cc389045d688d43f20a0.jpg"];
+    GYAdvertHeaderView *advertHeaderView= [[GYAdvertHeaderView alloc] initWithFrame:CGRectMake(0, GY_NavBarHeight +GY_StateBarHeight, GY_MainWidth, 170 / 2)];
+    [advertHeaderView configAdvert:arrayImages];
+    [self.view addSubview:advertHeaderView];
     
 }
 

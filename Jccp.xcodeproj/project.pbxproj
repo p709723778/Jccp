@@ -56,7 +56,6 @@
 		4E44FFC218B250F50066B9E9 /* tab_icon5_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FFA118B250F50066B9E9 /* tab_icon5_Press.png */; };
 		4E44FFC318B250F50066B9E9 /* tab_icon5_Press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */; };
 		4E680EFC18C8C95300D23325 /* View_iPad in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EF918C8C95300D23325 /* View_iPad */; };
-		4E680EFD18C8C95300D23325 /* View_iPhone in Resources */ = {isa = PBXBuildFile; fileRef = 4E680EFB18C8C95300D23325 /* View_iPhone */; };
 		4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */; };
 		4E73D88C18EAC3DB005D5663 /* GYJSONUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D88818EAC3DB005D5663 /* GYJSONUtility.m */; };
 		4E73D89018EAC554005D5663 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D88F18EAC554005D5663 /* XMLDictionary.m */; };
@@ -70,6 +69,7 @@
 		4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B7E187649AA0009991E /* UIView+Utils.m */; };
 		4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B8518764D790009991E /* AFAppDotNetAPIClient.m */; };
 		4EBA8B991876633D0009991E /* UIDevice+SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA8B981876633D0009991E /* UIDevice+SystemInfo.m */; };
+		4EC9E80818F543C100F88D13 /* GYAdvertHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC9E80718F543C100F88D13 /* GYAdvertHeaderView.m */; };
 		4ECEBBCD18F40A48009793FE /* CenterViewNavBarLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECEBBC318F40A48009793FE /* CenterViewNavBarLeft.png */; };
 		4ECEBBCE18F40A48009793FE /* CenterViewNavBarLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECEBBC418F40A48009793FE /* CenterViewNavBarLeft@2x.png */; };
 		4ECEBBCF18F40A48009793FE /* CenterViewNavBarLeft_Press.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ECEBBC518F40A48009793FE /* CenterViewNavBarLeft_Press.png */; };
@@ -182,7 +182,6 @@
 		4E44FFA118B250F50066B9E9 /* tab_icon5_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon5_Press.png; sourceTree = "<group>"; };
 		4E44FFA218B250F50066B9E9 /* tab_icon5_Press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon5_Press@2x.png"; sourceTree = "<group>"; };
 		4E680EF918C8C95300D23325 /* View_iPad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPad; sourceTree = "<group>"; };
-		4E680EFB18C8C95300D23325 /* View_iPhone */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = View_iPhone; sourceTree = "<group>"; };
 		4E680F1C18C8D44000D23325 /* MoreInterfaceTableItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreInterfaceTableItem.plist; sourceTree = "<group>"; };
 		4E73D88718EAC3DB005D5663 /* GYJSONUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYJSONUtility.h; sourceTree = "<group>"; };
 		4E73D88818EAC3DB005D5663 /* GYJSONUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYJSONUtility.m; sourceTree = "<group>"; };
@@ -208,6 +207,8 @@
 		4EBA8B8D187652050009991E /* ToolsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsManager.h; sourceTree = "<group>"; };
 		4EBA8B971876633D0009991E /* UIDevice+SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SystemInfo.h"; sourceTree = "<group>"; };
 		4EBA8B981876633D0009991E /* UIDevice+SystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SystemInfo.m"; sourceTree = "<group>"; };
+		4EC9E80618F543C100F88D13 /* GYAdvertHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAdvertHeaderView.h; sourceTree = "<group>"; };
+		4EC9E80718F543C100F88D13 /* GYAdvertHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAdvertHeaderView.m; sourceTree = "<group>"; };
 		4ECEBBC318F40A48009793FE /* CenterViewNavBarLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterViewNavBarLeft.png; sourceTree = "<group>"; };
 		4ECEBBC418F40A48009793FE /* CenterViewNavBarLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterViewNavBarLeft@2x.png"; sourceTree = "<group>"; };
 		4ECEBBC518F40A48009793FE /* CenterViewNavBarLeft_Press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterViewNavBarLeft_Press.png; sourceTree = "<group>"; };
@@ -456,7 +457,7 @@
 		4E680EFA18C8C95300D23325 /* View_iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				4E680EFB18C8C95300D23325 /* View_iPhone */,
+				4EC9E80418F543C100F88D13 /* LeftRightMain */,
 			);
 			path = View_iPhone;
 			sourceTree = "<group>";
@@ -680,6 +681,23 @@
 				4E28637918DD68510027F261 /* UtilityManager.h */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		4EC9E80418F543C100F88D13 /* LeftRightMain */ = {
+			isa = PBXGroup;
+			children = (
+				4EC9E80518F543C100F88D13 /* Center */,
+			);
+			path = LeftRightMain;
+			sourceTree = "<group>";
+		};
+		4EC9E80518F543C100F88D13 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				4EC9E80618F543C100F88D13 /* GYAdvertHeaderView.h */,
+				4EC9E80718F543C100F88D13 /* GYAdvertHeaderView.m */,
+			);
+			path = Center;
 			sourceTree = "<group>";
 		};
 		4ECEBBC218F40A48009793FE /* iPhone_LeftRightMain */ = {
@@ -963,7 +981,6 @@
 				4E44FFBE18B250F50066B9E9 /* tab_icon4_Press.png in Resources */,
 				4E680F1D18C8D44000D23325 /* MoreInterfaceTableItem.plist in Resources */,
 				4E44FFBC18B250F50066B9E9 /* tab_icon4.png in Resources */,
-				4E680EFD18C8C95300D23325 /* View_iPhone in Resources */,
 				4ECEBBCF18F40A48009793FE /* CenterViewNavBarLeft_Press.png in Resources */,
 				4EF2109018769C6C00D8634F /* InfoPlist.strings in Resources */,
 				4E680EFC18C8C95300D23325 /* View_iPad in Resources */,
@@ -1064,6 +1081,7 @@
 				4ED193E3187100FD00F643DC /* main.m in Sources */,
 				4ED43C9218D4415E003D56F1 /* UIDevice+UDID.m in Sources */,
 				4E0A0F8918DAA1B5004082C6 /* GYUncaughtExceptionHandler.m in Sources */,
+				4EC9E80818F543C100F88D13 /* GYAdvertHeaderView.m in Sources */,
 				4E0A0F7A18DA9B59004082C6 /* GYNewsInfoViewController.m in Sources */,
 				4E0A0F7F18DA9B97004082C6 /* GYMoreInterfaceViewController.m in Sources */,
 				4E0A0F8318DA9C93004082C6 /* GYRegularVerification.m in Sources */,
