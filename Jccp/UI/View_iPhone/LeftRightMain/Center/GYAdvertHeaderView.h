@@ -19,7 +19,7 @@
 }
 
 @property (nonatomic, strong) UIScrollView  *sv;
-@property (nonatomic, strong) SMPageControl *PageControl;
+@property (nonatomic, strong) SMPageControl *pageControl;
 @property (nonatomic, strong) void          (^clickImageHandler)(NSUInteger newIndex,NSUInteger clickIndex);
 // 设置广告栏图片
 - (void)configAdvert:(NSArray *)imgArray;

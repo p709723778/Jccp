@@ -62,6 +62,8 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 {
     [self validateAndSaveCriticalApplicationData];
     
+    NSLog(@"原因:%@",[exception reason]);
+    NSLog(@"原因userInfo:%@",[[exception userInfo] objectForKey:UncaughtExceptionHandlerAddressesKey]);
     UIAlertView *alert =
     [[UIAlertView alloc]
      initWithTitle:NSLocalizedString(@"抱歉，程序出现了异常", nil)

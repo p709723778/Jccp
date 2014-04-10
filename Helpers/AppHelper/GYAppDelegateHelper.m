@@ -19,7 +19,7 @@
 #import "GYMoreInterfaceViewController.h"
 
 #import "MMDrawerController.h"
-
+#import "MMDrawerVisualState.h"
 @implementation GYAppDelegateHelper
 
 GY_SINGLETON_FOR_CLASS(GYAppDelegateHelper);
@@ -131,16 +131,13 @@ GY_SINGLETON_FOR_CLASS(GYAppDelegateHelper);
     [mmDrawerController setMaximumRightDrawerWidth:280.0];
     [mmDrawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
     [mmDrawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
-
-//    [mmDrawerController
-//    setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
-//        MMDrawerControllerDrawerVisualStateBlock block;
-//
-//        if (block) {
-//            block(drawerController, drawerSide, percentVisible);
-//        }
-//    }];
-
+    
+    
+    [mmDrawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+        MMDrawerControllerDrawerVisualStateBlock block;
+        block = [MMDrawerVisualState parallaxVisualStateBlockWithParallaxFactor:2.0];
+        block(drawerController, drawerSide, percentVisible);
+    }];
     return mmDrawerController;
 }
 

@@ -20,7 +20,8 @@
         // Initialization code
         [self configUserInterface];
         _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(handleTimer:) userInfo:nil repeats:YES];
-        self.userInteractionEnabled = YES;
+//        self.userInteractionEnabled = YES;
+        self.exclusiveTouch = NO;
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(Action:)];
         singleTap.numberOfTapsRequired = 1;
         [self addGestureRecognizer:singleTap];
@@ -60,10 +61,10 @@
     _sv.pagingEnabled = YES;
     [self addSubview:_sv];
 
-    _PageControl = [[SMPageControl alloc]initWithFrame:CGRectMake(10, _sv.frame.size.height - 20, GY_MainWidth - 10, 20)];
-    _PageControl.alignment = SMPageControlAlignmentLeft;
-    [_PageControl addTarget:self action:@selector(setPage) forControlEvents:UIControlEventValueChanged];
-    [self addSubview:_PageControl];
+    _pageControl = [[SMPageControl alloc]initWithFrame:CGRectMake(10, _sv.frame.size.height - 20, GY_MainWidth - 10, 20)];
+    _pageControl.alignment = SMPageControlAlignmentLeft;
+    [_pageControl addTarget:self action:@selector(setPage) forControlEvents:UIControlEventValueChanged];
+    [self addSubview:_pageControl];
 }
 
 - (void)AdImg:(NSArray *)arr
@@ -71,51 +72,26 @@
     [_sv setContentSize:CGSizeMake(GY_MainWidth *[arr count], self.frame.size.height)];
 
     imageArray = arr;
-    _PageControl.numberOfPages = [arr count];
+    _pageControl.numberOfPages = [imageArray count];
 
-    for (int i = 0; i < [arr count]; i++) {
-        NSString *url = [arr objectAtIndex:i];
+    for (int i = 0; i < [imageArray count]; i++) {
+        NSString *url = [imageArray objectAtIndex:i];
 
         UIImageView *img = [[UIImageView alloc]initWithFrame:CGRectMake(GY_MainWidth * i, 0, GY_MainWidth, self.frame.size.height)];
-
-//        [img addTarget:self action:@selector(Action:) forControlEvents:UIControlEventTouchUpInside];
-        [img setImage:[UIImage imageNamed:@"NavBar"]];
+        // 这里进行图片缓存
+        [img setImageWithURL:[NSURL URLWithString:url]
+        placeholderImage    :[UIImage imageNamed:@"placeholder.png"]];
         [_sv addSubview:img];
-
-        // [img setImage:[UIImage imageNamed:@"jiazai_test@2x.png"] forState:UIControlStateNormal];
-
-//        UIImageFromURL([NSURL URLWithString:url], ^(UIImage *image)
-//
-//            {
-//                [img setBackgroundImage:image forState:UIControlStateNormal];
-//            }, ^(void) {});
     }
 }
 
 - (void)Action:(id)sender
 {
     if (((UITapGestureRecognizer *)sender).numberOfTapsRequired == 1) {
-        //单指单击
-         NSLog(@"单指单击");
-        _clickImageHandler(_PageControl.currentPage,1);
-       }
-    
-}
-
-void UIImageFromURL(NSURL *URL, void (^imageBlock)(UIImage *image), void (^errorBlock)(void))
-{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void)
-        {
-            NSData *data = [[NSData alloc] initWithContentsOfURL:URL];
-            UIImage *image = [[UIImage alloc] initWithData:data];
-            dispatch_async(dispatch_get_main_queue(), ^(void) {
-                if (image != nil) {
-                    imageBlock(image);
-                } else {
-                    errorBlock();
-                }
-            });
-        });
+        // 单指单击
+        NSLog(@"单指单击");
+        _clickImageHandler(_pageControl.currentPage, 1);
+    }
 }
 
 #pragma mark - 5秒换图片
@@ -123,22 +99,22 @@ void UIImageFromURL(NSURL *URL, void (^imageBlock)(UIImage *image), void (^error
 {
     if (TimeNum % 5 == 0) {
         if (!Tend) {
-            _PageControl.currentPage++;
+            _pageControl.currentPage++;
 
-            if (_PageControl.currentPage == _PageControl.numberOfPages - 1) {
+            if (_pageControl.currentPage == _pageControl.numberOfPages - 1) {
                 Tend = YES;
             }
         } else {
-            _PageControl.currentPage--;
+            _pageControl.currentPage--;
 
-            if (_PageControl.currentPage == 0) {
+            if (_pageControl.currentPage == 0) {
                 Tend = NO;
             }
         }
 
         [UIView animateWithDuration:0.8 // 速度0.7秒
                 animations:^{           // 修改坐标
-            _sv.contentOffset = CGPointMake(_PageControl.currentPage * GY_MainWidth, 0);
+            _sv.contentOffset = CGPointMake(_pageControl.currentPage * GY_MainWidth, 0);
         }];
     }
 
@@ -150,26 +126,26 @@ void UIImageFromURL(NSURL *URL, void (^imageBlock)(UIImage *image), void (^error
 {
     [UIView animateWithDuration:0.2 // 速度0.2秒
             animations:^{           // 修改坐标
-        _sv.contentOffset = CGPointMake(_PageControl.currentPage * GY_MainWidth, 0);
+        _sv.contentOffset = CGPointMake(_pageControl.currentPage * GY_MainWidth, 0);
     }];
 }
 
 #pragma mark - scrollView && page
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    _PageControl.currentPage = scrollView.contentOffset.x / GY_MainWidth;
-//    NSLog(@"%li",_PageControl.currentPage);
+    _pageControl.currentPage = scrollView.contentOffset.x / GY_MainWidth;
+    //    NSLog(@"%li",_pageControl.currentPage);
 }
 
--(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    //开始拖动scrollview的时候 停止计时器控制的跳转
+    // 开始拖动scrollview的时候 停止计时器控制的跳转
     [_timer setFireDate:[NSDate distantFuture]];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    //结束拖动scrollview的时候 启动计时器控制的跳转
+    // 结束拖动scrollview的时候 启动计时器控制的跳转
     [_timer setFireDate:[NSDate distantPast]];
 }
 

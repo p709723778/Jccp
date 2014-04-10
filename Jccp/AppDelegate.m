@@ -37,21 +37,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    NSDictionary *dic = @{ @"pid" : @5,@"page" : @1,@"limit" : @1  };
-    
-    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] POST:@"?c=api_zx&a=getZxList&callType=JSON" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSDictionary *dic = [GYResolveDataUtility dictionaryWithData:responseObject];
-        NSLog(@"ok:%@",dic);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"失败");
-    }];
-    
-    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=JSON" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSDictionary *dic = [GYResolveDataUtility dictionaryWithData:responseObject];
-        NSLog(@"ok:%@",dic);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"失败");
-    }];
+//    NSDictionary *dic = @{ @"pid" : @5,@"page" : @1,@"limit" : @1  };
+//    
+//    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] POST:@"?c=api_zx&a=getZxList&callType=JSON" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
+//        NSDictionary *dic = [GYResolveDataUtility dictionaryWithData:responseObject];
+//        NSLog(@"ok:%@",dic);
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//        NSLog(@"失败");
+//    }];
+//    
+//    [[GYHTTPNetWorkManager sharedGYHTTPNetWorkManager] GET:@"?c=api_betting&a=loadMoreBettingIssue&callType=JSON" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+//        NSDictionary *dic = [GYResolveDataUtility dictionaryWithData:responseObject];
+//        NSLog(@"ok:%@",dic);
+//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+//        NSLog(@"失败");
+//    }];
     
     // 本人版权日志输出
     [GYGaryPersonalLog outPutPersonalLog];
