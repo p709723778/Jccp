@@ -50,6 +50,7 @@
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR || TARGET_OS_MAC)
         CFUUIDRef   cfuuid = CFUUIDCreate(kCFAllocatorDefault);
         NSString    *cfuuidString = (NSString *)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, cfuuid));
+        CFRelease(cfuuid);
 
         if (cfuuidString) {
             return cfuuidString;
