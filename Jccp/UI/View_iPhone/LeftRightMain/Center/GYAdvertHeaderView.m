@@ -20,7 +20,6 @@
         // Initialization code
         [self configUserInterface];
         _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(handleTimer:) userInfo:nil repeats:YES];
-//        self.userInteractionEnabled = YES;
         self.exclusiveTouch = NO;
         UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(Action:)];
         singleTap.numberOfTapsRequired = 1;
@@ -59,6 +58,7 @@
     _sv.showsHorizontalScrollIndicator = NO;
     _sv.showsVerticalScrollIndicator = NO;
     _sv.pagingEnabled = YES;
+    _sv.bounces = NO;
     [self addSubview:_sv];
 
     _pageControl = [[SMPageControl alloc]initWithFrame:CGRectMake(10, _sv.frame.size.height - 20, GY_MainWidth - 10, 20)];
