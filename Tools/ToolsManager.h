@@ -12,4 +12,10 @@
 //正则验证
 #import "GYRegularVerification.h"
 
+//AES加密
+#import "GYAESEncryptTool.h"
+
+//Base64原生编码
+#import "GYBase64Tool.h"
+
 #endif

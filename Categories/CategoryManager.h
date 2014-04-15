@@ -33,4 +33,7 @@
 #import "NSString+MD5.h"
 #import "NSString+Category.h"
 
+//NSData
+#import "NSData+AES.h"
+
 #endif

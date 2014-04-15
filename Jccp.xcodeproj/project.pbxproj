@@ -62,6 +62,9 @@
 		4E73D89318EAC57A005D5663 /* GYResolveDataUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E73D89218EAC57A005D5663 /* GYResolveDataUtility.m */; };
 		4E84118518E409B100A7C36D /* NSObject+GYBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E84118418E409B100A7C36D /* NSObject+GYBlockTimer.m */; };
 		4E89AE6018DCAC0400C4DD7B /* APIRespondCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */; };
+		4E8A7C1918FD28B800456C3F /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A7C1818FD28B800456C3F /* NSData+AES.m */; };
+		4E8A7C2718FD2D0C00456C3F /* GYAESEncryptTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A7C2618FD2D0C00456C3F /* GYAESEncryptTool.m */; };
+		4E8A7C2A18FD2D4000456C3F /* GYBase64Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A7C2918FD2D4000456C3F /* GYBase64Tool.m */; };
 		4EA3AC2118F3E1E10019098D /* GYCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA3AC1F18F3E1E10019098D /* GYCenterViewController.m */; };
 		4EA3AC2218F3E1E10019098D /* GYCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EA3AC2018F3E1E10019098D /* GYCenterViewController.xib */; };
 		4EAC94A918E56BEB00E15684 /* AppDelegate+MMDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC94A818E56BEB00E15684 /* AppDelegate+MMDrawer.m */; };
@@ -192,6 +195,13 @@
 		4E84118318E409B100A7C36D /* NSObject+GYBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GYBlockTimer.h"; sourceTree = "<group>"; };
 		4E84118418E409B100A7C36D /* NSObject+GYBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GYBlockTimer.m"; sourceTree = "<group>"; };
 		4E89AE5F18DCAC0400C4DD7B /* APIRespondCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIRespondCode.plist; sourceTree = "<group>"; };
+		4E8A7C1718FD28B800456C3F /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		4E8A7C1818FD28B800456C3F /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		4E8A7C1A18FD29C200456C3F /* KeySettingMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeySettingMacro.h; sourceTree = "<group>"; };
+		4E8A7C2518FD2D0C00456C3F /* GYAESEncryptTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAESEncryptTool.h; sourceTree = "<group>"; };
+		4E8A7C2618FD2D0C00456C3F /* GYAESEncryptTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAESEncryptTool.m; sourceTree = "<group>"; };
+		4E8A7C2818FD2D4000456C3F /* GYBase64Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYBase64Tool.h; sourceTree = "<group>"; };
+		4E8A7C2918FD2D4000456C3F /* GYBase64Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYBase64Tool.m; sourceTree = "<group>"; };
 		4EA3AC1E18F3E1E10019098D /* GYCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYCenterViewController.h; sourceTree = "<group>"; };
 		4EA3AC1F18F3E1E10019098D /* GYCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYCenterViewController.m; sourceTree = "<group>"; };
 		4EA3AC2018F3E1E10019098D /* GYCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYCenterViewController.xib; sourceTree = "<group>"; };
@@ -561,6 +571,42 @@
 			path = RespondCode;
 			sourceTree = "<group>";
 		};
+		4E8A7C1618FD289800456C3F /* NSData+Category */ = {
+			isa = PBXGroup;
+			children = (
+				4E8A7C1718FD28B800456C3F /* NSData+AES.h */,
+				4E8A7C1818FD28B800456C3F /* NSData+AES.m */,
+			);
+			path = "NSData+Category";
+			sourceTree = "<group>";
+		};
+		4E8A7C2218FD2CDE00456C3F /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				4E8A7C2318FD2CDE00456C3F /* AESEncrypt */,
+				4E8A7C2418FD2CDE00456C3F /* Base64 */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		4E8A7C2318FD2CDE00456C3F /* AESEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				4E8A7C2518FD2D0C00456C3F /* GYAESEncryptTool.h */,
+				4E8A7C2618FD2D0C00456C3F /* GYAESEncryptTool.m */,
+			);
+			path = AESEncrypt;
+			sourceTree = "<group>";
+		};
+		4E8A7C2418FD2CDE00456C3F /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				4E8A7C2818FD2D4000456C3F /* GYBase64Tool.h */,
+				4E8A7C2918FD2D4000456C3F /* GYBase64Tool.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
 		4EA3AC1D18F3E1B50019098D /* LeftRightMain */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +629,7 @@
 		4EBA8B7B187649AA0009991E /* CategoryFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4E8A7C1618FD289800456C3F /* NSData+Category */,
 				4E84118218E4098A00A7C36D /* NSObject+Category */,
 				4E0A0F9E18DAD586004082C6 /* AppDelegate+Category */,
 				4E305A2518B3742C00ACDEB5 /* NSString+Category */,
@@ -638,6 +685,7 @@
 		4EBA8B881876517C0009991E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				4E8A7C2218FD2CDE00456C3F /* Security */,
 				4EBA8B89187651990009991E /* RegularVerify */,
 				4EBA8B8D187652050009991E /* ToolsManager.h */,
 			);
@@ -826,6 +874,7 @@
 				4EF2107E18769A0000D8634F /* ShorthandMethodMacro.h */,
 				4EF2107F18769A0000D8634F /* SingletonMacro.h */,
 				4E305A2418B373BD00ACDEB5 /* LotteryNameCodeMacro.h */,
+				4E8A7C1A18FD29C200456C3F /* KeySettingMacro.h */,
 			);
 			path = MacroFiles;
 			sourceTree = "<group>";
@@ -1056,6 +1105,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8A7C2A18FD2D4000456C3F /* GYBase64Tool.m in Sources */,
 				4E44FF4218B236100066B9E9 /* UIColor+UIImage.m in Sources */,
 				4E84118518E409B100A7C36D /* NSObject+GYBlockTimer.m in Sources */,
 				4ED193E7187100FD00F643DC /* AppDelegate.m in Sources */,
@@ -1069,7 +1119,9 @@
 				4EBA8B7F187649AA0009991E /* UIView+Utils.m in Sources */,
 				4E305A2818B3744000ACDEB5 /* NSString+LotteryNameCode.m in Sources */,
 				4EBA8B8618764D790009991E /* AFAppDotNetAPIClient.m in Sources */,
+				4E8A7C2718FD2D0C00456C3F /* GYAESEncryptTool.m in Sources */,
 				4E73D88C18EAC3DB005D5663 /* GYJSONUtility.m in Sources */,
+				4E8A7C1918FD28B800456C3F /* NSData+AES.m in Sources */,
 				4EFF266F18DD5F730058C193 /* GYRespondCodeUtility.m in Sources */,
 				4E0A0F6B18DA9A78004082C6 /* GYGameHallViewController.m in Sources */,
 				4E305A3118B375A200ACDEB5 /* NSString+Category.m in Sources */,

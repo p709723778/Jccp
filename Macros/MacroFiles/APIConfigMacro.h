@@ -50,8 +50,6 @@
 
 
 
-
-
 #pragma mark -服务器返回数据格式类型设置
 
 //向服务器请求返回格式编号
@@ -63,18 +61,5 @@
 #elif (API_SERVER_RETURN_FORMAT_NUMBER == 2) //返回JSON格式的数据
 #define API_SERVER_RETURN_FORMAT @"JSON"
 #endif
-
-
-
-#pragma mark -用户使用到的Key定义
-
-//用户操作Key
-#define API_Operate_KEY @"jucai"
-
-//用户支付Key
-#define API_Pay_Key @"jucaipay"
-
-//用户投注Key
-#define API_Lottery_Key @"jucai0113"
 
 #endif
