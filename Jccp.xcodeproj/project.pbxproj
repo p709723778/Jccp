@@ -65,6 +65,7 @@
 		4E8A7C1918FD28B800456C3F /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A7C1818FD28B800456C3F /* NSData+AES.m */; };
 		4E8A7C2718FD2D0C00456C3F /* GYAESEncryptTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A7C2618FD2D0C00456C3F /* GYAESEncryptTool.m */; };
 		4E8A7C2A18FD2D4000456C3F /* GYBase64Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8A7C2918FD2D4000456C3F /* GYBase64Tool.m */; };
+		4EA0476618FE3489001A832C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0476518FE3489001A832C /* LICENSE */; };
 		4EA3AC2118F3E1E10019098D /* GYCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA3AC1F18F3E1E10019098D /* GYCenterViewController.m */; };
 		4EA3AC2218F3E1E10019098D /* GYCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EA3AC2018F3E1E10019098D /* GYCenterViewController.xib */; };
 		4EAC94A918E56BEB00E15684 /* AppDelegate+MMDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC94A818E56BEB00E15684 /* AppDelegate+MMDrawer.m */; };
@@ -202,6 +203,7 @@
 		4E8A7C2618FD2D0C00456C3F /* GYAESEncryptTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAESEncryptTool.m; sourceTree = "<group>"; };
 		4E8A7C2818FD2D4000456C3F /* GYBase64Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYBase64Tool.h; sourceTree = "<group>"; };
 		4E8A7C2918FD2D4000456C3F /* GYBase64Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYBase64Tool.m; sourceTree = "<group>"; };
+		4EA0476518FE3489001A832C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4EA3AC1E18F3E1E10019098D /* GYCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYCenterViewController.h; sourceTree = "<group>"; };
 		4EA3AC1F18F3E1E10019098D /* GYCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYCenterViewController.m; sourceTree = "<group>"; };
 		4EA3AC2018F3E1E10019098D /* GYCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GYCenterViewController.xib; sourceTree = "<group>"; };
@@ -341,7 +343,7 @@
 			path = "NSString+Category";
 			sourceTree = "<group>";
 		};
-		4E44FF3618B233430066B9E9 /* Controller */ = {
+		4E44FF3618B233430066B9E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				4E44FF3718B233660066B9E9 /* UITabBarController */,
@@ -352,7 +354,7 @@
 				4E680F0018C8CA4A00D23325 /* NewsInfo */,
 				4E680EFF18C8CA4A00D23325 /* MoreInterface */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		4E44FF3718B233660066B9E9 /* UITabBarController */ = {
@@ -447,13 +449,13 @@
 			path = iPhone_TabBar;
 			sourceTree = "<group>";
 		};
-		4E680EF718C8C95300D23325 /* UI */ = {
+		4E680EF718C8C95300D23325 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4E680EF818C8C95300D23325 /* View_iPad */,
 				4E680EFA18C8C95300D23325 /* View_iPhone */,
 			);
-			path = UI;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4E680EF818C8C95300D23325 /* View_iPad */ = {
@@ -605,6 +607,14 @@
 				4E8A7C2918FD2D4000456C3F /* GYBase64Tool.m */,
 			);
 			path = Base64;
+			sourceTree = "<group>";
+		};
+		4EA0476418FE3489001A832C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4EA0476518FE3489001A832C /* LICENSE */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		4EA3AC1D18F3E1B50019098D /* LeftRightMain */ = {
@@ -811,9 +821,10 @@
 			isa = PBXGroup;
 			children = (
 				4EBB0AD918B440670034209E /* Utility */,
-				4EF2109C1876A3ED00D8634F /* Model */,
-				4E680EF718C8C95300D23325 /* UI */,
-				4E44FF3618B233430066B9E9 /* Controller */,
+				4EF2109C1876A3ED00D8634F /* Models */,
+				4EA0476418FE3489001A832C /* ViewModels */,
+				4E680EF718C8C95300D23325 /* Views */,
+				4E44FF3618B233430066B9E9 /* Controllers */,
 				4ED193E5187100FD00F643DC /* AppDelegate.h */,
 				4ED193E6187100FD00F643DC /* AppDelegate.m */,
 				4ED193F1187100FD00F643DC /* Images.xcassets */,
@@ -912,12 +923,12 @@
 			path = Librarys;
 			sourceTree = "<group>";
 		};
-		4EF2109C1876A3ED00D8634F /* Model */ = {
+		4EF2109C1876A3ED00D8634F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4EB771B818891FFD00EBF933 /* Model */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1050,6 +1061,7 @@
 				4E44FFC218B250F50066B9E9 /* tab_icon5_Press.png in Resources */,
 				4E0A0F6C18DA9A78004082C6 /* GYGameHallViewController.xib in Resources */,
 				4E44FFBD18B250F50066B9E9 /* tab_icon4@2x.png in Resources */,
+				4EA0476618FE3489001A832C /* LICENSE in Resources */,
 				4ECEBBD518F40A48009793FE /* CenterViewNavBarRigth_Press.png in Resources */,
 				4E44FFB218B250F50066B9E9 /* tab_icon1_Press.png in Resources */,
 				4E44FFB918B250F50066B9E9 /* tab_icon3@2x.png in Resources */,
