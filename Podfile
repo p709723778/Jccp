@@ -3,12 +3,12 @@
 #添加后要 pod update
 platform :ios, '6.0'
 pod 'CBIntrospect', '~> 0.4.2' , :inhibit_warnings => true  #这里有警告,要处理 这里只是做演示,没有处理
-pod 'AFNetworking', '~> 2.2.1'
+pod 'AFNetworking', '~> 2.2.2'
 pod 'ReactiveCocoa', '~> 2.3'
 pod 'Reachability', '~> 3.1.1'
 pod 'FMDB', '~> 2.2'
 pod 'Colours', '~> 5.2.1'
-pod 'MMDrawerController', '~> 0.5.3'
+pod 'MMDrawerController', '~> 0.5.4'
 pod 'DCKeyValueObjectMapping', '~> 1.4'
 pod 'SDWebImage', '~> 3.6'
 pod 'SMPageControl', '~> 1.2'
