@@ -54,6 +54,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SoundManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,57 +67,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0ADECA8CCEBF4BEAB9814A8F</key>
+		<key>07E65448AC704F1FADE57AAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>10FFE47C5EDC4D5684C58084</key>
+		<key>2CD48BFF8A0C47378BE3BBE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FA25E4DFA704D7D8303BA9B</key>
+		<key>304AFEE35C474A7F96C8168E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>31FEAFA25FC14FF4B0181AD8</key>
+		<key>30A9D20A13544887A169F971</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40DC8FB25C2F481A94682CF2</key>
+		<key>37F75A5DD9094FB3B7A5E10D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E412B8D7D9D4C108BE9A885</key>
+		<key>3A2E801135694248ACCF5BD1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>856057EC56A140B2ABD2541E</key>
+		<key>48DE4AF8273944CC96D34E43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C0FE6060B8841428321C69D</key>
+		<key>58EFEBC0173444D7BE395C09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9BA5F3C235F749319CBC897E</key>
+		<key>CA0639ADB1CB4C5A9900DB53</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B472747F33894212873BC733</key>
+		<key>D9695A447FB5428281F1737D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C84D10B25C2F44E9B12593F9</key>
+		<key>DB727AC2FAB64161A78337F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC3390C4EBC64C608F97837E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

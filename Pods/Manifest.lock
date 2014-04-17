@@ -49,18 +49,20 @@ PODS:
     - SDWebImage/Core
   - SDWebImage/Core (3.6)
   - SMPageControl (1.2)
+  - SoundManager (1.4.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.2.1)
+  - AFNetworking (~> 2.2.2)
   - CBIntrospect (~> 0.4.2)
   - Colours (~> 5.2.1)
   - DCKeyValueObjectMapping (~> 1.4)
   - FMDB (~> 2.2)
-  - MMDrawerController (~> 0.5.3)
+  - MMDrawerController (~> 0.5.4)
   - Reachability (~> 3.1.1)
   - ReactiveCocoa (~> 2.3)
   - SDWebImage (~> 3.6)
   - SMPageControl (~> 1.2)
+  - SoundManager (~> 1.4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: dd8c1868e57451e3d17ebd3516f2a8c16f9646fe
@@ -73,5 +75,6 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269
   SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
   SMPageControl: 0c5c5d7e142c1ce6ef5b0d7182d6ad3b2af8f2e3
+  SoundManager: 70ca8a12b24e451b0b8932721f2e46512a5fb605
 
 COCOAPODS: 0.29.0
