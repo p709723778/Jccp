@@ -7,7 +7,7 @@ platform :ios, '6.0'
 pod 'CBIntrospect', '~> 0.4.2' , :inhibit_warnings => true  #这里有警告,要处理 这里只是做演示,没有处理
 
 #网络处理
-pod 'AFNetworking', '~> 2.2.2'
+pod 'AFNetworking', '~> 2.2.3'
 
 #ARC   实现MVVM设计模式框架
 pod 'ReactiveCocoa', '~> 2.3'
@@ -19,10 +19,10 @@ pod 'Reachability', '~> 3.1.1'
 pod 'FMDB', '~> 2.2'
 
 #颜色集合
-pod 'Colours', '~> 5.2.1'
+pod 'Colours', '~> 5.3.0'
 
 #左右手滑效果
-pod 'MMDrawerController', '~> 0.5.4'
+pod 'MMDrawerController', '~> 0.5.5'
 
 #实体类映射
 pod 'DCKeyValueObjectMapping', '~> 1.4'

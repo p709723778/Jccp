@@ -69,7 +69,6 @@
 {
     // 导航栏 左边按钮
     UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
-
     [leftButton setBackgroundImage:[UIImage imageNamed:@"CenterViewNavBarLeft"] forState:UIControlStateNormal];
     [leftButton setBackgroundImage:[UIImage imageNamed:@"CenterViewNavBarLeft_Press"] forState:UIControlStateHighlighted];
     [leftButton addTarget:self action:@selector(leftDrawerButtonPress:) forControlEvents:UIControlEventTouchUpInside];

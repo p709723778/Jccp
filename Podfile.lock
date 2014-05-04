@@ -1,42 +1,42 @@
 PODS:
-  - AFNetworking (2.2.2):
+  - AFNetworking (2.2.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
     - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.2.2):
+  - AFNetworking/NSURLConnection (2.2.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.2.2):
+  - AFNetworking/NSURLSession (2.2.3):
     - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.2.2)
-  - AFNetworking/Security (2.2.2)
-  - AFNetworking/Serialization (2.2.2)
-  - AFNetworking/UIKit (2.2.2):
+  - AFNetworking/Reachability (2.2.3)
+  - AFNetworking/Security (2.2.3)
+  - AFNetworking/Serialization (2.2.3)
+  - AFNetworking/UIKit (2.2.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CBIntrospect (0.4.2)
-  - Colours (5.2.1)
+  - Colours (5.3.0)
   - DCKeyValueObjectMapping (1.4)
   - FMDB (2.2):
     - FMDB/standard
   - FMDB/common (2.2)
   - FMDB/standard (2.2):
     - FMDB/common
-  - MMDrawerController (0.5.4):
+  - MMDrawerController (0.5.5):
     - MMDrawerController/Core
     - MMDrawerController/MMDrawerBarButtonItem
     - MMDrawerController/MMDrawerVisualStates
     - MMDrawerController/Subclass
-  - MMDrawerController/Core (0.5.4)
-  - MMDrawerController/MMDrawerBarButtonItem (0.5.4):
+  - MMDrawerController/Core (0.5.5)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.5):
     - MMDrawerController/Core
-  - MMDrawerController/MMDrawerVisualStates (0.5.4):
+  - MMDrawerController/MMDrawerVisualStates (0.5.5):
     - MMDrawerController/Core
-  - MMDrawerController/Subclass (0.5.4):
+  - MMDrawerController/Subclass (0.5.5):
     - MMDrawerController/Core
   - Reachability (3.1.1)
   - ReactiveCocoa (2.3):
@@ -52,12 +52,12 @@ PODS:
   - SoundManager (1.4.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.2.2)
+  - AFNetworking (~> 2.2.3)
   - CBIntrospect (~> 0.4.2)
-  - Colours (~> 5.2.1)
+  - Colours (~> 5.3.0)
   - DCKeyValueObjectMapping (~> 1.4)
   - FMDB (~> 2.2)
-  - MMDrawerController (~> 0.5.4)
+  - MMDrawerController (~> 0.5.5)
   - Reachability (~> 3.1.1)
   - ReactiveCocoa (~> 2.3)
   - SDWebImage (~> 3.6)
@@ -65,16 +65,16 @@ DEPENDENCIES:
   - SoundManager (~> 1.4.1)
 
 SPEC CHECKSUMS:
-  AFNetworking: dd8c1868e57451e3d17ebd3516f2a8c16f9646fe
+  AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
   CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
-  Colours: f26e8eef024a94feaa700155e1e80a5bc41fdd3b
+  Colours: 4df972e1ff8d888acad5a00302288a94c43ec5dc
   DCKeyValueObjectMapping: 39adaf0a54ff6368a22d9221db60f0696d81ad7b
   FMDB: e0dd09464b4e1a1cd7fa51ea835ae821b5656865
-  MMDrawerController: 76408e0a01b0a3996479261c57aed5d5765a6ea1
+  MMDrawerController: fb6a17a3e2d1cb4f5f4a411915703b3569cdb227
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269
   SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e
   SMPageControl: 0c5c5d7e142c1ce6ef5b0d7182d6ad3b2af8f2e3
   SoundManager: 70ca8a12b24e451b0b8932721f2e46512a5fb605
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.32.1
